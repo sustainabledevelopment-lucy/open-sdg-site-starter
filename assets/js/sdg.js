@@ -1168,7 +1168,7 @@ var mapView = function () {
       geoData: geoData,
       geoCodeRegEx: geoCodeRegEx,
       mapOptions: {"tileURL":"https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}","tileOptions":{"id":"mapbox.light","accessToken":"pk.eyJ1IjoiYnJvY2tmYW5uaW5nMSIsImEiOiJjaXplbmgzczgyMmRtMnZxbzlmbGJmdW9pIn0.LU-BYMX69uu3eGgk0Imibg","attribution":"<a href=\"https://www.mapbox.com\">Mapbox</a> | <a href=\"http://geoportal.statistics.gov.uk/\">ONS</a>"},"minZoom":6},
-      mapLayers: [{"min_zoom":6,"max_zoom":8,"serviceUrl":"https://github.com/AshKyd/geojson-regions/blob/master/countries/50m/KGZ.geojson","nameProperty":"sovereignt","idProperty":"sov_a3","staticBorders":true}],
+      mapLayers: [{"min_zoom":6,"max_zoom":8,"serviceUrl":"https://github.com/sustainabledevelopment-kyrgyzstan/open-sdg-site-starter/blob/maptest/boundaries/Country.geojson","nameProperty":"sovereignt","idProperty":"sov_a3","staticBorders":true}],
     });
   };
 };
