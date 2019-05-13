@@ -37,6 +37,7 @@ jekyll_get_json:
 
 analytics:
   ga_prod: ''
+  
  
 # Social media accounts.
 twitter: 'MyTwitterAccount'
@@ -98,6 +99,7 @@ non_global_metadata: indicator.national_metadata
 
 # The list of languages that are translated. The first one is the default.
 languages:
+  - ru
   - en
 
 # This makes sure that all pages have a language.
@@ -106,7 +108,7 @@ defaults:
     scope:
       path: ""
     values:
-      language: "en"
+      language: "ru"
 
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
@@ -137,7 +139,7 @@ map_layers:
   # Country
   - min_zoom: 6
     max_zoom: 8
-    serviceUrl: https://github.com/AshKyd/geojson-regions/blob/master/countries/50m/KGZ.geojson
+    serviceUrl: https://github.com/sustainabledevelopment-kyrgyzstan/open-sdg-site-starter/blob/maptest/boundaries/Country.geojson
     nameProperty: sovereignt
     idProperty: sov_a3
     staticBorders: true
