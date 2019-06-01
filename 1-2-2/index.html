@@ -118,7 +118,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/default.css?v=20190531053311">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/default.css?v=20190601035629">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -126,7 +126,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css" />
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' />
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20190531053311"></head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20190601035629"></head>
 <body class="language-ru">
 <!-- <div class="container"> -->
 
@@ -286,20 +286,113 @@ var translations = {
 
   <div class="row">
     <div class="col-xs-12">
-      <h2>Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</h2>
+      <h2>Доля мужчин, женщин и детей всех возрастов, живущих в нищете во всех ее проявлениях, согласно национальным определениям</h2>
     </div>
   </div>
 
   <div class="row" id="indicatorData" data-indicatorid='indicator_1-2-2' data-id="1-2-2" data-country=""
-  data-charttitle="Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions" data-measurementunit="" data-datasource="" data-geographicalarea="" data-footnote="" data-showdata="false" data-graphtype="line" data-geocoderegex="" data-showmap="">
+  data-charttitle="Доля мужчин, женщин и детей всех возрастов, живущих в нищете во всех ее проявлениях, согласно национальным определениям" data-measurementunit="" data-datasource="" data-geographicalarea="" data-footnote="" data-showdata="true" data-graphtype="line" data-geocoderegex="" data-showmap="false">
     
-    <div class="col-md-12">
+    <div class="col-md-3">
+      <div id="toolbar">
+        <span id="series-help">
+          <h4>Субкатегории</h4>
+          <p>Выберите категории из выпадающего меню внизу, чтобы увидеть разные разбивки данных. Несколько не будет доступно, пока более высокий уровень не выбран. </p>
+        </span>
+        <p>Нажмите на легенду, чтобы убрать линии из графика.</p>
+        <div id="fields">
+          <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
+        </div>
+      </div>
+      <div id="units"></div>
+    </div>
+    <div class="col-md-9">
     
+
+      
+      
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    <a href="https://sustainabledevelopment-kyrgyzstan.github.io/open-sdg-data-starter/headline/1-2-2.csv" class="btn btn-primary btn-download" download="indicator_1-2-2.csv" tabindex="0" role="button">Скачать заголовки CSV</a>
+
+    <a href="https://sustainabledevelopment-kyrgyzstan.github.io/open-sdg-data-starter/data/1-2-2.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_1-2-2.csv' tabindex='0' role='button'>Скачать исходные CSV</a>
+
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption></caption>
+      <thead>
+        
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <div id="datatableFooter">
+    
+    
+    
+    
+  </div>
+
+</div>
 
       
 
       <section>
 
+        
+        <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
+        <div class="async-loaded" style="display:none">
+          <ul class="nav nav-tabs data-view" role="tablist">
+            <li role="presentation" class="nav-item active">
+              <a class="nav-link" data-toggle="tab" href="#chartview" aria-controls="chartview" role="tab">График</a>
+            </li>
+            <li role="presentation" class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tableview" aria-controls="tableview" role="tab">Таблица</a>
+            </li>
+            <li role="presentation" class="nav-item map" style="display:none">
+              <a class="nav-link" data-toggle="tab" href="#mapview" aria-controls="mapview" role="tab">Карта</a>
+            </li></ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content data-view">
+            <div role="tabpanel" class="tab-pane active" id="chartview">
+              
+
+    <div id="dataset-size-warning" style="display:none">
+      <i class="fa fa-bolt"></i> В таблице слишком много данных, чтобы показать в графике. Чтобы увидеть все, удалите выделенное.
+    </div>
+
+    
+    <div class="plot-container">
+        
+<canvas></canvas>
+
+    </div>
+    <div id="plotLegend"></div>
+
+    <div id="chartSelectionDownload"></div>
+
+
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tableview">
+              <div id="selectionsTable"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="mapview" class="map">
+              <div id="map">
+                <img src="/open-sdg-site-starter/assets/img/loading.gif" alt="Загружка карты" />
+              </div>
+            </div>
+            
+          </div>
+        </div>
         
 
         <!-- Nav tabs -->
@@ -467,8 +560,8 @@ var translations = {
             
 
             
-              <a href="https://github.com/sustainabledevelopment-kyrgyzstan/open-sdg-data-starter/commit/50a0b3002a1640136ad0312d759c15b84748c897" target="_blank">
-                2019-05-10: see changes on GitHub <span class="visuallyhidden">открывается в новой вкладке</span>
+              <a href="https://github.com/sustainabledevelopment-kyrgyzstan/open-sdg-data-starter/commit/cce87f96ef858f9fb8a732ff328dccfe3e43bcc0" target="_blank">
+                2019-05-31: see changes on GitHub <span class="visuallyhidden">открывается в новой вкладке</span>
               </a>
             
 
@@ -584,7 +677,7 @@ var translations = {
         <th scope="row">Название показателя </th>
         <td>
           
-            Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions
+            Доля мужчин, женщин и детей всех возрастов, живущих в нищете во всех ее проявлениях, согласно национальным определениям
           
         </td>
         </tr>
@@ -608,7 +701,7 @@ var translations = {
         <th scope="row">Название задачи </th>
         <td>
           
-            By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions
+            К 2030 году сократить долю мужчин, женщин и детей всех возрастов, живущих в нищете во всех ее проявлениях, согласно национальным определениям, по крайней мере наполовину
           
         </td>
         </tr>
@@ -632,7 +725,7 @@ var translations = {
         <th scope="row">Описание глобального показателя </th>
         <td>
           
-            Monitoring national poverty is important for country-specific development agendas. National poverty lines are used to make more accurate estimates of poverty consistent with the country’s specific economic and social circumstances, and are not intended for international comparisons of poverty rates.
+            
           
         </td>
         </tr>
@@ -644,7 +737,7 @@ var translations = {
         <th scope="row">ООН-ями назначенный уровень </th>
         <td>
           
-            2
+            2.0
           
         </td>
         </tr>
@@ -674,7 +767,7 @@ var translations = {
             
 
             
-              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-02-02.pdf " target="_blank">
+              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-02-02.pdf" target="_blank">
                 United Nations Sustainable Development Goals Metadata (PDF 894 KB) <span class="visuallyhidden">открывается в новой вкладке</span>
               </a>
             
@@ -847,7 +940,7 @@ var translations = {
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20190531053311'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20190601035629'></script>
 <script>
 $(function() {
     if($('#indicatorData').length) {
