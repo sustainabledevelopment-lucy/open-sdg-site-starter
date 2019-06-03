@@ -35,3 +35,9 @@ jekyll_get_json:
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
   ga_prod: ''
+  
+  # Tell Jekyll to use the Remote Theme plugin.
+plugins:
+  - jekyll-remote-theme
+  - jekyll-open-sdg-plugins
+  - jekyll-get-json
