@@ -22,6 +22,7 @@ git config --global user.name "$GH_NAME"
 sed -i -e 's/Host gh-prod/Host gh-prod\n  HostName github.com/g' ~/.ssh/config
 git clone git@gh-prod:$GH_ORG_PROD/.github.io.git out
 
+
 cd out
 git checkout master || git checkout --orphan master
 git rm -rfq .
