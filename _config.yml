@@ -17,7 +17,7 @@ url: ""
 data_dir: data
 environment: staging
 # Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/tree/publish-site"
+remotedatabaseurl: "https://SDG-kyrgyzstan.github.io/open-sdg-data-starter"
 
 jekyll_get_json:
   - data: meta
