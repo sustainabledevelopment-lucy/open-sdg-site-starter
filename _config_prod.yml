@@ -35,30 +35,3 @@ jekyll_get_json:
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
   ga_prod: ''
-  
-  # Tell Jekyll to use the Remote Theme plugin.
-plugins:
-  - jekyll-remote-theme
-  - jekyll-open-sdg-plugins
-  - jekyll-get-json
-  
-# This makes sure that all pages have a language.
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      language: "en"
-
-# Tell Jekyll to use the Remote Theme plugin.
-plugins:
-  - jekyll-remote-theme
-  - jekyll-open-sdg-plugins
-  - jekyll-get-json
-
-# Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg@0.5.0
-
-# Apply any custom CSS.
-custom_css:
-  - /assets/css/custom.css
