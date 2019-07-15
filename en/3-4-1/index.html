@@ -5,6 +5,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
@@ -118,7 +120,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/default.css?v=20190709000127">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/default.css?v=20190715145653">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -126,7 +128,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css" />
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' />
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20190709000127"></head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20190715145653"></head>
 <body class="language-en">
 <!-- <div class="container"> -->
 
@@ -284,125 +286,46 @@ var translations = {
 
   <div class="row">
     <div class="col-xs-12">
-      <h2>Смертность от сердечно-сосудистых заболеваний, рака, диабета, хронических респираторных заболеваний</h2>
+      <h2>Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease</h2>
     </div>
   </div>
 
   <div class="row" id="indicatorData" data-indicatorid='indicator_3-4-1' data-id="3-4-1" data-country=""
-  data-charttitle="Смертность от сердечно-сосудистых заболеваний, рака, диабета, хронических респираторных заболеваний" data-measurementunit="" data-datasource="" data-geographicalarea="" data-footnote="" data-showdata="true" data-graphtype="line" data-geocoderegex="" data-showmap="false">
+  data-charttitle="Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease" data-measurementunit="" data-datasource=""
+  data-geographicalarea="" data-footnote="" data-showdata="false" data-graphtype="line"
+  data-geocoderegex="" data-showmap="" data-startvalues="">
     
-    <div class="col-md-3">
-      <div id="toolbar">
-        <span id="series-help">
-          <h4>Sub-categories</h4>
-          <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
-        </span>
-        <p>Click on the legend to remove individual lines from the chart.</p>
-        <div id="fields">
-          <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
-        </div>
-      </div>
-      <div id="units"></div>
-    </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
     
-
-      
-      
-
-
-<div id="headlineTable">
-
-  <div id="datatables">
-
-    <a href="https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/headline/3-4-1.csv" class="btn btn-primary btn-download" download="indicator_3-4-1.csv" tabindex="0" role="button">Download Headline CSV</a>
-
-    <a href="https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/data/3-4-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_3-4-1.csv' tabindex='0' role='button'>Download Source CSV</a>
-
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption></caption>
-      <thead>
-        
-      </thead>
-      <tbody>
-        
-      </tbody>
-    </table>
-  </div>
-
-  <div id="datatableFooter">
-    
-    
-    
-    
-  </div>
-
-</div>
 
       
 
       <section>
 
         
-        <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
-        <div class="async-loaded" style="display:none">
-          <ul class="nav nav-tabs data-view" role="tablist">
-            <li role="presentation" class="nav-item active">
-              <a class="nav-link" data-toggle="tab" href="#chartview" aria-controls="chartview" role="tab">Chart</a>
-            </li>
-            <li role="presentation" class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#tableview" aria-controls="tableview" role="tab">Table</a>
-            </li>
-            <li role="presentation" class="nav-item map" style="display:none">
-              <a class="nav-link" data-toggle="tab" href="#mapview" aria-controls="mapview" role="tab">Map</a>
-            </li></ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content data-view">
-            <div role="tabpanel" class="tab-pane active" id="chartview">
-              
-
-    <div id="dataset-size-warning" style="display:none">
-      <i class="fa fa-bolt"></i> There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
-    </div>
-
-    
-    <div class="plot-container">
-        
-<canvas></canvas>
-
-    </div>
-    <div id="plotLegend"></div>
-
-    <div id="chartSelectionDownload"></div>
-
-
-
-            </div>
-            <div role="tabpanel" class="tab-pane" id="tableview">
-              <div id="selectionsTable"></div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="mapview" class="map">
-              <div id="map">
-                <img src="/open-sdg-site-starter/assets/img/loading.gif" alt="Loading map" />
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        
 
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="nav-item active">
-            <a class="nav-link" data-toggle="tab" href="#metadata" aria-controls="metadata" role="tab">National Metadata</a>
+            <a class="nav-link" data-toggle="tab" href="#metadata" aria-controls="metadata" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to National Metadata tab"
+>National Metadata</a>
           </li>
           <li role="presentation" class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#globalmetadata" aria-controls="globalmetadata" role="tab">Global Metadata</a>
+            <a class="nav-link" data-toggle="tab" href="#globalmetadata" aria-controls="globalmetadata" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Global Metadata tab"
+>Global Metadata</a>
           </li>
           <li role="presentation" class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#sources" aria-controls="sources" role="tab">Sources</a>
+            <a class="nav-link" data-toggle="tab" href="#sources" aria-controls="sources" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Sources tab"
+>Sources</a>
           </li>
           
           <li role="presentation" class="nav-item">
@@ -533,8 +456,8 @@ var translations = {
             
 
             
-              <a href="https://github.com/sdg-kyrgyzstan/open-sdg-data-starter/commit/d256038f6854ec70a8565481de2d2e08bf51dc64" target="_blank">
-                2019-05-31: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-kyrgyzstan/open-sdg-data-starter/commit/a4ddb2e7e624f720bd662e8addefe056469dc22b" target="_blank">
+                2019-07-15: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -558,8 +481,8 @@ var translations = {
             
 
             
-              <a href="https://github.com/sdg-kyrgyzstan/open-sdg-data-starter/commit/ffdb8b76952110d9679a65532dca833a7bf258ac" target="_blank">
-                2019-05-31: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-kyrgyzstan/open-sdg-data-starter/commit/f51bbbb57a2d2e451ccbb1d9bb30a88a710b7ea7" target="_blank">
+                2019-07-15: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -675,7 +598,7 @@ var translations = {
         <th scope="row">Indicator name </th>
         <td>
           
-            Смертность от сердечно-сосудистых заболеваний, рака, диабета, хронических респираторных заболеваний
+            Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease
           
         </td>
         </tr>
@@ -699,7 +622,7 @@ var translations = {
         <th scope="row">Target name </th>
         <td>
           
-            К 2030 году уменьшить на треть преждевременную смертность от неинфекционных заболеваний посредством профилактики и лечения и поддержания психического здоровья и благополучия
+            By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being
           
         </td>
         </tr>
@@ -723,7 +646,7 @@ var translations = {
         <th scope="row">Global indicator description </th>
         <td>
           
-            
+            Probability of dying between the ages of 30 and 70 years from cardiovascular diseases, cancer, diabetes or chronic respiratory diseases, defined as the per cent of 30-year-old-people who would die before their 70th birthday from cardiovascular disease, cancer, diabetes, or chronic respiratory disease, assuming that s/he would experience current mortality rates at every age and s/he would not die from any other cause of death.
           
         </td>
         </tr>
@@ -735,7 +658,7 @@ var translations = {
         <th scope="row">UN designated tier </th>
         <td>
           
-            1.0
+            1
           
         </td>
         </tr>
@@ -901,12 +824,16 @@ var translations = {
 <footer role="contentinfo">
   <div class="container">
     <div class="row">
-      <div class="col-xs-9">
-        <a href="mailto:test@example.com">Contact us</a>
-        
-      </div>
-      <div class="col-xs-3 text-right">
-        <a href="/open-sdg-site-starter/faq/">FAQ</a> | <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a>
+      <div class="col-xs-12">
+        <div id="footerLinks">
+          <ul>
+            <li><a href="mailto:test@example.com">Contact us</a></li>
+            
+            
+            <li><a href="/open-sdg-site-starter/faq/">FAQ</a></li>
+            <li><a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -934,7 +861,8 @@ var translations = {
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20190709000127'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20190715145653'></script>
 <script>
 $(function() {
     if($('#indicatorData').length) {
@@ -965,7 +893,8 @@ $(function() {
             geographicalArea: domData.geographicalarea,
             showData: domData.showdata,
             footnote: domData.footnote,
-            graphType: domData.graphtype
+            graphType: domData.graphtype,
+            startValues: domData.startvalues
           }),
           view  = new indicatorView(model, {
             rootElement: '#indicatorData',

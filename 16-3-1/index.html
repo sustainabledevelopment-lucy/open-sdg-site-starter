@@ -5,6 +5,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
@@ -118,7 +120,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/default.css?v=20190709000127">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/default.css?v=20190715145653">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -126,7 +128,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css" />
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' />
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20190709000127"></head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20190715145653"></head>
 <body class="language-ru">
 <!-- <div class="container"> -->
 
@@ -292,125 +294,46 @@ var translations = {
 
   <div class="row">
     <div class="col-xs-12">
-      <h2>Доля жертв насилия, которые в последние 12 месяцев подали соответствующую жалобу в компетентные органы или другие официально признанные механизмы урегулирования конфликтов</h2>
+      <h2>Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms</h2>
     </div>
   </div>
 
   <div class="row" id="indicatorData" data-indicatorid='indicator_16-3-1' data-id="16-3-1" data-country=""
-  data-charttitle="Доля жертв насилия, которые в последние 12 месяцев подали соответствующую жалобу в компетентные органы или другие официально признанные механизмы урегулирования конфликтов" data-measurementunit="" data-datasource="" data-geographicalarea="" data-footnote="" data-showdata="true" data-graphtype="line" data-geocoderegex="" data-showmap="false">
+  data-charttitle="Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms" data-measurementunit="" data-datasource=""
+  data-geographicalarea="" data-footnote="" data-showdata="false" data-graphtype="line"
+  data-geocoderegex="" data-showmap="" data-startvalues="">
     
-    <div class="col-md-3">
-      <div id="toolbar">
-        <span id="series-help">
-          <h4>Субкатегории</h4>
-          <p>Выберите категории из выпадающего меню внизу, чтобы увидеть разные разбивки данных. Несколько не будет доступно, пока более высокий уровень не выбран. </p>
-        </span>
-        <p>Нажмите на легенду, чтобы убрать линии из графика.</p>
-        <div id="fields">
-          <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
-        </div>
-      </div>
-      <div id="units"></div>
-    </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
     
-
-      
-      
-
-
-<div id="headlineTable">
-
-  <div id="datatables">
-
-    <a href="https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/headline/16-3-1.csv" class="btn btn-primary btn-download" download="indicator_16-3-1.csv" tabindex="0" role="button">Скачать заголовки CSV</a>
-
-    <a href="https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/data/16-3-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_16-3-1.csv' tabindex='0' role='button'>Скачать исходные CSV</a>
-
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption></caption>
-      <thead>
-        
-      </thead>
-      <tbody>
-        
-      </tbody>
-    </table>
-  </div>
-
-  <div id="datatableFooter">
-    
-    
-    
-    
-  </div>
-
-</div>
 
       
 
       <section>
 
         
-        <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
-        <div class="async-loaded" style="display:none">
-          <ul class="nav nav-tabs data-view" role="tablist">
-            <li role="presentation" class="nav-item active">
-              <a class="nav-link" data-toggle="tab" href="#chartview" aria-controls="chartview" role="tab">График</a>
-            </li>
-            <li role="presentation" class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#tableview" aria-controls="tableview" role="tab">Таблица</a>
-            </li>
-            <li role="presentation" class="nav-item map" style="display:none">
-              <a class="nav-link" data-toggle="tab" href="#mapview" aria-controls="mapview" role="tab">Карта</a>
-            </li></ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content data-view">
-            <div role="tabpanel" class="tab-pane active" id="chartview">
-              
-
-    <div id="dataset-size-warning" style="display:none">
-      <i class="fa fa-bolt"></i> В таблице слишком много данных, чтобы показать в графике. Чтобы увидеть все, удалите выделенное.
-    </div>
-
-    
-    <div class="plot-container">
-        
-<canvas></canvas>
-
-    </div>
-    <div id="plotLegend"></div>
-
-    <div id="chartSelectionDownload"></div>
-
-
-
-            </div>
-            <div role="tabpanel" class="tab-pane" id="tableview">
-              <div id="selectionsTable"></div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="mapview" class="map">
-              <div id="map">
-                <img src="/open-sdg-site-starter/assets/img/loading.gif" alt="Загружка карты" />
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        
 
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="nav-item active">
-            <a class="nav-link" data-toggle="tab" href="#metadata" aria-controls="metadata" role="tab">Национальные метаданные</a>
+            <a class="nav-link" data-toggle="tab" href="#metadata" aria-controls="metadata" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to National Metadata tab"
+>Национальные метаданные</a>
           </li>
           <li role="presentation" class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#globalmetadata" aria-controls="globalmetadata" role="tab">Глобальные метаданные</a>
+            <a class="nav-link" data-toggle="tab" href="#globalmetadata" aria-controls="globalmetadata" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Global Metadata tab"
+>Глобальные метаданные</a>
           </li>
           <li role="presentation" class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#sources" aria-controls="sources" role="tab">Источники</a>
+            <a class="nav-link" data-toggle="tab" href="#sources" aria-controls="sources" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Sources tab"
+>Источники</a>
           </li>
           
           <li role="presentation" class="nav-item">
@@ -541,8 +464,8 @@ var translations = {
             
 
             
-              <a href="https://github.com/sdg-kyrgyzstan/open-sdg-data-starter/commit/80db6a3467e34b776aacc13bc443b9831cfd7f1c" target="_blank">
-                2019-05-31: see changes on GitHub <span class="visuallyhidden">открывается в новой вкладке</span>
+              <a href="https://github.com/sdg-kyrgyzstan/open-sdg-data-starter/commit/a4ddb2e7e624f720bd662e8addefe056469dc22b" target="_blank">
+                2019-07-15: see changes on GitHub <span class="visuallyhidden">открывается в новой вкладке</span>
               </a>
             
 
@@ -566,8 +489,8 @@ var translations = {
             
 
             
-              <a href="https://github.com/sdg-kyrgyzstan/open-sdg-data-starter/commit/9bcecdb28a3438fd2ec66433f6f709e27dafa3b4" target="_blank">
-                2019-05-31: see changes on GitHub <span class="visuallyhidden">открывается в новой вкладке</span>
+              <a href="https://github.com/sdg-kyrgyzstan/open-sdg-data-starter/commit/88b72964f0858e622335ca752d8cae322774aebf" target="_blank">
+                2019-07-15: see changes on GitHub <span class="visuallyhidden">открывается в новой вкладке</span>
               </a>
             
 
@@ -683,7 +606,7 @@ var translations = {
         <th scope="row">Название показателя </th>
         <td>
           
-            Доля жертв насилия, которые в последние 12 месяцев подали соответствующую жалобу в компетентные органы или другие официально признанные механизмы урегулирования конфликтов
+            Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms
           
         </td>
         </tr>
@@ -707,7 +630,7 @@ var translations = {
         <th scope="row">Название задачи </th>
         <td>
           
-            Содействовать верховенству права на национальном и международном уровнях и обеспечить всем равный доступ к правосудию
+            Promote the rule of law at the national and international levels and ensure equal access to justice for all
           
         </td>
         </tr>
@@ -743,7 +666,7 @@ var translations = {
         <th scope="row">ООН-ями назначенный уровень </th>
         <td>
           
-            2.0
+            2
           
         </td>
         </tr>
@@ -774,7 +697,7 @@ var translations = {
 
             
               <a href="http://unstats.un.org/sdgs/files/metadata-compilation/Metadata-Goal-16.pdf" target="_blank">
-                Метаданные Целей ООН в области устойчивого развития (PDF, 222 КБ) <span class="visuallyhidden">открывается в новой вкладке</span>
+                United Nations Sustainable Development Goals Metadata (pdf 1361kB) <span class="visuallyhidden">открывается в новой вкладке</span>
               </a>
             
 
@@ -909,12 +832,16 @@ var translations = {
 <footer role="contentinfo">
   <div class="container">
     <div class="row">
-      <div class="col-xs-9">
-        <a href="mailto:test@example.com">Свяжитесь с нами</a>
-        
-      </div>
-      <div class="col-xs-3 text-right">
-        <a href="/open-sdg-site-starter/faq/">Часто задаваемые вопросы</a> | <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a>
+      <div class="col-xs-12">
+        <div id="footerLinks">
+          <ul>
+            <li><a href="mailto:test@example.com">Свяжитесь с нами</a></li>
+            
+            
+            <li><a href="/open-sdg-site-starter/faq/">Часто задаваемые вопросы</a></li>
+            <li><a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -942,7 +869,8 @@ var translations = {
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20190709000127'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20190715145653'></script>
 <script>
 $(function() {
     if($('#indicatorData').length) {
@@ -973,7 +901,8 @@ $(function() {
             geographicalArea: domData.geographicalarea,
             showData: domData.showdata,
             footnote: domData.footnote,
-            graphType: domData.graphtype
+            graphType: domData.graphtype,
+            startValues: domData.startvalues
           }),
           view  = new indicatorView(model, {
             rootElement: '#indicatorData',
