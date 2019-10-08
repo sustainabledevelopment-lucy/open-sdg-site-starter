@@ -17,28 +17,28 @@ url: ""
 data_dir: data
 environment: staging
 # Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "http://127.0.0.1:8080"
+remotedatabaseurl: "https://SDG-kyrgyzstan.github.io/open-sdg-data-starter"
 
 jekyll_get_json:
   - data: meta
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'http://127.0.0.1:8080/meta/all.json'
+    json: 'https://sdg-kyrgyzstan.github.io/open-sdg-data-starter/meta/all.json'
   - data: headlines
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'http://127.0.0.1:8080/headline/all.json'
+    json: 'https://sdg-kyrgyzstan.github.io/open-sdg-data-starter/headline/all.json'
   - data: schema
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'http://127.0.0.1:8080/meta/schema.json'
+    json: 'https://sdg-kyrgyzstan.github.io/open-sdg-data-starter/meta/schema.json'
   - data: reporting
     # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'http://127.0.0.1:8080/stats/reporting.json'
+    json: 'https://sdg-kyrgyzstan.github.io/open-sdg-data-starter/stats/reporting.json'
   - data: translations
     json: 'https://open-sdg.github.io/sdg-translations/translations-0.5.0.json'
 
 analytics:
   ga_prod: ''
-
-
+  
+ 
 # Social media accounts.
 #twitter: 'MyTwitterAccount'
 
@@ -66,8 +66,8 @@ exclude: [vendor, scripts, remotedata]
 country:
   name: Kyrgyzstan
   adjective: Kyrgyz
-
-
+  
+  
 # Optionally uncomment and update the settings below to control the frontpage heading and instructions.
 frontpage_heading: Показатели целей в области устойчивого развития Кыргызской Республики
 frontpage_instructions: Нажмите на каждую цель, или поищите статистики для глобальных показателей целей в области устойчивого развития. Для получения данных по показателям Целей устойчивого развития – выберите цель, или введите название показателя через <span id="jump-to-search"><a>«Поиск»</a></span>
@@ -126,12 +126,12 @@ plugins:
   - jekyll-open-sdg-plugins
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg@0.9.0
+remote_theme: open-sdg/open-sdg@0.7.1
 
 # Apply any custom CSS.
 custom_css:
   - /assets/css/custom.css
-
+  
 # Mapping
 map_options:
   tileURL: https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}
