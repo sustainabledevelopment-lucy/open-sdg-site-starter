@@ -1,8 +1,15 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
+        <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.forEach%2CString.prototype.includes"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
 // This is where we initialise any global variables, namespaced in "opensdg".
@@ -80,7 +87,6 @@ var translations = {
 
         <!-- Basic Page Needs
         ================================================== -->
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
         ================================================== -->
         <meta name="HandheldFriendly" content="True">
@@ -89,7 +95,17 @@ var translations = {
         <!-- Title and meta description
         ================================================== -->
         
-        <title>Indicators For The Sustainable Development Goals</title>
+
+        
+
+        <title>
+          
+            
+        Цель 14 - Сохранение морских экосистем
+        
+          
+        </title>
+
         <meta name="description" content="">
         <meta property="og:description" content="">
         
@@ -113,22 +129,24 @@ var translations = {
         
 
         
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/default.css?v=20191016132725">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/default.css?v=20191016135816">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css" />
-        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' />
-        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20191016132725"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
+        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
+        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20191016135816"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-ru layout-goal-by-target">
 <!-- <div class="container"> -->
+
+<script>translations['header'] = {"alpha":"Альфа","default_contrast":"стандартный контраст","disable_high_contrast":"Отключить высокую контрастность","disclaimer":"Это сайт находится в разработке. Мы рады вашим отзывам.","enable_high_contrast":"Включить высокую контрастность","high_contrast":"высокий контраст","skip_link":"Перейти к главному содержанию","tag_line":"17 Целей, чтобы преобразовать наш мир"};</script>
 
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Перейти к главному содержанию</a>
 <div id="disclaimer">
@@ -152,7 +170,7 @@ var translations = {
     <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
       <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
   <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">русский</span>
+  <span class="language-toggle-text">Pусский</span>
   <i class="language-toggle fa fa-chevron-down"></i>
   <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
 </a>
@@ -163,7 +181,13 @@ var translations = {
     <nav class="navbar navbar-default" id="main-nav">
 
       <ul class="top-level">
-        <li><span data-target="menu">Меню</span></li>
+        <li id="menuToggle"
+            aria-label="Menu toggle. Click to expand or collapse the menu."
+            aria-haspopup="true"
+            aria-expanded="false">
+          <span data-target="menu" tabindex="0"
+          role="navigation">Меню</span>
+        </li>
         <li><span data-target="search">Поиск</span></li>
       </ul>
 
@@ -178,7 +202,7 @@ var translations = {
           </li><li>
           <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
   <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">русский</span>
+  <span class="language-toggle-text">Pусский</span>
   <i class="language-toggle fa fa-chevron-down"></i>
   <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
 </a>
@@ -189,7 +213,7 @@ var translations = {
       <div id="search" class="menu-target">
   <input id="indicator_search" title="Поиск показателя" placeholder="Поиск показателя" data-url="/open-sdg-site-starter/indicators.json" data-pageurl="/open-sdg-site-starter/search/?q=" />
   <label for="indicator_search">
-    <button id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button><span>Поиск:</span>
+    <button id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false" aria-label=Поиск показателя></i></button><span>Поиск:</span>
   </label>
 </div>
 
@@ -198,8 +222,6 @@ var translations = {
   </div>
 
 </header>
-
-
 
 
 <div class="heading goal-14">
@@ -230,6 +252,7 @@ var translations = {
   
 </ol>
 
+
   <div class="visible-md-block visible-lg-block">
     <div class="col-md-6">
       <h4>Задачи</h4>
@@ -241,6 +264,8 @@ var translations = {
 
   
   
+    
+    
     
     
     
@@ -272,7 +297,7 @@ var translations = {
           <span>
             14.1.1
             <span class="status notstarted">
-              Исследование источников данных
+              В процессе разработки
             </span>
           </span>
           Index of coastal eutrophication and floating plastic debris density
@@ -282,6 +307,8 @@ var translations = {
     
     </div>
   
+    
+    
     
     
     
@@ -315,7 +342,7 @@ var translations = {
           <span>
             14.2.1
             <span class="status notstarted">
-              Исследование источников данных
+              В процессе разработки
             </span>
           </span>
           Proportion of national exclusive economic zones managed using ecosystem-based approaches
@@ -325,6 +352,8 @@ var translations = {
     
     </div>
   
+    
+    
     
     
     
@@ -354,7 +383,7 @@ var translations = {
           <span>
             14.3.1
             <span class="status notstarted">
-              Исследование источников данных
+              В процессе разработки
             </span>
           </span>
           Average marine acidity (pH) measured at agreed suite of representative sampling stations
@@ -364,6 +393,8 @@ var translations = {
     
     </div>
   
+    
+    
     
     
     
@@ -402,7 +433,7 @@ var translations = {
           <span>
             14.4.1
             <span class="status notstarted">
-              Исследование источников данных
+              В процессе разработки
             </span>
           </span>
           Proportion of fish stocks within biologically sustainable levels
@@ -412,6 +443,8 @@ var translations = {
     
     </div>
   
+    
+    
     
     
     
@@ -443,7 +476,7 @@ var translations = {
           <span>
             14.5.1
             <span class="status notstarted">
-              Исследование источников данных
+              В процессе разработки
             </span>
           </span>
           Coverage of protected areas in relation to marine areas
@@ -453,6 +486,8 @@ var translations = {
     
     </div>
   
+    
+    
     
     
     
@@ -492,7 +527,7 @@ var translations = {
           <span>
             14.6.1
             <span class="status notstarted">
-              Исследование источников данных
+              В процессе разработки
             </span>
           </span>
           Progress by countries in the degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing
@@ -502,6 +537,8 @@ var translations = {
     
     </div>
   
+    
+    
     
     
     
@@ -535,7 +572,7 @@ var translations = {
           <span>
             14.7.1
             <span class="status notstarted">
-              Исследование источников данных
+              В процессе разработки
             </span>
           </span>
           Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries
@@ -545,6 +582,8 @@ var translations = {
     
     </div>
   
+    
+    
     
     
     
@@ -582,7 +621,7 @@ var translations = {
           <span>
             14.a.1
             <span class="status notstarted">
-              Исследование источников данных
+              В процессе разработки
             </span>
           </span>
           Proportion of total research budget allocated to research in the field of marine technology
@@ -592,6 +631,8 @@ var translations = {
     
     </div>
   
+    
+    
     
     
     
@@ -622,7 +663,7 @@ var translations = {
           <span>
             14.b.1
             <span class="status notstarted">
-              Исследование источников данных
+              В процессе разработки
             </span>
           </span>
           Progress by countries in the degree of application of a legal/regulatory/policy/institutional framework which recognizes and protects access rights for small-scale fisheries
@@ -632,6 +673,8 @@ var translations = {
     
     </div>
   
+    
+    
     
     
     
@@ -668,7 +711,7 @@ var translations = {
           <span>
             14.c.1
             <span class="status notstarted">
-              Исследование источников данных
+              В процессе разработки
             </span>
           </span>
           Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nation Convention on the Law of the Sea, for the conservation and sustainable use of the oceans and their resources
@@ -711,7 +754,6 @@ var translations = {
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
-<script src="//cdn.jsdelivr.net/bluebird/3.5.0/bluebird.min.js"></script>
 <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
@@ -721,7 +763,9 @@ var translations = {
 <script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20191016132725'></script><script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20191016135816'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -747,6 +791,7 @@ $(function() {
             shortIndicatorId: domData.id,
             chartTitle: domData.charttitle,
             measurementUnit: domData.measurementunit,
+            copyright: domData.copyright,
             dataSource: domData.datasource,
             geographicalArea: domData.geographicalarea,
             showData: domData.showdata,
@@ -757,7 +802,7 @@ $(function() {
           view  = new indicatorView(model, {
             rootElement: '#indicatorData',
             legendElement: '#plotLegend',
-            maxChartHeight: 600,
+            maxChartHeight: 420,
             tableColumnDefs: [
               { maxCharCount: 25 }, // nowrap
               { maxCharCount: 35, width: 200 },
