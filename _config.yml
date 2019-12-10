@@ -16,24 +16,17 @@ baseurl: "/open-sdg-site-starter"
 url: ""
 data_dir: data
 environment: staging
-# Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "https://SDG-kyrgyzstan.github.io/open-sdg-data-starter"
 
-jekyll_get_json:
-  - data: meta
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://sdg-kyrgyzstan.github.io/open-sdg-data-starter/meta/all.json'
-  - data: headlines
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://sdg-kyrgyzstan.github.io/open-sdg-data-starter/headline/all.json'
-  - data: schema
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://sdg-kyrgyzstan.github.io/open-sdg-data-starter/meta/schema.json'
-  - data: reporting
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://sdg-kyrgyzstan.github.io/open-sdg-data-starter/stats/reporting.json'
-  - data: translations
-    json: 'https://open-sdg.github.io/sdg-translations/translations-0.8.0.json'
+# Replace my-github-org and open-sdg-data-starter as needed.
+remote_data_prefix: "https://SDG-kyrgyzstan.github.io/open-sdg-data-starter"
+remote_translations:
+  - https://open-sdg.github.io/sdg-translations/translations-0.8.0.json
+
+create_indicators:
+  layout: indicator
+create_goals:
+  layout: goal-by-target
+create_pages: true
 
 analytics:
   ga_prod: ''
@@ -122,7 +115,6 @@ goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
   - jekyll-remote-theme
-  - jekyll-get-json
   - jekyll-open-sdg-plugins
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
