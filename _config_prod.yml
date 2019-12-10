@@ -13,24 +13,11 @@
 
 baseurl: ""
 environment: production
-# Replace my-github-org and open-sdg-data-starter as needed.
-remotedatabaseurl: "https://sustainabledevelopment-kyrgyzstan.github.io/sdg-data"
 
-jekyll_get_json:
-  - data: meta
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://sustainabledevelopment-kyrgyzstan.github.io/sdg-data/meta/all.json'
-  - data: headlines
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://sustainabledevelopment-kyrgyzstan.github.io/sdg-data/headline/all.json'
-  - data: schema
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://sustainabledevelopment-kyrgyzstan.github.io/sdg-data/meta/schema.json'
-  - data: reporting
-    # Replace my-github-org and open-sdg-data-starter as needed.
-    json: 'https://sustainabledevelopment-kyrgyzstan.github.io/sdg-data/stats/reporting.json'
-  - data: translations
-    json: 'https://open-sdg.github.io/sdg-translations/translations-0.8.0.json'
+# Replace my-github-org and open-sdg-data-starter as needed.
+remote_data_prefix: "https://sustainabledevelopment-kyrgyzstan.github.io/sdg-data"
+remote_translations:
+  - 'https://open-sdg.github.io/sdg-translations/translations-0.8.0.json'
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
