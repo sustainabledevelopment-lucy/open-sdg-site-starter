@@ -90,6 +90,13 @@ menu:
     translation_key: menu.guidance
   - path: /faq
     translation_key: menu.faq
+    
+footer_menu:
+  - path: mailto:my-email-address@example.com
+    translation_key: menu.contact_us
+  - path: /cookies
+    translation_key: menu.cookies
+
 
 # Configure the text (or "translation key") to be used on the
 # non-global metadata tab.
