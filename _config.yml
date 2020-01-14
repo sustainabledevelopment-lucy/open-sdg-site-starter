@@ -94,7 +94,7 @@ menu:
 footer_menu:
   - path: mailto:my-email-address@example.com
     translation_key: menu.contact_us
-  - path: /cookies
+  - path: about/cookies-and-privacy
     translation_key: menu.cookies
 
 
