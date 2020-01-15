@@ -19,8 +19,6 @@ environment: staging
 
 # Replace my-github-org and open-sdg-data-starter as needed.
 remote_data_prefix: "https://SDG-kyrgyzstan.github.io/open-sdg-data-starter"
-remote_translations:
-  - https://open-sdg.github.io/sdg-translations/translations-0.8.0.json
 
 create_indicators:
   layout: indicator
