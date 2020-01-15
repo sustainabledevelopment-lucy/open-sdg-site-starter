@@ -16,8 +16,6 @@ environment: production
 
 # Replace my-github-org and open-sdg-data-starter as needed.
 remote_data_prefix: "https://sustainabledevelopment-kyrgyzstan.github.io/sdg-data"
-remote_translations:
-  - 'https://open-sdg.github.io/sdg-translations/translations-0.8.0.json'
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
