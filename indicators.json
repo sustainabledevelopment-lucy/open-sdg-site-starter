@@ -1367,7 +1367,7 @@
         
         {
           "id": "10-1-1",
-          "title": "",
+          "title": "Темпы роста расходов домохозяйств или доходовна душу населения среди наименее обеспеченных40 процентов населения и среди населения в целом",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-1-1",
@@ -1375,7 +1375,7 @@
         },
         {
           "id": "10-2-1",
-          "title": "",
+          "title": "Доля людей с доходом ниже 50 процентовмедианного дохода в разбивке по полу, возрасту ипризнаку инвалидности",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-2-1",
@@ -1383,7 +1383,7 @@
         },
         {
           "id": "10-3-1",
-          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
+          "title": "Доля людей, сообщивших об испытанныхими лично в последние 12 месяцев проявлениях дискриминацииили преследованиях на основании, дискриминацияна котором запрещена международнымправом прав человека",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-3-1",
@@ -1391,7 +1391,7 @@
         },
         {
           "id": "10-4-1",
-          "title": "",
+          "title": "Доля доходов трудящихся в ВВП, в томчисле заработная плата и выплаты по линии социальнойзащиты",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-4-1",
@@ -1399,7 +1399,7 @@
         },
         {
           "id": "10-5-1",
-          "title": "",
+          "title": "Показатели финансовой устойчивости",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-5-1",
@@ -1407,15 +1407,15 @@
         },
         {
           "id": "10-6-1",
-          "title": "Proportion of members of developing countries in international organizations, by organization",
+          "title": "Доля развивающихся стран в членском составемеждународных организаций и удельный весих голосов",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-7-1",
-          "title": "",
+          "title": "Затраты работника на трудоустройство в процентахот его годового дохода в стране назначения",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-7-1",
@@ -1423,7 +1423,7 @@
         },
         {
           "id": "10-7-2",
-          "title": "",
+          "title": "Число стран, проводящих хорошо продуманнуюмиграционную политику",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-7-2",
@@ -1519,7 +1519,7 @@
         },
         {
           "id": "11-6-1",
-          "title": "Municipal Solid Waste collection coverage, by cities (%)",
+          "title": "Proportion of population served by municipal waste collection",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-6-1",
