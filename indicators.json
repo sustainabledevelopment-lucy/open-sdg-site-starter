@@ -1503,7 +1503,7 @@
         },
         {
           "id": "11-5-1",
-          "title": "Number of deaths due to disaster",
+          "title": "Число погибших, пропавших без вести и пострадавшихнепосредственно в результате бедствий на 100 000 человек",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-5-1",
@@ -1511,7 +1511,7 @@
         },
         {
           "id": "11-5-2",
-          "title": "Direct economic loss attributed to disasters relative to GDP",
+          "title": "Общая сумма расходов (государственных ичастных) в расчете на душу населения на цели сохраненияи защиты всего культурного и природногонаследия в разбивке по видам наследия (культурное,природное, смешанного характера и признанное объектомвсемирного наследия Центром всемирногонаследия), уровню государственной подведомственности(национальный, региональный и местный/ муниципальный),видам расходов (эксплуатационные расходы/капиталовложения) и видам частного финансирования(пожертвования в натуральной форме,частный некоммерческий сектор и спонсорство)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-5-2",
@@ -1519,7 +1519,7 @@
         },
         {
           "id": "11-6-1",
-          "title": "",
+          "title": "Доля твердых бытовых отходов, которые регулярнособираются и надлежащим образом удаляются,в общей массе городских отходов",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-6-1",
@@ -1527,7 +1527,7 @@
         },
         {
           "id": "11-6-2",
-          "title": "",
+          "title": "Среднегодовой уровень содержания мелкихтвердых частиц (например, класса PM2.5 и PM10) ватмосфере городов (в пересчете на численность населения)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-6-2",
@@ -1535,7 +1535,7 @@
         },
         {
           "id": "11-7-1",
-          "title": "",
+          "title": "Средняя доля застроенной городской территории,относящейся к открытым для всех общественнымместам, с указанием доступности в разбивке пополу, возрасту и признаку инвалидности",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-7-1",
@@ -1543,7 +1543,7 @@
         },
         {
           "id": "11-7-2",
-          "title": "",
+          "title": "Доля лиц, подвергшихся физическим илисексуальным домогательствам, в разбивке по полу,возрасту, признаку инвалидности и месту происшествияза последние 12 месяцев",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-7-2",
@@ -1551,7 +1551,7 @@
         },
         {
           "id": "11-a-1",
-          "title": "",
+          "title": "Доля населения, живущего в городах, осуществляющихгородские и региональные планы застройки,в которых учитываются прогнозы ростанаселения и потребности в ресурсах, в разбивке поразмерам городов",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-a-1",
@@ -1559,23 +1559,23 @@
         },
         {
           "id": "11-b-1",
-          "title": "Score of adoption and implementation of national DRR strategies in line with the Sendai Framework",
+          "title": "Число стран, принявших и осуществляющихнациональные стратегии снижения риска бедствий всоответствии с Сендайской рамочной программой поснижению риска бедствий на 2015–2030 годы",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-b-2",
-          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
+          "title": "Доля местных органов власти, принявших иосуществляющих местные стратегии снижения рискабедствий в соответствии с национальными стратегиямиснижения риска бедствий",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-b-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-c-1",
-          "title": "",
+          "title": "Доля финансовой поддержки наименее развитыхстран, выделяемой на строительство экологичных,прочных и ресурсосберегающих зданий и переоборудование зданий для обеспечения их экологичности,прочности и экономии ресурсов с использованиемместных материалов",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-c-1",
@@ -1591,7 +1591,7 @@
         
         {
           "id": "12-1-1",
-          "title": "Countries with coordination mechanism for sustainable consumption and production (1 = YES; 0 = NO)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-1-1",
@@ -1615,7 +1615,7 @@
         },
         {
           "id": "12-3-1",
-          "title": "Global food loss index",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-3-1",
@@ -1623,7 +1623,7 @@
         },
         {
           "id": "12-4-1",
-          "title": "Compliance with the Basel Convention on hazardous waste and other chemicals",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-4-1",
@@ -1631,7 +1631,7 @@
         },
         {
           "id": "12-4-2",
-          "title": "Hazardous waste generated per capita",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-4-2",
@@ -1647,7 +1647,7 @@
         },
         {
           "id": "12-6-1",
-          "title": "Number of companies publishing sustainability reports",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-6-1",
@@ -1655,7 +1655,7 @@
         },
         {
           "id": "12-7-1",
-          "title": "Number of countries implementing sustainable public procurement policies and action plans",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-7-1",
@@ -1671,7 +1671,7 @@
         },
         {
           "id": "12-a-1",
-          "title": "Amount of support to developing countries on research and development for sustainable consumption and production and environmentally sound technologies",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-a-1",
@@ -1687,7 +1687,7 @@
         },
         {
           "id": "12-c-1",
-          "title": "Fossil-fuel pre-tax subsidies (consumption and production)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-c-1",

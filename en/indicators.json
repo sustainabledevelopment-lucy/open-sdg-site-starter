@@ -1503,7 +1503,7 @@
         },
         {
           "id": "11-5-1",
-          "title": "Number of deaths due to disaster",
+          "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-5-1",
@@ -1511,7 +1511,7 @@
         },
         {
           "id": "11-5-2",
-          "title": "Direct economic loss attributed to disasters relative to GDP",
+          "title": "Total expenditure (public and private) per capita spent on the preservation, protection and conservation of all cultural and natural heritage, by type of heritage (cultural, natural, mixed and World Heritage Centre designation), level of government (national, regional and local/municipal), type of expenditure (operating expenditure/investment) and type of private funding (donations in kind, private non-profit sector and sponsorship)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-5-2",
@@ -1519,7 +1519,7 @@
         },
         {
           "id": "11-6-1",
-          "title": "",
+          "title": "Proportion of urban solid waste regularly collected and with adequate final discharge out of total urban solid waste generated, by cities",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-6-1",
@@ -1527,7 +1527,7 @@
         },
         {
           "id": "11-6-2",
-          "title": "",
+          "title": "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-6-2",
@@ -1535,7 +1535,7 @@
         },
         {
           "id": "11-7-1",
-          "title": "",
+          "title": "Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-7-1",
@@ -1543,7 +1543,7 @@
         },
         {
           "id": "11-7-2",
-          "title": "",
+          "title": "Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-7-2",
@@ -1551,7 +1551,7 @@
         },
         {
           "id": "11-a-1",
-          "title": "",
+          "title": "Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs, by size of city",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-a-1",
@@ -1559,11 +1559,11 @@
         },
         {
           "id": "11-b-1",
-          "title": "Score of adoption and implementation of national DRR strategies in line with the Sendai Framework",
+          "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-b-2",
@@ -1571,11 +1571,11 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-b-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-c-1",
-          "title": "",
+          "title": "Proportion of financial support to the least developed countries that is allocated to the construction and retrofitting of sustainable, resilient and resource-efficient buildings utilizing local materials",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-c-1",
@@ -1591,7 +1591,7 @@
         
         {
           "id": "12-1-1",
-          "title": "Countries with coordination mechanism for sustainable consumption and production (1 = YES; 0 = NO)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-1-1",
@@ -1615,7 +1615,7 @@
         },
         {
           "id": "12-3-1",
-          "title": "Global food loss index",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-3-1",
@@ -1623,7 +1623,7 @@
         },
         {
           "id": "12-4-1",
-          "title": "Compliance with the Basel Convention on hazardous waste and other chemicals",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-4-1",
@@ -1631,7 +1631,7 @@
         },
         {
           "id": "12-4-2",
-          "title": "Hazardous waste generated per capita",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-4-2",
@@ -1647,7 +1647,7 @@
         },
         {
           "id": "12-6-1",
-          "title": "Number of companies publishing sustainability reports",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-6-1",
@@ -1655,7 +1655,7 @@
         },
         {
           "id": "12-7-1",
-          "title": "Number of countries implementing sustainable public procurement policies and action plans",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-7-1",
@@ -1671,7 +1671,7 @@
         },
         {
           "id": "12-a-1",
-          "title": "Amount of support to developing countries on research and development for sustainable consumption and production and environmentally sound technologies",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-a-1",
@@ -1687,7 +1687,7 @@
         },
         {
           "id": "12-c-1",
-          "title": "Fossil-fuel pre-tax subsidies (consumption and production)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-c-1",
