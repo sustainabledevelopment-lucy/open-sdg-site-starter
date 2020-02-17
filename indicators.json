@@ -1463,7 +1463,7 @@
         
         {
           "id": "11-1-1",
-          "title": "",
+          "title": "Доля городского населения, проживающего втрущобах, неформальных поселениях или в неудовлетворительныхжилищных условиях",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-1-1",
@@ -1471,7 +1471,7 @@
         },
         {
           "id": "11-2-1",
-          "title": "",
+          "title": "Доля населения, имеющего удобный доступк общественному транспорту, в разбивке по полу,возрасту и признаку инвалидности",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-2-1",
@@ -1479,7 +1479,7 @@
         },
         {
           "id": "11-3-1",
-          "title": "",
+          "title": "Соотношение темпов застройки и темпов ростанаселения",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-3-1",
@@ -1487,7 +1487,7 @@
         },
         {
           "id": "11-3-2",
-          "title": "Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically",
+          "title": "Доля городов, в которых регулярно и на демократическойоснове функционируют структуры,обеспечивающие прямое участие гражданского обществав градостроительном планировании и управлениигородским хозяйством",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-3-2",
@@ -1495,7 +1495,7 @@
         },
         {
           "id": "11-4-1",
-          "title": "",
+          "title": "Общая сумма расходов (государственных ичастных) в расчете на душу населения на цели сохраненияи защиты всего культурного и природногонаследия в разбивке по видам наследия (культурное,природное, смешанного характера и признанное объектомвсемирного наследия Центром всемирногонаследия), уровню государственной подведомственности(национальный, региональный и местный/ муниципальный),видам расходов (эксплуатационные расходы/капиталовложения) и видам частного финансирования(пожертвования в натуральной форме,частный некоммерческий сектор и спонсорство)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-4-1",
@@ -1503,7 +1503,7 @@
         },
         {
           "id": "11-5-1",
-          "title": "Number of deaths due to disaster",
+          "title": "Число погибших, пропавших без вести и пострадавшихнепосредственно в результате бедствий на 100 000 человек",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-5-1",
@@ -1511,7 +1511,7 @@
         },
         {
           "id": "11-5-2",
-          "title": "Direct economic loss attributed to disasters relative to GDP",
+          "title": "Общая сумма расходов (государственных ичастных) в расчете на душу населения на цели сохраненияи защиты всего культурного и природногонаследия в разбивке по видам наследия (культурное,природное, смешанного характера и признанное объектомвсемирного наследия Центром всемирногонаследия), уровню государственной подведомственности(национальный, региональный и местный/ муниципальный),видам расходов (эксплуатационные расходы/капиталовложения) и видам частного финансирования(пожертвования в натуральной форме,частный некоммерческий сектор и спонсорство)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-5-2",
@@ -1519,7 +1519,7 @@
         },
         {
           "id": "11-6-1",
-          "title": "Municipal Solid Waste collection coverage, by cities (%)",
+          "title": "Доля твердых бытовых отходов, которые регулярнособираются и надлежащим образом удаляются,в общей массе городских отходов",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-6-1",
@@ -1527,7 +1527,7 @@
         },
         {
           "id": "11-6-2",
-          "title": "",
+          "title": "Среднегодовой уровень содержания мелкихтвердых частиц (например, класса PM2.5 и PM10) ватмосфере городов (в пересчете на численность населения)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-6-2",
@@ -1535,7 +1535,7 @@
         },
         {
           "id": "11-7-1",
-          "title": "Average share of the built-up area of cities that is open space for public use for all",
+          "title": "Средняя доля застроенной городской территории,относящейся к открытым для всех общественнымместам, с указанием доступности в разбивке пополу, возрасту и признаку инвалидности",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-7-1",
@@ -1543,7 +1543,7 @@
         },
         {
           "id": "11-7-2",
-          "title": "Proportion of persons victim of physical or sexual harassment, in the previous 12 months",
+          "title": "Доля лиц, подвергшихся физическим илисексуальным домогательствам, в разбивке по полу,возрасту, признаку инвалидности и месту происшествияза последние 12 месяцев",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-7-2",
@@ -1551,7 +1551,7 @@
         },
         {
           "id": "11-a-1",
-          "title": "Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs",
+          "title": "Доля населения, живущего в городах, осуществляющихгородские и региональные планы застройки,в которых учитываются прогнозы ростанаселения и потребности в ресурсах, в разбивке поразмерам городов",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-a-1",
@@ -1559,23 +1559,23 @@
         },
         {
           "id": "11-b-1",
-          "title": "Score of adoption and implementation of national DRR strategies in line with the Sendai Framework",
+          "title": "Число стран, принявших и осуществляющихнациональные стратегии снижения риска бедствий всоответствии с Сендайской рамочной программой поснижению риска бедствий на 2015–2030 годы",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-b-2",
-          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
+          "title": "Доля местных органов власти, принявших иосуществляющих местные стратегии снижения рискабедствий в соответствии с национальными стратегиямиснижения риска бедствий",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-b-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-c-1",
-          "title": "Proportion of financial support to the least developed countries that is allocated to the construction and retrofitting of sustainable, resilient and resource-efficient buildings utilizing local materials",
+          "title": "Доля финансовой поддержки наименее развитыхстран, выделяемой на строительство экологичных,прочных и ресурсосберегающих зданий и переоборудование зданий для обеспечения их экологичности,прочности и экономии ресурсов с использованиемместных материалов",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-c-1",
@@ -1590,24 +1590,16 @@
       "indicators": [
         
         {
-          "id": "12-1-1",
-          "title": "Countries with coordination mechanism for sustainable consumption and production (1 = YES; 0 = NO)",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/12-1-1",
-          "status": "notstarted"
-        },
-        {
           "id": "12-2-1",
-          "title": "Material footprint per capita",
+          "title": "Совокупные ресурсозатраты и ресурсозатратына душу населения и в процентном отношениик ВВП",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "12-2-2",
-          "title": "",
+          "title": "Совокупное внутреннее материальное потреблениеи внутреннее материальное потреблениена душу населения и в процентном отношении кВВП",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-2-2",
@@ -1615,7 +1607,7 @@
         },
         {
           "id": "12-3-1",
-          "title": "Global food loss index",
+          "title": "Глобальный индекс потерь продовольствия",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-3-1",
@@ -1623,7 +1615,7 @@
         },
         {
           "id": "12-4-1",
-          "title": "Compliance with the Basel Convention on hazardous waste and other chemicals",
+          "title": "Число сторон международных многостороннихэкологических соглашений по опасным и инымхимических веществам и отходам, выполняющихсвои обязательства и обязанности по передаче информациив соответствии с требованиями каждогосоглашения",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-4-1",
@@ -1631,7 +1623,7 @@
         },
         {
           "id": "12-4-2",
-          "title": "Hazardous waste generated per capita",
+          "title": "Образование опасных отходов на душу населенияи доля обрабатываемых опасных отходов в разбивкепо видам обработки",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-4-2",
@@ -1639,7 +1631,7 @@
         },
         {
           "id": "12-5-1",
-          "title": "",
+          "title": "Национальный уровень переработки отходов,масса утилизированных материалов в тоннах",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-5-1",
@@ -1647,7 +1639,7 @@
         },
         {
           "id": "12-6-1",
-          "title": "Number of companies publishing sustainability reports",
+          "title": "Число компаний, публикующих отчеты о рациональномиспользовании ресурсов",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-6-1",
@@ -1655,7 +1647,7 @@
         },
         {
           "id": "12-7-1",
-          "title": "Number of countries implementing sustainable public procurement policies and action plans",
+          "title": "Число стран, осуществляющих стратегии ипланы действий по экологизации государственныхзакупок",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-7-1",
@@ -1663,7 +1655,7 @@
         },
         {
           "id": "12-8-1",
-          "title": "",
+          "title": "Статус i) воспитания в духе всемирной гражданственностии ii) пропаганды устойчивого развития(включая просвещение по проблеме измененияклимата) a) в национальной политике в сфере образования;b) в учебных программах; c) в программахподготовки учителей; и d) в системе аттестации учащихся",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-8-1",
@@ -1671,7 +1663,7 @@
         },
         {
           "id": "12-a-1",
-          "title": "Amount of support to developing countries on research and development for sustainable consumption and production and environmentally sound technologies",
+          "title": "Объем помощи развивающимся странам всфере научно-исследовательских и опытно-конструкторскихработ в интересах обеспечения рациональногопотребления и производства и внедрения экологическибезопасных технологий",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-a-1",
@@ -1687,7 +1679,7 @@
         },
         {
           "id": "12-c-1",
-          "title": "Fossil-fuel pre-tax subsidies (consumption and production)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-c-1",
@@ -1799,7 +1791,7 @@
         },
         {
           "id": "14-4-1",
-          "title": "Proportion of fish stocks within biologically sustainable levels (not overexploited)",
+          "title": "Proportion of fish stocks that are fully exploited",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/14-4-1",
