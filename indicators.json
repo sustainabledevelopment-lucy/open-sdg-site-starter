@@ -119,23 +119,23 @@
         },
         {
           "id": "1-5-3",
-          "title": "Число стран, принявших и осуществляющихнациональные стратегии снижения риска бедствий всоответствии с Сендайской рамочной программой поснижению риска бедствий на 2015–2030 годы",
+          "title": "Score of adoption and implementation of national DRR strategies in line with the Sendai Framework",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/1-5-3",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "1-5-4",
-          "title": "Доля местных органов власти, принявших иосуществляющих местные стратегии снижения рискабедствий в соответствии с национальными стратегиямиснижения риска бедствий",
+          "title": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/1-5-4",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "1-a-1",
-          "title": "Доля ресурсов, выделенных правительствомнепосредственно на программы по сокращению масштабовнищеты",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/1-a-1",
@@ -159,7 +159,7 @@
         },
         {
           "id": "1-b-1",
-          "title": "Доля текущих и капитальных государственныхрасходов в секторах, которые приносят преимущественнуювыгоду женщинам, бедным и уязвимымгруппам населения",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/1-b-1",
@@ -1799,7 +1799,7 @@
         },
         {
           "id": "14-4-1",
-          "title": "Proportion of fish stocks that are fully exploited",
+          "title": "Proportion of fish stocks within biologically sustainable levels (not overexploited)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/14-4-1",
