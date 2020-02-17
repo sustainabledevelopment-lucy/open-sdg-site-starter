@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200217070113">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200217084013">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -130,7 +130,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200217070113"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200217084013"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-ru layout-indicator">
@@ -371,7 +371,7 @@ var translations = {
           
           
           
-          <td class="table-value">350</td>
+          <td class="table-value">35.0</td>
           
           
         </tr>
@@ -383,7 +383,7 @@ var translations = {
           
           
           
-          <td class="table-value">317</td>
+          <td class="table-value">31.7</td>
           
           
         </tr>
@@ -395,7 +395,7 @@ var translations = {
           
           
           
-          <td class="table-value">317</td>
+          <td class="table-value">31.7</td>
           
           
         </tr>
@@ -407,7 +407,7 @@ var translations = {
           
           
           
-          <td class="table-value">337</td>
+          <td class="table-value">33.7</td>
           
           
         </tr>
@@ -419,7 +419,7 @@ var translations = {
           
           
           
-          <td class="table-value">368</td>
+          <td class="table-value">36.8</td>
           
           
         </tr>
@@ -431,7 +431,7 @@ var translations = {
           
           
           
-          <td class="table-value">380</td>
+          <td class="table-value">38.0</td>
           
           
         </tr>
@@ -443,7 +443,7 @@ var translations = {
           
           
           
-          <td class="table-value">370</td>
+          <td class="table-value">37.0</td>
           
           
         </tr>
@@ -455,7 +455,7 @@ var translations = {
           
           
           
-          <td class="table-value">306</td>
+          <td class="table-value">30.6</td>
           
           
         </tr>
@@ -467,7 +467,7 @@ var translations = {
           
           
           
-          <td class="table-value">321</td>
+          <td class="table-value">32.1</td>
           
           
         </tr>
@@ -479,7 +479,7 @@ var translations = {
           
           
           
-          <td class="table-value">254</td>
+          <td class="table-value">25.4</td>
           
           
         </tr>
@@ -491,7 +491,7 @@ var translations = {
           
           
           
-          <td class="table-value">256</td>
+          <td class="table-value">25.6</td>
           
           
         </tr>
@@ -503,7 +503,7 @@ var translations = {
           
           
           
-          <td class="table-value">224</td>
+          <td class="table-value">22.4</td>
           
           
         </tr>
@@ -606,27 +606,43 @@ data-event-label="Change to Map tab"
         <!-- Nav tabs -->
         <ul class="nav nav-tabs spacer medium" role="tablist">
         
+          
+          
+          
+          
+          
           <li role="presentation" class="nav-item active">
+            <a class="nav-link" data-toggle="tab" href="#indicator_information" aria-controls="indicator_information" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to custom.indicator_information tab"
+>custom.indicator_information</a>
+          </li>
+          
+          
+          
+          
+          
+          <li role="presentation" class="nav-item ">
             <a class="nav-link" data-toggle="tab" href="#national" aria-controls="national" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
-data-event-label="Change to National Metadata tab"
+data-event-label="Change to indicator.national_metadata tab"
 >Национальные метаданные</a>
           </li>
-          <li role="presentation" class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#global" aria-controls="global" role="tab" data-on="click"
+          
+          
+          
+          
+          
+          <li role="presentation" class="nav-item ">
+            <a class="nav-link" data-toggle="tab" href="#data_reporter" aria-controls="data_reporter" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
-data-event-label="Change to Global Metadata tab"
->Глобальные метаданные</a>
+data-event-label="Change to custom.data_reporter tab"
+>custom.data_reporter</a>
           </li>
-          <li role="presentation" class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#sources" aria-controls="sources" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change metadata view"
-data-event-label="Change to Sources tab"
->Источники</a>
-          </li>
+          
         
           
           <li role="presentation" class="nav-item">
@@ -638,16 +654,133 @@ data-event-label="Change to Sources tab"
         <!-- Tab panes -->
         <div class="tab-content">
           
-          <div role="tabpanel" class="tab-pane active" id="national">
-            <!-- National Metadata -->
-            <div > <!-- formerly class="collapsible expanded" -->
-              <!-- <h3 tabindex='0'>National Metadata</h3> -->
+            
+            
+            
+            
+            
+            <div role="tabpanel" class="tab-pane active" id="indicator_information">
               <article>
-                <p>
-                  
-                  
-                  В этой таблице представлены метаданные для фактического показателя, доступного из статистики ближайшей к соответствующему глобальному индикатору ЦУР. Обратите внимание, что даже если глобальный индикатор ЦУР полностью доступен из статистики, по этой таблице следует проконсультироваться для получения информации о национальной методологии и других специфичных метаданных.
-                </p>
+                <p>custom.indicator_information_blurb</p>
+                <table class="table table-hover">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+              </article>
+            </div>
+            
+            
+            
+            
+            
+            <div role="tabpanel" class="tab-pane " id="national">
+              <article>
+                <p>В этой таблице представлены метаданные для фактического показателя, доступного из статистики ближайшей к соответствующему глобальному индикатору ЦУР. Обратите внимание, что даже если глобальный индикатор ЦУР полностью доступен из статистики, по этой таблице следует проконсультироваться для получения информации о национальной методологии и других специфичных метаданных.</p>
                 <table class="table table-hover">
   
   
@@ -892,144 +1025,28 @@ data-event-label="Change to Sources tab"
 
               </article>
             </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="global">
-            <!-- Global Metadata -->
-            <div> <!-- formerly <div class="collapsible expanded"> -->
-              <!-- <h3 tabindex='0'>Global Metadata</h3> -->
+            
+            
+            
+            
+            
+            <div role="tabpanel" class="tab-pane " id="data_reporter">
               <article>
-                <p>В этой таблице представлена информация для метаданных показателей ЦУР, определенных Статистической комиссией ООН. Полные глобальные метаданные представлены Статистическим отделом ООН.</p>
+                <p>custom.data_reporter_blurb</p>
                 <table class="table table-hover">
   
   
   
   
   
-      
-      
-      <tr>
-        <th scope="row">Название показателя </th>
-        <td>
-          
-            <p>Доля населения страны, живущего за официальной
-чертой бедности, в разбивке по полу и возрасту</p>
-
-          
-        </td>
-        </tr>
-        
-      
   
-      
-      
-      <tr>
-        <th scope="row">Номер показателя </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
   
-      
-      
-      <tr>
-        <th scope="row">Название задачи </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
   
-      
-      
-      <tr>
-        <th scope="row">Номер задачи </th>
-        <td>
-          
-            <p>1.2</p>
-
-          
-        </td>
-        </tr>
-        
-      
   
-      
-      
-      <tr>
-        <th scope="row">Описание глобального показателя </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
   
-      
-      
-      <tr>
-        <th scope="row">Назначенный ООН уровень </th>
-        <td>
-          
-            <p>1</p>
-
-          
-        </td>
-        </tr>
-        
-      
   
-      
-      
-      <tr>
-        <th scope="row">Депозитарное учреждение ООН  </th>
-        <td>
-          
-            <p>World Bank</p>
-
-          
-        </td>
-        </tr>
-        
-      
   
-      
-      
-      <tr>
-        <th scope="row">Ссылка на метаданные ООН </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-02-01.pdf" target="_blank">
-                United Nations Sustainable Development Goals Metadata (PDF 98.2 KB) <span class="visuallyhidden">открывается в новой вкладке</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
   
-      
-      
-      
   
   
   
@@ -1127,272 +1144,7 @@ data-event-label="Change to Sources tab"
 
               </article>
             </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="sources">
-            <!-- Count the non-empty sources (up to 5) -->
-
-
-
-
-  <div class="row no-gutters">
-  
-    
-    
-    <div class="col-md-6">
-      
-      <table class="table table-hover">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      <tr>
-        <th scope="row">Организация </th>
-        <td>
-          
-            <p>НСК КР</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Периодичность </th>
-        <td>
-          
             
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Самые ранние доступные данные </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Географический охват </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Ссылка на источник данных </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Дата выпуска </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Следующий  выпуск </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Статистическая классификация </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Контактные данные </th>
-        <td>
-          
-            <p>Керималиева Н.К, nazira.kerimaliena@gmail.com, (0312) 32 46 91</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Другая информация </th>
-        <td>
-          
-            <p>Оценки национальной бедности обычно производятся и принадлежат правительствам стран (например, Национальными статистическими офисами), а иногда с технической помощью со стороны Всемирного банка и ПРООН (UNDP). После опубликования национальной оценки бедности правительством, Глобальная группа по вопросам бедности Всемирного банка оценивает методологию, используемую правительством, по возможности оценивает оценки с необработанными данными и консультирует экономистов страны для публикации. Принятые оценки наряду с метаданными будут опубликованы в базе данных WDI, а также в Базе данных Всемирного банка по вопросам бедности и социальной справедливости.Другим источником является оценка бедности Всемирного банка. Всемирный банк периодически готовит оценки бедности для стран, в которых она активно участвует, в тесном сотрудничестве с национальными учреждениями, группами гражданского общества и другими учреждениями, занимающимися вопросами развития. Отчеты об оценках бедности сообщают о масштабах и причинах бедности и предлагают стратегии по ее сокращению. Они часто включают отдельные оценки городской и сельской бедности. Такие исследования бедности являются наилучшим источником информации об оценке бедности с использованием национальной черты бедности. Сбор исходных материалов осуществляется Глобальной рабочей группой по проблемам бедности Всемирного банка. Данные в показателях мирового развития (WDI) обновляются ежеквартально после расписания обновления базы данных WDI.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</table>
-
-    </div>
-    
-  </div>
-
-
-          </div>
           
           
           <div role="tabpanel" class="tab-pane" id="edit">
@@ -1467,7 +1219,7 @@ data-event-label="Change to Sources tab"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200217070113'></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200217084013'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
