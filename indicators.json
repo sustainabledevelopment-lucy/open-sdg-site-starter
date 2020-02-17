@@ -1007,7 +1007,7 @@
         },
         {
           "id": "7-3-1-1",
-          "title": "Энергоемкость ВВП по отраслям",
+          "title": "Энергоемкость",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-3-1-1",
@@ -1015,7 +1015,7 @@
         },
         {
           "id": "7-3-1-2",
-          "title": "Электроемкость ВВП по отраслям и производство электроэнергии на малых ГЭС",
+          "title": "Электроемкость",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-3-1-2",
@@ -1223,27 +1223,11 @@
         },
         {
           "id": "8-10-2-2",
-          "title": "Financial indicators of insurance companies",
+          "title": "Финансовые показатели страховых компаний",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-10-2-2",
           "status": "complete"
-        },
-        {
-          "id": "8-10-2-2a",
-          "title": "Количество отчитавшихся страховых компаний",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/8-10-2-2a",
-          "status": "notstarted"
-        },
-        {
-          "id": "8-10-2-2b",
-          "title": "Поступление страховых взносов",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/8-10-2-2b",
-          "status": "notstarted"
         }]
     }
   },
@@ -1311,7 +1295,7 @@
         },
         {
           "id": "9-4-1-1",
-          "title": "Pollutants emitted by stationary sources",
+          "title": "Объем загрязняющих веществ, отходящих от стационарных источников на 1 кв.км и по территории",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-4-1-1",
@@ -1871,7 +1855,7 @@
         },
         {
           "id": "15-1-2-1",
-          "title": "Protected areas as a share of the country's surface",
+          "title": "Площадь ООПТ от всей площади",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-1-2-1",
@@ -1963,6 +1947,14 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-b-1-1",
+          "title": "Объем государственных средств, выделяемых на охрану окружающей среды (леса)",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/15-b-1-1",
           "status": "notstarted"
         },
         {
@@ -2102,16 +2094,8 @@
           "status": "notstarted"
         },
         {
-          "id": "16-6-2-1",
-          "title": "Executive branch of the government satisfaction index",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/16-6-2-1",
-          "status": "notstarted"
-        },
-        {
           "id": "16-6-2-1a",
-          "title": "Executive branch of the government satisfaction index",
+          "title": "Индекс оценки деятельности к государственным органам исполнительной власти",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-6-2-1a",
