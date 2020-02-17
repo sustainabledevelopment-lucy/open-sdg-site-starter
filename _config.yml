@@ -104,6 +104,18 @@ non_global_metadata: indicator.national_metadata
 languages:
   - ru
   - en
+  
+metadata_tabs:
+  indicator_information:
+    title: custom.indicator_information
+    blurb: custom.indicator_information_blurb
+  national:
+    title: indicator.national_metadata
+    blurb: indicator.national_metadata_blurb
+  data_reporter:
+    title: custom.data_reporter
+    blurb: custom.data_reporter_blurb
+
 
 # This makes sure that all pages have a language.
 defaults:
