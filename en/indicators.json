@@ -2206,20 +2206,20 @@
           "status": "notstarted"
         },
         {
-          "id": "17-3-1-1",
-          "title": "Foreign direct investment by (a) economic activity and (b) country of origin",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/en/17-3-1-1",
-          "status": "notstarted"
-        },
-        {
           "id": "17-3-1-1a",
-          "title": "Foreign direct investment by economic activity",
+          "title": "Поступление прямых иностранных инвестиций по  видам экономической деятельности (ГКЭД, версия 3)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/17-3-1-1a",
           "status": "complete"
+        },
+        {
+          "id": "17-3-1-1b",
+          "title": "Поступление прямых иностранных инвестиций по странам",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/en/17-3-1-1b",
+          "status": "notstarted"
         },
         {
           "id": "17-3-2",
