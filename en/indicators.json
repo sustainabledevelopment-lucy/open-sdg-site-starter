@@ -1411,7 +1411,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/10-6-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "10-7-1",
@@ -1887,7 +1887,7 @@
         },
         {
           "id": "15-3-1",
-          "title": "",
+          "title": "Proportion of land that is degraded over total land area",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-3-1",
@@ -1895,7 +1895,7 @@
         },
         {
           "id": "15-4-1",
-          "title": "",
+          "title": "Coverage by protected areas of important sites for mountain biodiversity",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-4-1",
@@ -1903,7 +1903,7 @@
         },
         {
           "id": "15-4-2",
-          "title": "",
+          "title": "Mountain Green Cover Index",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-4-2",
@@ -1911,7 +1911,7 @@
         },
         {
           "id": "15-5-1",
-          "title": "",
+          "title": "Red List Index",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-5-1",
@@ -1919,7 +1919,7 @@
         },
         {
           "id": "15-6-1",
-          "title": "",
+          "title": "Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-6-1",
@@ -1927,7 +1927,7 @@
         },
         {
           "id": "15-7-1",
-          "title": "",
+          "title": "Proportion of traded wildlife that was poached or illicitly trafficked",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-7-1",
@@ -1935,7 +1935,7 @@
         },
         {
           "id": "15-8-1",
-          "title": "",
+          "title": "Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-8-1",
@@ -1943,7 +1943,7 @@
         },
         {
           "id": "15-9-1",
-          "title": "",
+          "title": "Progress towards national targets established in accordance with Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-9-1",
@@ -1951,7 +1951,7 @@
         },
         {
           "id": "15-a-1",
-          "title": "",
+          "title": "Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-a-1",
@@ -1959,7 +1959,7 @@
         },
         {
           "id": "15-b-1",
-          "title": "",
+          "title": "Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-b-1",
@@ -1967,7 +1967,7 @@
         },
         {
           "id": "15-c-1",
-          "title": "",
+          "title": "Proportion of traded wildlife that was poached or illicitly trafficked",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/15-c-1",
@@ -1983,7 +1983,7 @@
         
         {
           "id": "16-1-1",
-          "title": "Number of victims of intentional homicide per 100,000 population",
+          "title": "Number of victims of intentional homicide per 100,000 population, by sex and age",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-1-1",
@@ -1991,7 +1991,7 @@
         },
         {
           "id": "16-1-2",
-          "title": "",
+          "title": "Conflict-related deaths per 100,000 population, by sex, age and cause",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-1-2",
@@ -1999,7 +1999,7 @@
         },
         {
           "id": "16-1-3",
-          "title": "Proportion of population subjected to physical violence in the previous 12 months",
+          "title": "Proportion of population subjected to (a) physical violence, (b) psychological violence and (c) sexual violence in the previous 12 months",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-1-3",
@@ -2007,7 +2007,7 @@
         },
         {
           "id": "16-1-4",
-          "title": "Proportion of population that feel safe walking alone around the area they live in",
+          "title": "Proportion of population that feel safe walking alone around the area they live",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-1-4",
@@ -2015,7 +2015,7 @@
         },
         {
           "id": "16-2-1",
-          "title": "Proportion of children aged 1-14 years who experienced physical punishment and/or psychological aggression by caregivers in last month",
+          "title": "Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-2-1",
@@ -2023,7 +2023,7 @@
         },
         {
           "id": "16-2-2",
-          "title": "Detected victims of human trafficking (number)",
+          "title": "Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-2-2",
@@ -2031,7 +2031,7 @@
         },
         {
           "id": "16-2-3",
-          "title": "Proportion of population aged 18-29 years who experienced sexual violence by age 18",
+          "title": "Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-2-3",
@@ -2039,7 +2039,7 @@
         },
         {
           "id": "16-3-1",
-          "title": "Police reporting rate for physical assault, by sex (%)",
+          "title": "Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-3-1",
@@ -2055,7 +2055,7 @@
         },
         {
           "id": "16-4-1",
-          "title": "Total value of inward illicit financial flows",
+          "title": "Total value of inward and outward illicit financial flows (in current United States dollars)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-4-1",
@@ -2071,7 +2071,7 @@
         },
         {
           "id": "16-5-1",
-          "title": "Prevalence rate of bribery",
+          "title": "Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-5-1",
@@ -2079,7 +2079,7 @@
         },
         {
           "id": "16-5-2",
-          "title": "Bribery incidence (% of firms experiencing at least one bribe payment request)",
+          "title": "Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-5-2",
@@ -2087,7 +2087,7 @@
         },
         {
           "id": "16-6-1",
-          "title": "Primary government expenditures as a proportion of original approved budget",
+          "title": "Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-6-1",
@@ -2111,7 +2111,7 @@
         },
         {
           "id": "16-7-1",
-          "title": "",
+          "title": "Proportions of positions (by sex, age, persons with disabilities and population groups) in public institutions (national and local legislatures, public service, and judiciary) compared to national distributions",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-7-1",
@@ -2119,7 +2119,7 @@
         },
         {
           "id": "16-7-2",
-          "title": "Proportion of population who believe decision-making is inclusive and responsive",
+          "title": "Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-7-2",
@@ -2127,7 +2127,7 @@
         },
         {
           "id": "16-8-1",
-          "title": "Proportion of members of developing countries in international organizations, by organization",
+          "title": "Proportion of members and voting rights of developing countries in international organizations",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-8-1",
@@ -2135,7 +2135,7 @@
         },
         {
           "id": "16-9-1",
-          "title": "Proportion of children under 5 years of age whose births have been registered with a civil authority",
+          "title": "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-9-1",
@@ -2143,7 +2143,7 @@
         },
         {
           "id": "16-a-1",
-          "title": "Proportion of countries with independent National Human Rights Institutions in compliance with the Paris Principles (%)",
+          "title": "Existence of independent national human rights institutions in compliance with the Paris Principles",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-a-1",
@@ -2151,7 +2151,7 @@
         },
         {
           "id": "16-b-1",
-          "title": "",
+          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-b-1",
@@ -2159,7 +2159,7 @@
         },
         {
           "id": "16-10-1",
-          "title": "Number of cases of killings of human rights defenders, journalists and trade unionists",
+          "title": "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-10-1",
@@ -2167,7 +2167,7 @@
         },
         {
           "id": "16-10-2",
-          "title": "Countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information",
+          "title": "Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/16-10-2",
