@@ -103,15 +103,15 @@
         },
         {
           "id": "1-5-1",
-          "title": "Number of deaths due to disaster",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/1-5-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "1-5-2",
-          "title": "Direct economic loss attributed to disasters relative to GDP",
+          "title": "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/1-5-2",
@@ -143,7 +143,7 @@
         },
         {
           "id": "1-a-2",
-          "title": "Proportion of total government spending on essential services, education",
+          "title": "Proportion of total government spending on essential services (education, health and social protection)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/1-a-2",
@@ -319,7 +319,7 @@
         },
         {
           "id": "3-1-2",
-          "title": "Proportion of births attended by skilled health personnel",
+          "title": "Доля родов, принятых квалифицированнымимедицинскими работниками",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-1-2",
@@ -335,7 +335,7 @@
         },
         {
           "id": "3-2-2",
-          "title": "Neonatal mortality rate",
+          "title": "Коэффициент неонатальной смертности",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-2-2",
@@ -343,7 +343,7 @@
         },
         {
           "id": "3-3-1",
-          "title": "Number of new HIV infections per 1,000 uninfected population",
+          "title": "Число новых заражений ВИЧ на 1000 неинфицированныхв разбивке по полу, возрасту и принадлежностик основным группам населения",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-3-1",
@@ -351,7 +351,7 @@
         },
         {
           "id": "3-3-2",
-          "title": "Tuberculosis incidence",
+          "title": "Заболеваемость туберкулезом на 100 000 человек",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-3-2",
@@ -359,7 +359,7 @@
         },
         {
           "id": "3-3-3",
-          "title": "Malaria incidence per 1,000 population at risk",
+          "title": "Заболеваемость малярией на 1000 человек",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-3-3",
@@ -367,7 +367,7 @@
         },
         {
           "id": "3-3-4",
-          "title": "Prevalence of hepatitis B surface antigen (HBsAg)",
+          "title": "Заболеваемость гепатитом B на 100 000 человек",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-3-4",
@@ -375,7 +375,7 @@
         },
         {
           "id": "3-3-5",
-          "title": "",
+          "title": "Число людей, нуждающихся в лечении от«забытых» тропических болезней",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-3-5",
@@ -383,7 +383,7 @@
         },
         {
           "id": "3-4-1",
-          "title": "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease",
+          "title": "Смертность от сердечно-сосудистых заболеваний,рака, диабета, хронических респираторных заболеваний",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-4-1",
@@ -391,7 +391,7 @@
         },
         {
           "id": "3-4-2",
-          "title": "Suicide mortality rate",
+          "title": "Смертность от самоубийств",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-4-2",
@@ -399,7 +399,7 @@
         },
         {
           "id": "3-5-1",
-          "title": "",
+          "title": "Охват лечением расстройств, вызванныхупотреблением психоактивных веществ (медикаментозные,психосоциальные и реабилитационныеуслуги и услуги по последующему уходу)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-5-1",
@@ -423,7 +423,7 @@
         },
         {
           "id": "3-5-2",
-          "title": "",
+          "title": "Злоупотребление алкоголем (определяемое в соответствии с национальными особенностями употреблениеалкоголя на душу населения в возрасте от15 лет) в литрах чистого спирта в календарный год",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-5-2",
@@ -431,7 +431,7 @@
         },
         {
           "id": "3-6-1",
-          "title": "Death rate due to road traffic injuries",
+          "title": "Смертность в результате дорожно-транспортныхпроисшествий",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-6-1",
@@ -439,7 +439,7 @@
         },
         {
           "id": "3-7-1",
-          "title": "Proportion of women married or in a union of reproductive age (aged 15-49 years) who have their need for family planning satisfied with modern methods",
+          "title": "Доля женщин репродуктивного возраста (от15 до 49 лет), чьи потребности по планированию семьиудовлетворяются современными методами",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-7-1",
@@ -447,7 +447,7 @@
         },
         {
           "id": "3-7-2",
-          "title": "Adolescent birth rate (per 1,000 women aged 15-19 years)",
+          "title": "Показатель рождаемости среди девушек-подростков(в возрасте от 10 до 14 лет; в возрасте от 15до 19 лет) на 1000 женщин в данной возрастнойгруппе",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-7-2",
@@ -455,7 +455,7 @@
         },
         {
           "id": "3-8-1",
-          "title": "",
+          "title": "Охват основными медико-санитарнымиуслугами (определяемый как средний охват основнымиуслугами по отслеживаемым процедурам, к которымотносятся охрана репродуктивного здоровья,охрана здоровья матери и ребенка, лечение инфекционныхзаболеваний, лечение неинфекционных заболеванийи масштабы и доступность услуг для широкихслоев населения и для находящихся в наиболеенеблагоприятном положении групп населения)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-8-1",
@@ -463,7 +463,7 @@
         },
         {
           "id": "3-8-2",
-          "title": "",
+          "title": "Доля населения с большим удельным весомсемейных расходов на медицинскую помощь в общемобъеме расходов или доходов домохозяйств",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-8-2",
@@ -471,7 +471,7 @@
         },
         {
           "id": "3-9-1",
-          "title": "",
+          "title": "Смертность от загрязнения воздуха в жилыхпомещениях и атмосферного воздуха",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-9-1",
@@ -487,15 +487,15 @@
         },
         {
           "id": "3-9-2",
-          "title": "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene",
+          "title": "Смертность от отсутствия безопасной воды,безопасной санитарии и гигиены (от отсутствия безопасныхуслуг в области водоснабжения, санитариии гигиены (ВССГ) для всех)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-9-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-9-3",
-          "title": "Mortality rate attributed to unintentional poisonings",
+          "title": "Смертность от неумышленного отравления",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-9-3",
@@ -503,7 +503,7 @@
         },
         {
           "id": "3-a-1",
-          "title": "",
+          "title": "Стандартизированная по возрасту распространенностьупотребления табака лицами в возрастеот 15 лет",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-a-1",
@@ -511,23 +511,23 @@
         },
         {
           "id": "3-b-1",
-          "title": "Proportion of the target population with access to 3 doses of diphtheria-tetanus-pertussis (DTP3)",
+          "title": "Доля целевой группы населения, охваченнаяиммунизацией всеми вакцинами, включенными внациональные программы",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-b-2",
-          "title": "Total official development assistance to medical research and basic heath sectors, net disbursement, by recipient countries",
+          "title": "Общий чистый объем официальной помощив целях развития, направленной на медицинские исследованияи в основные отрасли здравоохранения",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-b-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-b-3",
-          "title": "",
+          "title": "Доля медицинских учреждений, постояннорасполагающих набором основных необходимых идоступных лекарственных средств",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-b-3",
@@ -535,7 +535,7 @@
         },
         {
           "id": "3-c-1",
-          "title": "Health workder density",
+          "title": "Число медицинских работников на душунаселения и их распределение",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-c-1",
@@ -543,7 +543,7 @@
         },
         {
           "id": "3-d-1",
-          "title": "",
+          "title": "Способность соблюдать Международные медико-санитарныеправила (ММСП) и готовность кчрезвычайным ситуациям в области общественногоздравоохранения",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-d-1",
@@ -559,7 +559,7 @@
         
         {
           "id": "4-1-1",
-          "title": "Proportion of children and young people achieving a minimum proficiency level in reading and mathematics",
+          "title": "Доля детей и молодежи, приходящаяся наa) учащихся 2/3 классов; b) выпускников начальнойшколы; и c) выпускников младшей средней школы,которые достигли по меньшей мере минимальногоуровня владения навыками i) чтения и ii) математики",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-1-1",
@@ -575,7 +575,7 @@
         },
         {
           "id": "4-2-1",
-          "title": "Proportion of children aged 36-59 months who are developmentally on track in at least three of the following domains: literacy-numeracy, physical development, social-emotional development, and learning",
+          "title": "Доля детей в возрасте до пяти лет, которыеразвиваются без отклонений в плане здоровья, обученияи психосоциального благополучия, в разбивке пополу",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-2-1",
@@ -583,11 +583,11 @@
         },
         {
           "id": "4-2-2",
-          "title": "",
+          "title": "Уровень участия в организованных видахобучения (за один год до достижения официальноговозраста поступления в школу) в разбивке по полу",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-2-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "4-2-2-1a",
@@ -599,7 +599,7 @@
         },
         {
           "id": "4-3-1",
-          "title": "Participation rate in formal and non-formal education and training",
+          "title": "Уровень участия взрослых и молодежи вформальных и неформальных видах обучения и профессиональнойподготовки в последние 12 месяцев вразбивке по полу",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-3-1",
@@ -615,11 +615,11 @@
         },
         {
           "id": "4-4-1",
-          "title": "Proportion of youth and adults with information and communications technology (ICT) skills",
+          "title": "Доля молодежи/взрослых, обладающей/ обладающихнавыками в области информационно-коммуникационныхтехнологий, в разбивке по видамнавыков",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-4-1-1a",
@@ -631,7 +631,7 @@
         },
         {
           "id": "4-5-1",
-          "title": "Gender parity index for participation rate in formal and non-formal education and training",
+          "title": "Индексы равенства (женщин и мужчин, городскихи сельских жителей, нижней и верхнейквинтили достатка и других групп, например инвалидов,коренных народов и людей, затронутых конфликтом,в зависимости от наличия данных) по всемкасающимся образования показателям в настоящемперечне, которые могут быть дезагрегированы",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-5-1",
@@ -639,7 +639,7 @@
         },
         {
           "id": "4-6-1",
-          "title": "Proportion of population achieving at least a fixed level of proficiency in functional skills",
+          "title": "Доля населения в данной возрастной группе,достигшая, по меньшей мере, установленного уровняфункциональной a) грамотности и b) математическойграмотности, в разбивке по полу.",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-6-1",
@@ -647,7 +647,7 @@
         },
         {
           "id": "4-7-1",
-          "title": "",
+          "title": "Статус i) воспитания в духе всемирной гражданственностии ii) пропаганды устойчивого развития,включая гендерное равенство и права человека,на всех уровнях в a) национальной политике в сфереобразования; b) учебных программах; c) программахподготовки учителей; и d) системе аттестации учащихся",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-7-1",
@@ -655,7 +655,7 @@
         },
         {
           "id": "4-a-1",
-          "title": "Proportion of schools with access to electricity",
+          "title": "Доля школ, обеспеченных a) электроэнергией;b) доступом к Интернету для учебных целей;c) компьютерами для учебных целей; d) адаптированнойинфраструктурой и материалами для учащихсяинвалидов;e) базовыми источниками питьевой воды;f) раздельными минимально оборудованными туалетами;и g) базовыми средствами для мытья рук (согласноопределениям показателей инициативыВССГ)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-a-1",
@@ -663,7 +663,7 @@
         },
         {
           "id": "4-b-1",
-          "title": "Total official flows for scholarships, by recipient countries",
+          "title": "Объем официальной помощи в целях развития,направляемой на выплату стипендий, в разбивкепо отраслям и видам обучения",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-b-1",
@@ -679,7 +679,7 @@
         },
         {
           "id": "4-c-1",
-          "title": "Proportion of teachers who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country",
+          "title": "Доля учителей в a) дошкольных учреждениях;b) начальной школе; c) младшей среднейшколе; и d) старшей средней школе, прошедших доначала или во время работы по меньшей мере минимальнуюорганизованную профессиональную учительскуюподготовку (например, педагогическую) насоответствующем уровне в данной стране",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-c-1",
@@ -703,7 +703,7 @@
         
         {
           "id": "5-1-1",
-          "title": "Legal frameworks that promote, enforce and monitor gender equality (percentage of achievement, 0 - 100) -- Area 1: overarching legal frameworks and public life.",
+          "title": "Наличие нормативно-правовой базы для поощренияи обеспечения равенства и недискриминациипо признаку пола и наблюдения за положением вэтой области",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-1-1",
@@ -711,7 +711,7 @@
         },
         {
           "id": "5-2-1",
-          "title": "Proportion of ever-partnered women and girls subjected to physical and sexual violence by a current or former intimate partner in the previous 12 months",
+          "title": "Доля когда-либо имевших партнера женщини девочек в возрасте от 15 лет, подвергавшихся физическому,сексуальному или психологическому насилиюсо стороны нынешнего или бывшего интимногопартнера в последние 12 месяцев, в разбивке по формамнасилия и возрасту",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-2-1",
@@ -735,7 +735,7 @@
         },
         {
           "id": "5-2-2",
-          "title": "Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months",
+          "title": "Доля женщин и девочек в возрасте от 15 лет,подвергавшихся сексуальному насилию со стороныкого-либо, кроме интимных партнеров, в последние12 месяцев, в разбивке по возрасту и месту происшествия",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-2-2",
@@ -743,7 +743,7 @@
         },
         {
           "id": "5-3-1",
-          "title": "Proportion of women aged 20-24 years who were married or in a union before age 15",
+          "title": "Доля женщин в возрасте от 20 до 24 лет,вступивших в брак или союз до 15 лет и до 18 лет",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-3-1",
@@ -751,7 +751,7 @@
         },
         {
           "id": "5-3-2",
-          "title": "Proportion of girls and women aged 15-49 years who have undergone female genital mutilation/cutting",
+          "title": "Доля девочек и женщин в возрасте от 15 до49 лет, подвергшихся калечащим операциям на женскихполовых органах/обрезанию, в разбивке по возрасту",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-3-2",
@@ -759,7 +759,7 @@
         },
         {
           "id": "5-4-1",
-          "title": "Proportion of time spent on unpaid domestic chores and care work",
+          "title": "Доля времени, затрачиваемого на неоплачиваемыйтруд по уходу и работу по дому, в разбивкепо полу, возрасту и месту проживания",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-4-1",
@@ -767,7 +767,7 @@
         },
         {
           "id": "5-5-1",
-          "title": "Proportion of seats held by women in national parliaments (% of total number of seats)",
+          "title": "Доля мест, занимаемых женщинами вa) национальных парламентах и b) местных органахвласти",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-5-1",
@@ -775,7 +775,7 @@
         },
         {
           "id": "5-5-2",
-          "title": "Proportion of women in managerial positions",
+          "title": "Доля женщин на руководящих должностях",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-5-2",
@@ -783,7 +783,7 @@
         },
         {
           "id": "5-6-1",
-          "title": "Proportion of women who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care (% of women aged 15-49 years)",
+          "title": "Доля женщин в возрасте от 15 до 49 лет, самостоятельнопринимающих обдуманные решения осексуальных отношениях, применении противозачаточныхсредств и обращении за услугами по охранерепродуктивного здоровья",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-6-1",
@@ -799,7 +799,7 @@
         },
         {
           "id": "5-6-2",
-          "title": "Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education",
+          "title": "Число стран, где действуют законы и нормативныеакты, гарантирующие женщинам и мужчинамв возрасте от 15 лет полный и равный доступ к услугампо охране сексуального и репродуктивного здоровьяи информации и просвещению в этой сфере",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-6-2",
@@ -807,7 +807,7 @@
         },
         {
           "id": "5-a-1",
-          "title": "Proportion of total agricultural population with ownership or secure rights over agricultural land",
+          "title": "a) Доля людей, владеющих сельскохозяйственнойземлей или имеющих гарантированноеправо пользования ею, в общей численности населения,занимающегося сельским хозяйством, в разбивкепо полу; и b) доля женщин, владеющих сельскохозяйственнойземлей или являющихся носителямиправа владения ею, в разбивке по формам землевладения",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-a-1",
@@ -815,7 +815,7 @@
         },
         {
           "id": "5-a-2",
-          "title": "Proportion of countries where the legal framework (including customary law) guarantees women's equal rights to land ownership and/or control",
+          "title": "Доля стран, в которых правовая база (в томчисле обычное право) гарантирует женщинам равныеправа на владение и/или распоряжение землей",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-a-2",
@@ -823,7 +823,7 @@
         },
         {
           "id": "5-b-1",
-          "title": "Proportion of individuals who own a mobile telephone",
+          "title": "Доля людей, имеющих мобильный телефон,в разбивке по полу",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-b-1",
@@ -831,7 +831,7 @@
         },
         {
           "id": "5-c-1",
-          "title": "Proportion of countries with systems to track and make public allocations for gender equality and women's empowerment",
+          "title": "Доля стран, обладающих механизмами отслеживаниягосударственных ассигнований на обеспечениегендерного равенства и расширение прав ивозможностей женщин и обнародования данных оних",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-c-1",
@@ -847,7 +847,7 @@
         
         {
           "id": "6-1-1",
-          "title": "Proportion of population using safely managed drinking water services",
+          "title": "Доля населения, пользующегося услугамиводоснабжения, организованного с соблюдением требованийбезопасности",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-1-1",
@@ -863,7 +863,7 @@
         },
         {
           "id": "6-2-1",
-          "title": "Proportion of population using safely managed sanitation services",
+          "title": "Доля населения, использующего a) организованныес соблюдением требований безопасностиуслуги санитарии и b) устройства для мытья рук смылом и водой",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-2-1",
@@ -871,7 +871,7 @@
         },
         {
           "id": "6-3-1",
-          "title": "Proportion of safely treated domestic wastewater flows",
+          "title": "Доля безопасно очищаемых сточных вод",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-3-1",
@@ -879,7 +879,7 @@
         },
         {
           "id": "6-3-2",
-          "title": "Proportion of open water bodies with good ambient water quality",
+          "title": "Доля водоемов с хорошим качеством воды",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-3-2",
@@ -887,7 +887,7 @@
         },
         {
           "id": "6-4-1",
-          "title": "Water Use Efficiency (United States dollars per cubic meter)",
+          "title": "Динамика изменения эффективности водопользования",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-4-1",
@@ -903,7 +903,7 @@
         },
         {
           "id": "6-4-2",
-          "title": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
+          "title": "Уровень нагрузки на водные ресурсы: заборпресной воды в процентном отношении к имеющимсязапасам пресной воды",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-4-2",
@@ -919,7 +919,7 @@
         },
         {
           "id": "6-5-1",
-          "title": "Degree of integrated water resources management implementation",
+          "title": "Степень внедрения комплексного управленияводными ресурсами (от 0 до 100)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-5-1",
@@ -927,7 +927,7 @@
         },
         {
           "id": "6-5-2",
-          "title": "Proportion of transboundary basins (river and lake basins and aquifers) with an operational arrangement for water cooperation",
+          "title": "Доля трансграничных водных бассейнов,охваченных действующими договоренностями о сотрудничествев области водопользования",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-5-2",
@@ -935,7 +935,7 @@
         },
         {
           "id": "6-6-1",
-          "title": "Water body extent (permanent) (% of total land area)",
+          "title": "Динамика изменения площади связанных сводой экосистем",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-6-1",
@@ -943,7 +943,7 @@
         },
         {
           "id": "6-a-1",
-          "title": "Total official development assistance (gross disbursement) for water supply and sanitation, by recipient countries",
+          "title": "Объем официальной помощи в целях развития,выделенной на водоснабжение и санитарию врамках координируемой государственной программырасходов",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-a-1",
@@ -951,7 +951,7 @@
         },
         {
           "id": "6-b-1",
-          "title": "Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management",
+          "title": "Доля местных административных единиц, вкоторых действуют правила и процедуры участияграждан в управлении водными ресурсами и санитарией",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-b-1",
@@ -967,7 +967,7 @@
         
         {
           "id": "7-1-1",
-          "title": "Proportion of population with access to electricity",
+          "title": "Доля населения, имеющего доступ к электроэнергии",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-1-1",
@@ -975,7 +975,7 @@
         },
         {
           "id": "7-1-2",
-          "title": "Proportion of population with primary reliance on clean fuels and technology",
+          "title": "Доля населения, использующего в основномчистые виды топлива и технологии",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-1-2",
@@ -983,7 +983,7 @@
         },
         {
           "id": "7-2-1",
-          "title": "Renewable energy share in the total final energy consumption",
+          "title": "Доля возобновляемых источников энергии вобщем объеме конечного энергопотребления",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-2-1",
@@ -999,7 +999,7 @@
         },
         {
           "id": "7-3-1",
-          "title": "Energy intensity level of primary energy (megajoules per constant purchasing power parity GDP)",
+          "title": "Энергоемкость, рассчитываемая как отношениерасхода первичной энергии к ВВП",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-3-1",
@@ -1023,7 +1023,7 @@
         },
         {
           "id": "7-a-1",
-          "title": "International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems",
+          "title": "Объем международных финансовых потоков,поступающих в развивающиеся страны для поддержкиисследований и разработок в области «чистой»энергии и развития энергетики на возобновляемыхисточниках, включая комбинированные системы",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-a-1",
@@ -1031,7 +1031,7 @@
         },
         {
           "id": "7-b-1",
-          "title": "",
+          "title": "Капиталовложения в обеспечение энергоэффективностив процентном отношении к ВВП и доля прямых иностранных инвестиций в финансовыхсредствах, поступающих в отрасли обслуживания,обеспечивающие устойчивое развитие, на цели расширенияих инфраструктуры и модернизации технологии",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-b-1",
@@ -1055,7 +1055,7 @@
         
         {
           "id": "8-1-1",
-          "title": "Annual growth rate of real GDP per capita",
+          "title": "Ежегодные темпы роста реального ВВП надушу населения",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-1-1",
@@ -1063,7 +1063,7 @@
         },
         {
           "id": "8-2-1",
-          "title": "Annual growth rate of real GDP per employed person",
+          "title": "Ежегодные темпы роста реального ВВП накаждого занятого",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-2-1",
@@ -1071,7 +1071,7 @@
         },
         {
           "id": "8-3-1",
-          "title": "Proportion of informal employment in non-agriculture employment",
+          "title": "Доля неформальной занятости в несельскохозяйственныхсекторах в разбивке по полу",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-3-1",
@@ -1095,7 +1095,7 @@
         },
         {
           "id": "8-4-1",
-          "title": "Material footprint per capita",
+          "title": "Совокупные ресурсозатраты и ресурсозатратына душу населения и в процентном отношениик ВВП",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-4-1",
@@ -1103,7 +1103,7 @@
         },
         {
           "id": "8-4-2",
-          "title": "Domestic material consumption per capita, by type of raw material",
+          "title": "Совокупное внутреннее материальное потреблениеи внутреннее материальное потреблениена душу населения и в процентном отношении кВВП",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-4-2",
@@ -1111,7 +1111,7 @@
         },
         {
           "id": "8-5-1",
-          "title": "Average hourly earnings",
+          "title": "Средний почасовой заработок женщин имужчин в разбивке по роду занятий, возрасту и признакуинвалидности",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-5-1",
@@ -1127,7 +1127,7 @@
         },
         {
           "id": "8-5-2",
-          "title": "Unemployment rate",
+          "title": "Уровень безработицы в разбивке по полу,возрасту и признаку инвалидности",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-5-2",
@@ -1135,7 +1135,7 @@
         },
         {
           "id": "8-6-1",
-          "title": "Proportion of youth not in education, employment or training",
+          "title": "Доля молодежи (в возрасте от 15 до 24 лет),которая не учится, не работает и не приобретает профессиональныхнавыков",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-6-1",
@@ -1143,7 +1143,7 @@
         },
         {
           "id": "8-7-1",
-          "title": "Proportion of children engaged in economic activity",
+          "title": "Доля и число детей в возрасте от 5 до 17 лет,занятых детским трудом, в разбивке по полу и возрасту",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-7-1",
@@ -1151,15 +1151,15 @@
         },
         {
           "id": "8-8-1",
-          "title": "Non-fatal occupational injuries among employees (rate)",
+          "title": "Производственный травматизм со смертельными несмертельным исходом в разбивке по полу имиграционному статусу",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-8-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-8-2",
-          "title": "",
+          "title": "Ситуация с соблюдением трудовых прав нанациональном уровне (свобода объединений и заключениеколлективных трудовых договоров) на основедокументальных источников Международнойорганизации труда (МОТ) и национального законодательствав разбивке по полу и миграционному статусу",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-8-2",
@@ -1167,7 +1167,7 @@
         },
         {
           "id": "8-9-1",
-          "title": "Tourism direct GDP as a proportion of total GDP",
+          "title": "Непосредственный вклад туризма в ВВП впроцентном отношении к совокупному ВВП и потемпам роста",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-9-1",
@@ -1183,7 +1183,7 @@
         },
         {
           "id": "8-9-2",
-          "title": "Proportion of jobs in sustainable tourism industries out of total tourism jobs",
+          "title": "Доля занятых в индустрии устойчивого туризмав общем числе рабочих мест в отрасли",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-9-2",
@@ -1191,7 +1191,7 @@
         },
         {
           "id": "8-a-1",
-          "title": "Total official flows (commitments) for Aid for Trade, by donor countries",
+          "title": "Объем обязательств и выплат в рамках инициативы«Помощь в торговле»",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-a-1",
@@ -1199,7 +1199,7 @@
         },
         {
           "id": "8-b-1",
-          "title": "Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy",
+          "title": "Наличие разработанной и осуществляемойнациональной стратегии молодежной занятости в качествеотдельной стратегии или в рамках национальнойстратегии в области занятости",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-b-1",
@@ -1207,7 +1207,7 @@
         },
         {
           "id": "8-10-1",
-          "title": "Number of commercial bank branches per 100,000 adults",
+          "title": "Число a) филиалов коммерческих банков иb) банкоматов на 100 000 взрослых",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-10-1",
@@ -1215,7 +1215,7 @@
         },
         {
           "id": "8-10-2",
-          "title": "Proportion of adults (15 years and older) with an account at a financial institution or mobile-money-service provider (% of adults aged 15 years and older)",
+          "title": "Доля взрослых (от 15 лет), имеющих счет вбанке или ином финансовом учреждении или пользующихсяуслугами операторов мобильных финансовыхуслуг",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-10-2",
@@ -1255,7 +1255,7 @@
         
         {
           "id": "9-1-1",
-          "title": "Proportion of the rural population who live within 2 km of an all-season road",
+          "title": "Доля сельского населения, проживающего впределах 2 км от круглогодичной дороги",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-1-1",
@@ -1263,7 +1263,7 @@
         },
         {
           "id": "9-1-2",
-          "title": "Freight volume (tonne kilometres)",
+          "title": "Объем пассажирских и грузовых перевозок вразбивке по видам транспорта",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-1-2",
@@ -1271,7 +1271,7 @@
         },
         {
           "id": "9-2-1",
-          "title": "",
+          "title": "Добавленная стоимость, создаваемая в обрабатывающейпромышленности, в процентном отношениик ВВП и на душу населения",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-2-1",
@@ -1279,7 +1279,7 @@
         },
         {
           "id": "9-2-2",
-          "title": "Manufacturing employment as a proportion of total employment",
+          "title": "Занятость в обрабатывающей промышленностив процентах от общей занятости",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-2-2",
@@ -1287,15 +1287,15 @@
         },
         {
           "id": "9-3-1",
-          "title": "",
+          "title": "Доля мелких предприятий в совокупном объемечистой продукции промышленности",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-3-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-3-2",
-          "title": "Proportion of small-scale industries with a loan or line of credit",
+          "title": "Доля мелких предприятий, имеющих кредитили кредитную линию",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-3-2",
@@ -1303,7 +1303,7 @@
         },
         {
           "id": "9-4-1",
-          "title": "Carbon dioxide emissions from fuel combustion",
+          "title": "Выбросы CO2 на единицу добавленной стоимости",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-4-1",
@@ -1319,7 +1319,7 @@
         },
         {
           "id": "9-5-1",
-          "title": "",
+          "title": "Доля расходов на научно-исследовательскиеи опытно-конструкторские работы в ВВП",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-5-1",
@@ -1327,15 +1327,15 @@
         },
         {
           "id": "9-5-2",
-          "title": "",
+          "title": "Количество исследователей (в эквивалентеполной занятости) на миллион жителей",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-5-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-a-1",
-          "title": "Total official flows for infrastructure, by recipient countries",
+          "title": "Совокупный объем официальной международнойподдержки (официальной помощи в целяхразвития и других потоков официального финансирования),направляемой на инфраструктуру",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-a-1",
@@ -1343,7 +1343,7 @@
         },
         {
           "id": "9-b-1",
-          "title": "Proportion of medium and high-tech industry value added in total value added",
+          "title": "Доля добавленной стоимости продукциисреднетехнологичных и высокотехнологичных отраслейв общем объеме добавленной стоимости",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-b-1",
@@ -1351,11 +1351,11 @@
         },
         {
           "id": "9-c-1",
-          "title": "",
+          "title": "Доля населения, охваченного мобильнымисетями, в разбивке по технологиям",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-c-1",
-          "status": "complete"
+          "status": "notstarted"
         }]
     }
   },
@@ -1387,7 +1387,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-3-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "10-4-1",
@@ -1507,7 +1507,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-5-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "11-5-2",
@@ -1595,7 +1595,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "12-2-2",
@@ -2107,6 +2107,14 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-6-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-6-2-1a",
+          "title": "Executive branch of the government satisfaction index",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/16-6-2-1a",
           "status": "complete"
         },
         {
@@ -2155,7 +2163,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-10-1",
@@ -2219,6 +2227,14 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-3-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-3-1-1a",
+          "title": "Foreign direct investment by economic activity",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/17-3-1-1a",
           "status": "complete"
         },
         {
