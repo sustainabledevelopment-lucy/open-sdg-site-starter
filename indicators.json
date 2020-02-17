@@ -47,7 +47,7 @@
         },
         {
           "id": "1-3-1",
-          "title": "Доля населения, охватываемого минимальнымуровнем/системами социальной защиты, в разбивкепо полу, с выделением детей, безработных, пожилых,инвалидов, беременных, новорожденных,лиц, получивших трудовое увечье, и бедных и уязвимых",
+          "title": "Proportion of population covered by at least one social protection benefit",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/1-3-1",
@@ -1519,7 +1519,7 @@
         },
         {
           "id": "11-6-1",
-          "title": "Proportion of population served by municipal waste collection",
+          "title": "Municipal Solid Waste collection coverage, by cities (%)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-6-1",
@@ -1799,7 +1799,7 @@
         },
         {
           "id": "14-4-1",
-          "title": "Proportion of fish stocks that are fully exploited",
+          "title": "Proportion of fish stocks within biologically sustainable levels (not overexploited)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/14-4-1",
