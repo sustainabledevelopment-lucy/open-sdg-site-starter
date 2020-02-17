@@ -1411,7 +1411,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-7-1",
@@ -1983,7 +1983,7 @@
         
         {
           "id": "16-1-1",
-          "title": "Число жертв умышленных убийств на100 000 человек в разбивке по возрастной группе иполу",
+          "title": "Number of victims of intentional homicide per 100,000 population",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-1",
@@ -1991,7 +1991,7 @@
         },
         {
           "id": "16-1-2",
-          "title": "Число связанных с конфликтами смертей на100 000 человек (в разбивке по возрастной группе,полу и причине)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-2",
@@ -1999,7 +1999,7 @@
         },
         {
           "id": "16-1-3",
-          "title": "Доля населения, в последние 12 месяцевподвергшегося a) физическому, b) психологическомуи c) сексуальному насилию",
+          "title": "Proportion of population subjected to physical violence in the previous 12 months",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-3",
@@ -2007,7 +2007,7 @@
         },
         {
           "id": "16-1-4",
-          "title": "Доля людей, чувствующих себя в безопасности,когда они идут одни по улице в своем районе",
+          "title": "Proportion of population that feel safe walking alone around the area they live in",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-4",
@@ -2015,7 +2015,7 @@
         },
         {
           "id": "16-2-1",
-          "title": "Доля детей в возрасте от 1 года до 17 лет, впоследний месяц подвергшихся любому физическомунаказанию и/или психологической агрессии состороны тех, кто обеспечивает уход за ними",
+          "title": "Proportion of children aged 1-14 years who experienced physical punishment and/or psychological aggression by caregivers in last month",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-2-1",
@@ -2023,7 +2023,7 @@
         },
         {
           "id": "16-2-2",
-          "title": "Число жертв торговли людьми на 100 000 человекв разбивке по полу, возрасту и форме эксплуатации",
+          "title": "Detected victims of human trafficking (number)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-2-2",
@@ -2031,7 +2031,7 @@
         },
         {
           "id": "16-2-3",
-          "title": "Доля молодых женщин и мужчин в возрастеот 18 до 24 лет, подвергшихся сексуальному насилиюдо достижения 18 лет",
+          "title": "Proportion of population aged 18-29 years who experienced sexual violence by age 18",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-2-3",
@@ -2039,7 +2039,7 @@
         },
         {
           "id": "16-3-1",
-          "title": "Доля жертв насилия, которые в последние12 месяцев подали соответствующую жалобу в компетентныеорганы или другие официально признанныемеханизмы урегулирования конфликтов",
+          "title": "Police reporting rate for physical assault, by sex (%)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-3-1",
@@ -2047,7 +2047,7 @@
         },
         {
           "id": "16-3-2",
-          "title": "Доля лиц, задерживаемых до вынесения приговора,в общей численности лиц, содержащихся под стражей",
+          "title": "Unsentenced detainees as a proportion of overall prison population",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-3-2",
@@ -2055,7 +2055,7 @@
         },
         {
           "id": "16-4-1",
-          "title": "Общий объем входящих и исходящих незаконныхфинансовых потоков (в долларах США в текущихценах)",
+          "title": "Total value of inward illicit financial flows",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-4-1",
@@ -2063,7 +2063,7 @@
         },
         {
           "id": "16-4-2",
-          "title": "Доля изъятого, обнаруженного или сданногооружия, незаконное происхождение или обстоятельстваприобретения которого было отслежено илиустановлено компетентным органом в соответствии смеждународными документами",
+          "title": "Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-4-2",
@@ -2071,7 +2071,7 @@
         },
         {
           "id": "16-5-1",
-          "title": "Доля лиц, которые в предыдущие 12 месяцевхотя бы один раз имели контакт с государственнымдолжностным лицом и которые заплатили взятку государственномудолжностному лицу или от которыхэто государственное должностное лицо требоваловзятку",
+          "title": "Prevalence rate of bribery",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-5-1",
@@ -2079,7 +2079,7 @@
         },
         {
           "id": "16-5-2",
-          "title": "Доля коммерческих компаний, которые впредыдущие 12 месяцев хотя бы один раз имели контактс государственным должностным лицом и которыезаплатили взятку государственному должностномулицу или от которых это государственное должностноелицо требовало взятку",
+          "title": "Bribery incidence (% of firms experiencing at least one bribe payment request)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-5-2",
@@ -2087,7 +2087,7 @@
         },
         {
           "id": "16-6-1",
-          "title": "Первичные расходы правительства в процентномотношении к первоначальному утвержденномубюджету в разбивке по секторам (по кодам бюджетнойклассификации или аналогичным категориям)",
+          "title": "Primary government expenditures as a proportion of original approved budget",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-6-1",
@@ -2095,7 +2095,7 @@
         },
         {
           "id": "16-6-2",
-          "title": "Доля населения, удовлетворенного последнимопытом использования государственных услуг",
+          "title": "Proportion of population satisfied with their last experience of public services",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-6-2",
@@ -2111,7 +2111,7 @@
         },
         {
           "id": "16-7-1",
-          "title": "Доля должностей (в разбивке по возрастнойгруппе, полу, признаку инвалидности и группе населения)в государственных учреждениях (национальныхи местных законодательных собраниях, государственнойслужбе и судебных органах) в сравнении снациональным распределением",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-7-1",
@@ -2119,7 +2119,7 @@
         },
         {
           "id": "16-7-2",
-          "title": "Доля населения, считающего процесс принятиярешений всеохватывающим и оперативным, вразбивке по полу, возрасту, признаку инвалидности игруппе населения",
+          "title": "Proportion of population who believe decision-making is inclusive and responsive",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-7-2",
@@ -2127,7 +2127,7 @@
         },
         {
           "id": "16-8-1",
-          "title": "Доля развивающихся стран в членском составемеждународных организаций и удельный весих голосов",
+          "title": "Proportion of members of developing countries in international organizations, by organization",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-8-1",
@@ -2135,7 +2135,7 @@
         },
         {
           "id": "16-9-1",
-          "title": "Доля детей в возрасте до пяти лет, рождениекоторых было зарегистрировано в гражданских органах,в разбивке по возрасту",
+          "title": "Proportion of children under 5 years of age whose births have been registered with a civil authority",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-9-1",
@@ -2143,7 +2143,7 @@
         },
         {
           "id": "16-a-1",
-          "title": "Наличие независимых национальных правозащитныхинститутов, действующих в соответствиис Парижскими принципами",
+          "title": "Proportion of countries with independent National Human Rights Institutions in compliance with the Paris Principles (%)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-a-1",
@@ -2151,7 +2151,7 @@
         },
         {
           "id": "16-b-1",
-          "title": "Доля людей, сообщивших об испытанныхими лично в последние 12 месяцев проявлениях дискриминацииили преследованиях на основании, дискриминацияна котором запрещена международнымправом прав человека",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-b-1",
@@ -2159,7 +2159,7 @@
         },
         {
           "id": "16-10-1",
-          "title": "Число подтвержденных случаев убийства,похищения, насильственного исчезновения, произвольногозадержания и пыток журналистов и связанныхс ними представителей средств массовой информации,профсоюзных деятелей и правозащитников впоследние 12 месяцев",
+          "title": "Number of cases of killings of human rights defenders, journalists and trade unionists",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-10-1",
@@ -2167,7 +2167,7 @@
         },
         {
           "id": "16-10-2",
-          "title": "Число стран, в которых приняты и действуютконституционные, законодательные и/или политическиегарантии доступа граждан к информации",
+          "title": "Countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-10-2",
@@ -2183,7 +2183,7 @@
         
         {
           "id": "17-1-1",
-          "title": "",
+          "title": "Total government revenue as a proportion of GDP",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-1-1",
@@ -2199,7 +2199,7 @@
         },
         {
           "id": "17-2-1",
-          "title": "",
+          "title": "Net official development assistance (ODA) to LDCs as a percentage of OECD-DAC donors' GNI, by donor countries",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-2-1",
@@ -2207,7 +2207,7 @@
         },
         {
           "id": "17-3-1",
-          "title": "",
+          "title": "Foreign direct investment (FDI), official development assistance and South-South cooperation as a proportion of total domestic budget",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-3-1",
@@ -2223,7 +2223,7 @@
         },
         {
           "id": "17-3-2",
-          "title": "",
+          "title": "Volume of remittances (in United States dollars) as a proportion of total GDP",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-3-2",
@@ -2231,7 +2231,7 @@
         },
         {
           "id": "17-4-1",
-          "title": "",
+          "title": "Debt service as a proportion of exports of goods and services",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-4-1",
@@ -2279,7 +2279,7 @@
         },
         {
           "id": "17-9-1",
-          "title": "",
+          "title": "Total official development assistance (gross disbursement) for technical cooperation",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-9-1",
@@ -2287,7 +2287,7 @@
         },
         {
           "id": "17-10-1",
-          "title": "",
+          "title": "Worldwide weighted tariff-average, most-favoured-nation status",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-10-1",
@@ -2295,7 +2295,7 @@
         },
         {
           "id": "17-11-1",
-          "title": "",
+          "title": "Developing countries’ and least developed countries’ share of global merchandise exports",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-11-1",
@@ -2303,7 +2303,7 @@
         },
         {
           "id": "17-12-1",
-          "title": "",
+          "title": "Average tariff applied by developed countries",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-12-1",
@@ -2319,7 +2319,7 @@
         },
         {
           "id": "17-14-1",
-          "title": "",
+          "title": "Number of countries with mechanisms in place to enhance policy coherence of sustainable development",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-14-1",
@@ -2327,7 +2327,7 @@
         },
         {
           "id": "17-15-1",
-          "title": "",
+          "title": "Proportion of new development interventions drawn from country-led result frameworks - data by provider (%)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-15-1",
@@ -2335,7 +2335,7 @@
         },
         {
           "id": "17-16-1",
-          "title": "",
+          "title": "Progress in multi-stakeholder development effectiveness monitoring frameworks that support the achievement of the sustainable development goals (1 = YES; 0 = NO)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-16-1",
@@ -2343,7 +2343,7 @@
         },
         {
           "id": "17-17-1",
-          "title": "",
+          "title": "Amount of United States dollars committed to public-private partnerships",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-17-1",
@@ -2351,7 +2351,7 @@
         },
         {
           "id": "17-18-1",
-          "title": "",
+          "title": "Proportion of sustainable development indicators produced at the national level with full disaggregation when relevant to the target, in accordance with the Fundamental Principles of Official Statistics",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-18-1",
@@ -2359,7 +2359,7 @@
         },
         {
           "id": "17-18-2",
-          "title": "",
+          "title": "Countries with national statistical legislation exists that complies with the Fundamental Principles of Official Statistics (1 = YES; 0 = NO)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-18-2",
@@ -2367,7 +2367,7 @@
         },
         {
           "id": "17-18-3",
-          "title": "",
+          "title": "Countries with national statistical plans with funding from donors (1 = YES; 0 = NO)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-18-3",
@@ -2375,7 +2375,7 @@
         },
         {
           "id": "17-19-1",
-          "title": "",
+          "title": "Dollar value of all resources made available to strengthen statistical capacity in developing countries",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-19-1",
@@ -2383,7 +2383,7 @@
         },
         {
           "id": "17-19-2",
-          "title": "",
+          "title": "Proportion of countries with birth registration data that are at least 90 percent complete",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-19-2",
