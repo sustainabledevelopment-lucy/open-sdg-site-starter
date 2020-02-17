@@ -1590,24 +1590,16 @@
       "indicators": [
         
         {
-          "id": "12-1-1",
-          "title": "Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/en/12-1-1",
-          "status": "notstarted"
-        },
-        {
           "id": "12-2-1",
-          "title": "Material footprint per capita",
+          "title": "Material footprint, material footprint per capita, and material footprint per GDP",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "12-2-2",
-          "title": "",
+          "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-2-2",
@@ -1615,7 +1607,7 @@
         },
         {
           "id": "12-3-1",
-          "title": "",
+          "title": "Global food loss index",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-3-1",
@@ -1623,7 +1615,7 @@
         },
         {
           "id": "12-4-1",
-          "title": "",
+          "title": "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-4-1",
@@ -1631,7 +1623,7 @@
         },
         {
           "id": "12-4-2",
-          "title": "",
+          "title": "Hazardous waste generated per capita and proportion of hazardous waste treated, by type of treatment",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-4-2",
@@ -1639,7 +1631,7 @@
         },
         {
           "id": "12-5-1",
-          "title": "",
+          "title": "National recycling rate, tons of material recycled",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-5-1",
@@ -1647,7 +1639,7 @@
         },
         {
           "id": "12-6-1",
-          "title": "",
+          "title": "Number of companies publishing sustainability reports",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-6-1",
@@ -1655,7 +1647,7 @@
         },
         {
           "id": "12-7-1",
-          "title": "",
+          "title": "Number of countries implementing sustainable public procurement policies and action plans",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-7-1",
@@ -1799,7 +1791,7 @@
         },
         {
           "id": "14-4-1",
-          "title": "Proportion of fish stocks that are fully exploited",
+          "title": "Proportion of fish stocks within biologically sustainable levels (not overexploited)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/14-4-1",
