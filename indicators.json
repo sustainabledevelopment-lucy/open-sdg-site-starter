@@ -1411,7 +1411,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-6-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "10-7-1",
@@ -1959,7 +1959,7 @@
         },
         {
           "id": "15-b-1",
-          "title": "",
+          "title": "Объем официальной помощи в целях развитияи государственных средств, выделяемых на сохранениеи рациональное использование биоразнообразияи экосистем",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-b-1",
@@ -1967,7 +1967,7 @@
         },
         {
           "id": "15-c-1",
-          "title": "",
+          "title": "Доля диких животных, являющихся объектомбраконьерства или незаконного оборота, средивидов, которыми ведется торговля",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-c-1",
@@ -1983,7 +1983,7 @@
         
         {
           "id": "16-1-1",
-          "title": "Number of victims of intentional homicide per 100,000 population",
+          "title": "Число жертв умышленных убийств на100 000 человек в разбивке по возрастной группе иполу",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-1",
@@ -1991,7 +1991,7 @@
         },
         {
           "id": "16-1-2",
-          "title": "",
+          "title": "Число связанных с конфликтами смертей на100 000 человек (в разбивке по возрастной группе,полу и причине)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-2",
@@ -1999,7 +1999,7 @@
         },
         {
           "id": "16-1-3",
-          "title": "Proportion of population subjected to physical violence in the previous 12 months",
+          "title": "Доля населения, в последние 12 месяцевподвергшегося a) физическому, b) психологическомуи c) сексуальному насилию",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-3",
@@ -2007,7 +2007,7 @@
         },
         {
           "id": "16-1-4",
-          "title": "Proportion of population that feel safe walking alone around the area they live in",
+          "title": "Доля людей, чувствующих себя в безопасности,когда они идут одни по улице в своем районе",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-4",
@@ -2015,7 +2015,7 @@
         },
         {
           "id": "16-2-1",
-          "title": "Proportion of children aged 1-14 years who experienced physical punishment and/or psychological aggression by caregivers in last month",
+          "title": "Доля детей в возрасте от 1 года до 17 лет, впоследний месяц подвергшихся любому физическомунаказанию и/или психологической агрессии состороны тех, кто обеспечивает уход за ними",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-2-1",
@@ -2023,7 +2023,7 @@
         },
         {
           "id": "16-2-2",
-          "title": "Detected victims of human trafficking (number)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-2-2",
@@ -2031,7 +2031,7 @@
         },
         {
           "id": "16-2-3",
-          "title": "Proportion of population aged 18-29 years who experienced sexual violence by age 18",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-2-3",
@@ -2047,7 +2047,7 @@
         },
         {
           "id": "16-3-2",
-          "title": "Unsentenced detainees as a proportion of overall prison population",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-3-2",
@@ -2055,7 +2055,7 @@
         },
         {
           "id": "16-4-1",
-          "title": "Total value of inward illicit financial flows",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-4-1",
@@ -2063,7 +2063,7 @@
         },
         {
           "id": "16-4-2",
-          "title": "Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-4-2",
@@ -2071,7 +2071,7 @@
         },
         {
           "id": "16-5-1",
-          "title": "Prevalence rate of bribery",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-5-1",
@@ -2079,7 +2079,7 @@
         },
         {
           "id": "16-5-2",
-          "title": "Bribery incidence (% of firms experiencing at least one bribe payment request)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-5-2",
@@ -2087,7 +2087,7 @@
         },
         {
           "id": "16-6-1",
-          "title": "Primary government expenditures as a proportion of original approved budget",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-6-1",
@@ -2095,7 +2095,7 @@
         },
         {
           "id": "16-6-2",
-          "title": "Proportion of population satisfied with their last experience of public services",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-6-2",
@@ -2119,7 +2119,7 @@
         },
         {
           "id": "16-7-2",
-          "title": "Proportion of population who believe decision-making is inclusive and responsive",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-7-2",
@@ -2127,7 +2127,7 @@
         },
         {
           "id": "16-8-1",
-          "title": "Proportion of members of developing countries in international organizations, by organization",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-8-1",
@@ -2143,7 +2143,7 @@
         },
         {
           "id": "16-a-1",
-          "title": "Proportion of countries with independent National Human Rights Institutions in compliance with the Paris Principles (%)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-a-1",
@@ -2159,7 +2159,7 @@
         },
         {
           "id": "16-10-1",
-          "title": "Number of cases of killings of human rights defenders, journalists and trade unionists",
+          "title": "Число подтвержденных случаев убийства,похищения, насильственного исчезновения, произвольногозадержания и пыток журналистов и связанныхс ними представителей средств массовой информации,профсоюзных деятелей и правозащитников впоследние 12 месяцев",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-10-1",
@@ -2167,7 +2167,7 @@
         },
         {
           "id": "16-10-2",
-          "title": "Countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information",
+          "title": "Число стран, в которых приняты и действуютконституционные, законодательные и/или политическиегарантии доступа граждан к информации",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-10-2",
