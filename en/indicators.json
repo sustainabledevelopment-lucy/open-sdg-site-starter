@@ -207,7 +207,7 @@
         },
         {
           "id": "2-2-1",
-          "title": "Proportion of children moderately or severely stunted",
+          "title": "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-2-1",
@@ -215,7 +215,7 @@
         },
         {
           "id": "2-2-2",
-          "title": "Proportion of children moderately or severely wasted (number)",
+          "title": "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-2-2",
@@ -231,7 +231,7 @@
         },
         {
           "id": "2-3-2",
-          "title": "",
+          "title": "Average income of small-scale food producers, by sex and indigenous status",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-3-2",
@@ -239,7 +239,7 @@
         },
         {
           "id": "2-4-1",
-          "title": "",
+          "title": "Proportion of agricultural area under productive and sustainable agriculture",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-4-1",
@@ -247,7 +247,7 @@
         },
         {
           "id": "2-5-1",
-          "title": "",
+          "title": "Number of plant and animal genetic resources for food and agriculture secured in either medium- or long-term conservation facilities",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-5-1",
@@ -263,7 +263,7 @@
         },
         {
           "id": "2-a-1",
-          "title": "Agriculture orientation index for government expenditures",
+          "title": "The agriculture orientation index for government expenditures",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-a-1",
@@ -271,15 +271,15 @@
         },
         {
           "id": "2-a-2",
-          "title": "Total official flows (disbursements) for agriculture, by recipient countries",
+          "title": "Total official flows (official development assistance plus other official flows) to the agriculture sector",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-a-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "2-b-1",
-          "title": "",
+          "title": "Agricultural export subsidies",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-b-1",
@@ -287,7 +287,7 @@
         },
         {
           "id": "2-c-1",
-          "title": "",
+          "title": "Indicator of food price anomalies",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-c-1",
