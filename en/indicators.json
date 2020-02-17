@@ -1463,7 +1463,7 @@
         
         {
           "id": "11-1-1",
-          "title": "Proportion of urban population living in slums, informal settlements or inadequate housing",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-1-1",
@@ -1471,7 +1471,7 @@
         },
         {
           "id": "11-2-1",
-          "title": "Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-2-1",
@@ -1479,7 +1479,7 @@
         },
         {
           "id": "11-3-1",
-          "title": "Ratio of land consumption rate to population growth rate",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-3-1",
@@ -1487,7 +1487,7 @@
         },
         {
           "id": "11-3-2",
-          "title": "Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-3-2",
@@ -1495,7 +1495,7 @@
         },
         {
           "id": "11-4-1",
-          "title": "Total expenditure (public and private) per capita spent on the preservation, protection and conservation of all cultural and natural heritage, by type of heritage (cultural, natural, mixed and World Heritage Centre designation), level of government (national, regional and local/municipal), type of expenditure (operating expenditure/investment) and type of private funding (donations in kind, private non-profit sector and sponsorship)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-4-1",
@@ -1503,7 +1503,7 @@
         },
         {
           "id": "11-5-1",
-          "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
+          "title": "Number of deaths due to disaster",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-5-1",
@@ -1511,7 +1511,7 @@
         },
         {
           "id": "11-5-2",
-          "title": "Total expenditure (public and private) per capita spent on the preservation, protection and conservation of all cultural and natural heritage, by type of heritage (cultural, natural, mixed and World Heritage Centre designation), level of government (national, regional and local/municipal), type of expenditure (operating expenditure/investment) and type of private funding (donations in kind, private non-profit sector and sponsorship)",
+          "title": "Direct economic loss attributed to disasters relative to GDP",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-5-2",
@@ -1519,7 +1519,7 @@
         },
         {
           "id": "11-6-1",
-          "title": "Proportion of urban solid waste regularly collected and with adequate final discharge out of total urban solid waste generated, by cities",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-6-1",
@@ -1527,7 +1527,7 @@
         },
         {
           "id": "11-6-2",
-          "title": "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-6-2",
@@ -1535,7 +1535,7 @@
         },
         {
           "id": "11-7-1",
-          "title": "Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-7-1",
@@ -1543,7 +1543,7 @@
         },
         {
           "id": "11-7-2",
-          "title": "Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months",
+          "title": "Proportion of persons victim of physical or sexual harassment, in the previous 12 months",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-7-2",
@@ -1551,7 +1551,7 @@
         },
         {
           "id": "11-a-1",
-          "title": "Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs, by size of city",
+          "title": "Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-a-1",
@@ -1559,11 +1559,11 @@
         },
         {
           "id": "11-b-1",
-          "title": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030",
+          "title": "Score of adoption and implementation of national DRR strategies in line with the Sendai Framework",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-b-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "11-b-2",
@@ -1571,7 +1571,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/11-b-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "11-c-1",
@@ -1590,16 +1590,24 @@
       "indicators": [
         
         {
+          "id": "12-1-1",
+          "title": "Countries with coordination mechanism for sustainable consumption and production (1 = YES; 0 = NO)",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/en/12-1-1",
+          "status": "notstarted"
+        },
+        {
           "id": "12-2-1",
-          "title": "Material footprint, material footprint per capita, and material footprint per GDP",
+          "title": "Material footprint per capita",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "12-2-2",
-          "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-2-2",
@@ -1615,7 +1623,7 @@
         },
         {
           "id": "12-4-1",
-          "title": "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement",
+          "title": "Compliance with the Basel Convention on hazardous waste and other chemicals",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-4-1",
@@ -1623,7 +1631,7 @@
         },
         {
           "id": "12-4-2",
-          "title": "Hazardous waste generated per capita and proportion of hazardous waste treated, by type of treatment",
+          "title": "Hazardous waste generated per capita",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-4-2",
@@ -1631,7 +1639,7 @@
         },
         {
           "id": "12-5-1",
-          "title": "National recycling rate, tons of material recycled",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-5-1",
@@ -1655,7 +1663,7 @@
         },
         {
           "id": "12-8-1",
-          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development (including climate change education) are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-8-1",
@@ -1679,7 +1687,7 @@
         },
         {
           "id": "12-c-1",
-          "title": "",
+          "title": "Fossil-fuel pre-tax subsidies (consumption and production)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/12-c-1",
@@ -1791,7 +1799,7 @@
         },
         {
           "id": "14-4-1",
-          "title": "Proportion of fish stocks that are fully exploited",
+          "title": "Proportion of fish stocks within biologically sustainable levels (not overexploited)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/14-4-1",
