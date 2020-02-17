@@ -183,11 +183,11 @@
         
         {
           "id": "2-1-1",
-          "title": "Prevalence of undernourishment",
+          "title": "Распространенность недоедания",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/2-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "2-1-1-1e",
@@ -199,7 +199,7 @@
         },
         {
           "id": "2-1-2",
-          "title": "",
+          "title": "Уровень умеренного или острого отсутствияпродовольственной безопасности населения (по«Шкале восприятия отсутствия продовольственнойбезопасности»)",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/2-1-2",
