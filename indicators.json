@@ -54,6 +54,14 @@
           "status": "complete"
         },
         {
+          "id": "1-3-1-1-f",
+          "title": "1.3.1.f. Proportion of people with disabilities receiving pensions Monthly Social Allowance to total population",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/1-3-1-1-f",
+          "status": "complete"
+        },
+        {
           "id": "1-3-1-1c",
           "title": "Численность населения, получающих ЕПМС, социальные пособия и пенсии, человек.",
           "description": "",
@@ -2100,6 +2108,14 @@
           "keywords": "",
           "href": "/open-sdg-site-starter/16-5-1",
           "status": "notstarted"
+        },
+        {
+          "id": "16-5-1-1b",
+          "title": "Number of convictions for malfeasance, including corruption and bribery",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/16-5-1-1b",
+          "status": "complete"
         },
         {
           "id": "16-5-2",
