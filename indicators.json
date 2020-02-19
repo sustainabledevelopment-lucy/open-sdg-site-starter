@@ -103,7 +103,7 @@
         },
         {
           "id": "1-5-1",
-          "title": "",
+          "title": "Число погибших, пропавших без вести и пострадавшихнепосредственно в результате бедствийна 100 000 человек",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/1-5-1",
@@ -116,14 +116,6 @@
           "keywords": "",
           "href": "/open-sdg-site-starter/1-5-2",
           "status": "complete"
-        },
-        {
-          "id": "1-5-2-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/1-5-2-1",
-          "status": "notstarted"
         },
         {
           "id": "1-5-3",
@@ -159,7 +151,7 @@
         },
         {
           "id": "1-a-3",
-          "title": "",
+          "title": "Суммарный объем субсидий и не образующегозадолженности притока средств, непосредственновыделяемых на программы сокращения масштабовнищеты, в процентном отношении к ВВП",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/1-a-3",
@@ -462,14 +454,6 @@
           "status": "complete"
         },
         {
-          "id": "3-6-1-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/3-6-1-1",
-          "status": "notstarted"
-        },
-        {
           "id": "3-7-1",
           "title": "Доля женщин репродуктивного возраста (от15 до 49 лет), чьи потребности по планированию семьиудовлетворяются современными методами",
           "description": "",
@@ -763,14 +747,6 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-c-1-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "4-с-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/4-с-1",
           "status": "notstarted"
         }]
     }
