@@ -190,14 +190,6 @@
           "status": "complete"
         },
         {
-          "id": "2-1-1-1d",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/2-1-1-1d",
-          "status": "notstarted"
-        },
-        {
           "id": "2-1-1-1e",
           "title": "Среднедушевое потребление основных продуктов питания по отношению к среднефизиологическим нормам",
           "description": "",
@@ -587,7 +579,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "4-1-1-1-a",
