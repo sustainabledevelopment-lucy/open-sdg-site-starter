@@ -331,7 +331,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-c-1-1b",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "2-а-1",
@@ -340,14 +340,6 @@
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-а-1",
           "status": "notstarted"
-        },
-        {
-          "id": "2-с-1-1b",
-          "title": "2.с.1.b. Consumer price index for food products in the Kyrgyz Republic and regions",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/en/2-с-1-1b",
-          "status": "complete"
         }]
     }
   },
