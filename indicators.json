@@ -431,7 +431,7 @@
         },
         {
           "id": "3-5-2-1",
-          "title": "Incidence of alcohol dependence per 100 000 people",
+          "title": ". Incidence of alcohol dependence per 100 000 people",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-5-2-1",
@@ -582,20 +582,12 @@
           "status": "notstarted"
         },
         {
-          "id": "4-1-1-1-a",
-          "title": "4.1.1.1a. Number of children and adolescents 7-17 years old who did not start studies in general education organizations of urban settlements and rural areas, and the territory",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/4-1-1-1-a",
-          "status": "complete"
-        },
-        {
           "id": "4-1-1-1a",
           "title": "Численность детей и подростков 7-17 лет (1-11классов), не приступивших  к занятиям  в общеобразовательные организации по причинам,  по полу",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-1-1-1a",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-2-1",
@@ -619,14 +611,6 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-2-2-1a",
-          "status": "notstarted"
-        },
-        {
-          "id": "4-2-2-1а",
-          "title": "4.2.2.1a Proportion of children who receive preschool education",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/4-2-2-1а",
           "status": "complete"
         },
         {
@@ -643,6 +627,14 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-3-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-3-1-1a",
+          "title": ".  Proportion of young people, by sex, who are enrolled in the system of primary vocational education (including short-term courses), in the system of secondary vocational and higher education",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/4-3-1-1a",
           "status": "complete"
         },
         {
@@ -2103,7 +2095,7 @@
         },
         {
           "id": "16-5-1-1b",
-          "title": "Number of convictions for malfeasance, including corruption and bribery",
+          "title": ". Number of convictions for malfeasance, including corruption and bribery",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-5-1-1b",
