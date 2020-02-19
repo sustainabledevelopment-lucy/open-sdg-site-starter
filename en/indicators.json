@@ -95,7 +95,7 @@
         },
         {
           "id": "1-4-2",
-          "title": "",
+          "title": "Proportion of total adult population with secure tenure rights to land, with legally recognized documentation, and who perceive their rights to land as secure, by sex and by type of tenure",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/1-4-2",
@@ -454,14 +454,6 @@
           "status": "complete"
         },
         {
-          "id": "3-4-2-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/en/3-4-2-1",
-          "status": "notstarted"
-        },
-        {
           "id": "3-5-1",
           "title": "Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders",
           "description": "",
@@ -652,14 +644,6 @@
           "keywords": "",
           "href": "/open-sdg-site-starter/en/3-d-1",
           "status": "notstarted"
-        },
-        {
-          "id": "3-с-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/en/3-с-1",
-          "status": "notstarted"
         }]
     }
   },
@@ -756,14 +740,6 @@
           "keywords": "",
           "href": "/open-sdg-site-starter/en/4-4-1-1a",
           "status": "notstarted"
-        },
-        {
-          "id": "4-4-1-1а",
-          "title": "4.4.1.1a Number of people who receive training in information and communication technologies (ICT) by sex",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/en/4-4-1-1а",
-          "status": "complete"
         },
         {
           "id": "4-5-1",
@@ -1997,14 +1973,6 @@
       "title": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
       "indicators": [
         
-        {
-          "id": "15-1-1",
-          "title": "Forest area as a proportion of total land area",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/en/15-1-1",
-          "status": "notstarted"
-        },
         {
           "id": "15-1-2",
           "title": "Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type",
