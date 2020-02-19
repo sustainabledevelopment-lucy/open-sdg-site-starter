@@ -82,7 +82,7 @@ menu:
   - path: /reporting-status
     # The "translation_key" refers to the key in the SDG Translations repository.
     translation_key: menu.reporting_status
-  - path: /about
+  - path: /news
     translation_key: menu.news
   - path: /about
     translation_key: menu.about
