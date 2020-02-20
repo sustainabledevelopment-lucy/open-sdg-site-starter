@@ -9,10 +9,6 @@ categories:
   - custom.international
 ---
 
-## National Statistics Committee held a seminar “Data and metadata for indicators of the Sustainable Development Goals»
-
-***
-
 <img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/internation-con-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
 
 ***
