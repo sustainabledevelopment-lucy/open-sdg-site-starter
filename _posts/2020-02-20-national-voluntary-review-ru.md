@@ -17,7 +17,3 @@ categories:
 
 Целью совещания являлось обсуждение текущей деятельности по построению системы мониторинга и отчётности для показателей Целей устойчивого развития, а также определение последующих шагов для подготовки Национального Добровольного Обзора Кыргызской Республики.
 
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/" height="300px" align="left">
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/" height="300px" align="center">
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/" height="300px" align="right">
-
