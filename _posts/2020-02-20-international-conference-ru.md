@@ -2,16 +2,17 @@
 layout: post
 title: В Кыргызстане проходит международная конференция по внедрению национальной системы мониторинга Целей устойчивого развития
 author: Национальный статистический комитет Кыргызской Республики
-excerpt:
+excerpt: Представители национальных статистических служб стран СНГ, Жогорку Кенеша, Аппарата Президента КР, Аппарата Правительства КР и международных организаций принимают участие в Международной конференции по внедрению национальной системы мониторинга Целей устойчивого развития (ЦУР), которая проходит в Бишкеке 19-20 сентября 2016 г.
+  <img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/group-photo-international-conference-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
 language: ru
 permalink: /international-conference/
 categories:
   - custom.international
 ---
 
-**Представители национальных статистических служб стран СНГ, Жогорку Кенеша, Аппарата Президента КР, Аппарата Правительства КР и международных организаций принимают участие в Международной конференции по внедрению национальной системы мониторинга Целей устойчивого развития (ЦУР), которая проходит в Бишкеке 19-20 сентября 2016 г.***
+**Представители национальных статистических служб стран СНГ, Жогорку Кенеша, Аппарата Президента КР, Аппарата Правительства КР и международных организаций принимают участие в Международной конференции по внедрению национальной системы мониторинга Целей устойчивого развития (ЦУР), которая проходит в Бишкеке 19-20 сентября 2016 г.**
 
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/group-photo-international-conference-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
+<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/group-photo-international-conference-1.jpg" alt="Photo of all participants at international conference" height="300px" align="middle">
 
 ***
 
@@ -29,5 +30,7 @@ categories:
 
 В ходе конференции обсуждались также и практические вопросы, связанные с определением основных направлений и построением системы мониторинга ЦУР, правильным использованием источников данных и эффективной координацией деятельности агентств по международному развитию. В панельных дискуссиях принимали участие представители национальных статистических служб стран СНГ и ряд международных экспертов.
 
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/group-photo-international-conference-2.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
+<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/group-photo-international-conference-2.jpg" alt="Photo of three participants at international conference" height="300px" align="right">
+
+
 
