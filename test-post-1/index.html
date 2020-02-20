@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/en',
+  remoteDataBaseUrl: 'https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/ru',
 
   // A hook which can be replaced to modify the configuration for Chart.js.
   // To see where this is used, see indicatorView.js createPlot() and updatePlot().
@@ -28,7 +28,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'en',
+  language: 'ru',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -124,7 +124,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200220091102">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200220092228">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,20 +132,20 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200220091102"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200220092228"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-post">
+<body class="language-ru layout-post">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Альфа","default_contrast":"стандартный контраст","disable_high_contrast":"Отключить высокую контрастность","disclaimer":"Это сайт находится в разработке. Мы рады вашим отзывам.","enable_high_contrast":"Включить высокую контрастность","high_contrast":"высокий контраст","skip_link":"Перейти к главному содержанию","tag_line":"17 Целей, чтобы преобразовать наш мир"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Перейти к главному содержанию</a>
 <div id="disclaimer">
   <div class="container">
   <div class="alert alert-danger" role="alert">
-    <strong class="phase-tag">Alpha</strong>
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    <strong class="phase-tag">Альфа</strong>
+    Это сайт находится в разработке. Мы рады вашим отзывам.
   </div>
 </div>
 
@@ -154,20 +154,20 @@ var translations = {
 <header role="banner">
   <div class="container">
 
-    <a class="navbar-brand" href="/open-sdg-site-starter/en/" id="home">
-      <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
+      <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Цели в области устойчивого развития - 17 Целей, чтобы преобразовать наш мир" />
     </a>
 
   <div class='hidden visible-xs float-right'>
     <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
       <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
   <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
+  <span class="language-toggle-text">Pусский</span>
   <i class="language-toggle fa fa-chevron-down"></i>
   <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
 </a>
 
-<ul class="language-options language-toggle"><li><a href="/open-sdg-site-starter/test-post-1/">Pусский</a></li></ul>
+<ul class="language-options language-toggle"><li><a href="/open-sdg-site-starter/en/test-post-1/">English</a></li></ul>
 
     </div></div>
 
@@ -179,40 +179,40 @@ var translations = {
             aria-haspopup="true"
             aria-expanded="false">
           <span data-target="menu" tabindex="0"
-          role="navigation">Menu</span>
+          role="navigation">Меню</span>
         </li>
-        <li><span data-target="search">Search</span></li>
+        <li><span data-target="search">Поиск</span></li>
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/open-sdg-site-starter/en/search">
-    <input name="q" id="indicator_search" title="Search" />
+  <form action="/open-sdg-site-starter/search">
+    <input name="q" id="indicator_search" title="Поиск" />
     <label for="indicator_search">
-      <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Search:</span>
+      <button aria-label="Поиск" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Поиск:</span>
     </label>
   </form>
 </div>
 
       
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/open-sdg-site-starter/en/reporting-status">Reporting Status</a>
+            <a href="/open-sdg-site-starter/reporting-status">Состояние отчётности</a>
           </li><li class="nav-link ">
-            <a href="/open-sdg-site-starter/en/news">News</a>
+            <a href="/open-sdg-site-starter/news">Новости</a>
           </li><li class="nav-link ">
-            <a href="/open-sdg-site-starter/en/about">About</a>
+            <a href="/open-sdg-site-starter/about">О нас</a>
           </li><li class="nav-link ">
-            <a href="/open-sdg-site-starter/en/guidance">Guidance</a>
+            <a href="/open-sdg-site-starter/guidance">Руководство</a>
           </li><li class="nav-link ">
-            <a href="/open-sdg-site-starter/en/faq">FAQ</a>
+            <a href="/open-sdg-site-starter/faq">Часто задаваемые вопросы</a>
           </li><li>
           <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
   <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
+  <span class="language-toggle-text">Pусский</span>
   <i class="language-toggle fa fa-chevron-down"></i>
   <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
 </a>
 
-<ul class="language-options language-toggle"><li><a href="/open-sdg-site-starter/test-post-1/">Pусский</a></li></ul>
+<ul class="language-options language-toggle"><li><a href="/open-sdg-site-starter/en/test-post-1/">English</a></li></ul>
 
         </li></ul>
 
@@ -227,11 +227,11 @@ var translations = {
   <div class="row">
     <div class="col-md-9 push-md-3">
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-        <h2 class="post-title" itemprop="name headline">English Test Post 1</h2>
-        <p><time datetime="2020-02-19T00:00:00+00:00" itemprop="datePublished">Feb 19, 2020</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">English Test Author 1</span></span></p>
+        <h2 class="post-title" itemprop="name headline">Russian Test Post 1</h2>
+        <p><time datetime="2020-02-19T00:00:00+00:00" itemprop="datePublished">Feb 19, 2020</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Russian Test Author 1</span></span></p>
 
         <div class="post-content" itemprop="articleBody">
-          <p>English body for test post 1.</p>
+          <p>Russian body for test post 1.</p>
 
         </div>
 
@@ -239,7 +239,7 @@ var translations = {
         <ul class="post-categories">
           
           <li class="warning">
-            <a href="/open-sdg-site-starter/en/categories/#custom.category" title="View all posts in the custom.category category">custom.category</a>
+            <a href="/open-sdg-site-starter/categories/#custom.category" title="View all posts in the custom.category category">custom.category</a>
           </li>
           
         </ul>
@@ -248,12 +248,12 @@ var translations = {
     </div>
     <div class="col-md-3 pull-md-9">
       <div id="sidebar">
-  <h4>Posts by Category</h4>
+  <h4>Посты по категории</h4>
   <ul>
     
       
       <li>
-        <a href="/open-sdg-site-starter/en/categories/#custom.category" title="View all posts in the custom.category category">custom.category</a>
+        <a href="/open-sdg-site-starter/categories/#custom.category" title="Просмотреть все посты в категории">custom.category</a>
       </li>
     
   </ul>
@@ -272,17 +272,17 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.readthedocs.io/en/latest/">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.readthedocs.io/en/latest/">Построен с использованием Open SDG</a></li>
             
               
                 <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Свяжитесь с нами</a>
                 
                 </li>
               
                 <li>
-                <a href="/open-sdg-site-starter/en/about/cookies-and-privacy">Cookies</a>
+                <a href="/open-sdg-site-starter/about/cookies-and-privacy">Cookies</a>
                 
                 </li>
               
@@ -319,7 +319,7 @@ var translations = {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200220091102'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200220091102"></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200220092228'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200220092228"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
