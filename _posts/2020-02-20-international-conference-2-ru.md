@@ -9,10 +9,6 @@ categories:
   - custom.international
 ---
 
-## Нацстакомом проведен семинар «Данные и метаданные для показателей Целей устойчивого развития»
-
-***
-
 <img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/internation-con-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
 
 ***
