@@ -11,9 +11,14 @@ categories:
 
 **Нацстатком провел совещание рабочей группы «Мониторинг и оценка» по подготовке Национального Добровольного обзора о ходе достижения ЦУР**
 
+<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-1.jpg.jpg" height="200px" align="right">
+
 ***
 
 Сегодня, 21 июня 2019 года, Национальный статистический комитет Кыргызской Республики провел совещание рабочей группы «Мониторинг и оценка» по подготовке Национального Добровольного обзора о ходе достижения Целей в области устойчивого развития Кыргызской Республики.   
 
 Целью совещания являлось обсуждение текущей деятельности по построению системы мониторинга и отчётности для показателей Целей устойчивого развития, а также определение последующих шагов для подготовки Национального Добровольного Обзора Кыргызской Республики.
 
+<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-2.jpg.jpg" height="200px" align="left">
+<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-3.jpg.jpg" height="200px" align="center">
+<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-4.jpg.jpg" height="200px" align="right">
