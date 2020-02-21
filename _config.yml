@@ -35,9 +35,9 @@ analytics:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: sdg_nsc@stat.kg
+  suggestions: sdg_nsc@stat.kg
+  functional: sdg_nsc@stat.kg
 
 # Github Repo for Data
 # Replace this value as needed.
@@ -82,6 +82,8 @@ menu:
   - path: /reporting-status
     # The "translation_key" refers to the key in the SDG Translations repository.
     translation_key: menu.reporting_status
+  - path: /news
+    translation_key: menu.news
   - path: /about
     translation_key: menu.about
   - path: /guidance
@@ -90,7 +92,7 @@ menu:
     translation_key: menu.faq
     
 footer_menu:
-  - path: mailto:my-email-address@example.com
+  - path: mailto:sdg_nsc@stat.kg
     translation_key: menu.contact_us
   - path: about/cookies-and-privacy
     translation_key: menu.cookies
@@ -104,6 +106,18 @@ non_global_metadata: indicator.national_metadata
 languages:
   - ru
   - en
+  
+metadata_tabs:
+  indicator_information:
+    title: custom.indicator_information
+    blurb: custom.indicator_information_blurb
+  national:
+    title: indicator.national_metadata
+    blurb: indicator.national_metadata_blurb
+  data_reporter:
+    title: custom.data_reporter
+    blurb: custom.data_reporter_blurb
+
 
 # This makes sure that all pages have a language.
 defaults:
@@ -125,6 +139,10 @@ plugins:
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg@master
+
+# Apply any custom Javascript.
+custom_js:
+  - /assets/js/custom.js
 
 # Apply any custom CSS.
 custom_css:
