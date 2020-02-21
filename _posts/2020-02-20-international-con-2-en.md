@@ -6,7 +6,7 @@ excerpt: National Statistics Committee held a seminar “Data and metadata for i
 language: en
 permalink: /en/international-conference/
 categories:
-  - custom.international
+  - 06.11.2019
 ---
 
 ## National Statistics Committee held a seminar “Data and metadata for indicators of the Sustainable Development Goals»
