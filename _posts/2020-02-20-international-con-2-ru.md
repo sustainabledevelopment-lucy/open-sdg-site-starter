@@ -3,7 +3,7 @@ layout: post
 title: Нацстакомом проведен семинар «Данные и метаданные для показателей Целей устойчивого развития»
 author: Национальный статистический комитет Кыргызской Республики
 excerpt: Нацстакомом проведен семинар «Данные и метаданные для показателей Целей устойчивого развития» 
-<img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/internation-con-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
+  <img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/internation-con-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
 language: ru
 permalink: /international-conference/
 categories:
