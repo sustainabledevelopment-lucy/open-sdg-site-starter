@@ -35,9 +35,9 @@ analytics:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: sdg_nsc@stat.kg
+  suggestions: sdg_nsc@stat.kg
+  functional: sdg_nsc@stat.kg
 
 # Github Repo for Data
 # Replace this value as needed.
@@ -92,7 +92,7 @@ menu:
     translation_key: menu.faq
     
 footer_menu:
-  - path: mailto:my-email-address@example.com
+  - path: mailto:sdg_nsc@stat.kg
     translation_key: menu.contact_us
   - path: about/cookies-and-privacy
     translation_key: menu.cookies
