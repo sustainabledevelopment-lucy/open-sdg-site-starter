@@ -4,5 +4,5 @@ title: News & Events
 permalink: /news/
 ---
 
-## News and Events
-Check this page for news regarding the reporting of our statistics for global indicators and opportunities to contribute to measuring achievement of the sustainable development goals
+## Новости
+Посетите эту страницу, чтобы узнать последние новости о построении системы мониторинга и отчётности для показателей Целей устойчивого развития
