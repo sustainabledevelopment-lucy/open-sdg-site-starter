@@ -3,7 +3,7 @@ opensdg.dataRounding = function(value) {
     return value
   }
   else {
-    if (value.split(".")[1].length == 1 {
+    if (value.split(".")[1].length == 1) {
         return value.toFixed(1)
     }
     else if (value.split(".")[1].length >= 2) {
