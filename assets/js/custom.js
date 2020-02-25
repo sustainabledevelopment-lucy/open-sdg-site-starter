@@ -1,4 +1,5 @@
 opensdg.dataRounding = function(value) {
+  var value
   if (value == null) {
     return value
   }
