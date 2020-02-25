@@ -3,6 +3,6 @@ opensdg.dataRounding = function(value) {
     return value
   }
   else {
-    return round(value, 2)
+    return value.toFixed(2)
   }
 };
