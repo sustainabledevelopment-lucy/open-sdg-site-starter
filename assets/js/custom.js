@@ -1,5 +1,5 @@
 opensdg.dataRounding = function(value) {
-  var value
+  var value = value.toString()
   if (value == null) {
     return value
   }
