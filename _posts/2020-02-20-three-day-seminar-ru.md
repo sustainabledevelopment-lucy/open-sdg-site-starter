@@ -1,6 +1,6 @@
 ---
 layout: post
-title: National Statistics Committee held a seminar “Data and metadata for indicators of the Sustainable Development Goals”
+title: В Бишкеке проходит семинар «Показатели ЦУР под координацией ФАО ООН»
 author: National Statistical Committee of the Kyrgyz Republic
 excerpt:
 language: ru
