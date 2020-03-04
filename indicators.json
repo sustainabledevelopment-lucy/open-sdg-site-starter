@@ -1902,6 +1902,14 @@
       "indicators": [
         
         {
+          "id": "15-1-1-1",
+          "title": ". Forest area as a proportion of total country",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/15-1-1-1",
+          "status": "complete"
+        },
+        {
           "id": "15-1-2",
           "title": "Доля важных с точки зрения биологического разнообразия районов суши и пресноводных районов,находящихся под охраной, в разбивке по видамэкосистем",
           "description": "",
@@ -1915,7 +1923,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-1-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-2-1",
@@ -1923,7 +1931,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-3-1",
@@ -1939,7 +1947,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-4-2",
@@ -1995,7 +2003,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-b-1",
@@ -2011,7 +2019,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-b-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-c-1",
