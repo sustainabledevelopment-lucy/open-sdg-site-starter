@@ -1507,7 +1507,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-3-1",
@@ -1558,6 +1558,14 @@
           "status": "notstarted"
         },
         {
+          "id": "11-6-1-1",
+          "title": ". Volume of removed solid household waste per person,kg",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/11-6-1-1",
+          "status": "complete"
+        },
+        {
           "id": "11-6-2",
           "title": "Среднегодовой уровень содержания мелкихтвердых частиц (например, класса PM2.5 и PM10) ватмосфере городов (в пересчете на численность населения)",
           "description": "",
@@ -1572,6 +1580,14 @@
           "keywords": "",
           "href": "/open-sdg-site-starter/11-7-1",
           "status": "notstarted"
+        },
+        {
+          "id": "11-7-1-1a",
+          "title": "11.1.1.1a. Green spaces in localities, hectares per 1000 people",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/11-7-1-1a",
+          "status": "complete"
         },
         {
           "id": "11-7-2",
@@ -1659,7 +1675,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-4-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "12-5-1",
