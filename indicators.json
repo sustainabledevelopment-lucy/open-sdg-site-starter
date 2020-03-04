@@ -187,7 +187,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/2-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "2-1-1-1e",
@@ -195,7 +195,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/2-1-1-1e",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "2-1-2",
@@ -211,7 +211,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/2-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "2-2-2",
@@ -219,7 +219,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/2-2-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "2-3-1",
@@ -267,7 +267,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/2-a-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "2-a-2",
@@ -275,7 +275,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/2-a-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "2-b-1",
@@ -299,7 +299,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/2-c-1-1b",
-          "status": "complete"
+          "status": "notstarted"
         }]
     }
   },
@@ -315,7 +315,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-1-2",
@@ -323,7 +323,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-1-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-2-1",
@@ -331,7 +331,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-2-2",
@@ -339,7 +339,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-2-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-3-1",
@@ -347,7 +347,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-3-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-3-2",
@@ -355,7 +355,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-3-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-3-3",
@@ -363,7 +363,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-3-3",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-3-4",
@@ -371,7 +371,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-3-4",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-3-5",
@@ -387,7 +387,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-4-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-4-2",
@@ -395,7 +395,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-4-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-5-1",
@@ -430,20 +430,12 @@
           "status": "notstarted"
         },
         {
-          "id": "3-5-2-1",
-          "title": ". Incidence of alcohol dependence per 100 000 people",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/3-5-2-1",
-          "status": "complete"
-        },
-        {
           "id": "3-6-1",
           "title": "Смертность в результате дорожно-транспортныхпроисшествий",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-6-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-7-1",
@@ -451,7 +443,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-7-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-7-2",
@@ -459,7 +451,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-7-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-8-1",
@@ -491,7 +483,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-9-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-9-2",
@@ -499,7 +491,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-9-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-9-3",
@@ -507,7 +499,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-9-3",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-a-1",
@@ -519,11 +511,11 @@
         },
         {
           "id": "3-b-1",
-          "title": "Доля целевой группы населения, охваченнаяиммунизацией всеми вакцинами, включенными внациональные программы",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-b-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-b-2",
@@ -531,7 +523,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-b-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-b-3",
@@ -547,7 +539,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/3-c-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "3-d-1",
@@ -579,7 +571,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-1-1-1a",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "4-2-1",
@@ -587,7 +579,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "4-2-2",
@@ -595,7 +587,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-2-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "4-2-2-1a",
@@ -603,7 +595,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-2-2-1a",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "4-3-1",
@@ -622,20 +614,12 @@
           "status": "notstarted"
         },
         {
-          "id": "4-3-1-1a",
-          "title": ".  Proportion of young people, by sex, who are enrolled in the system of primary vocational education (including short-term courses), in the system of secondary vocational and higher education",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/4-3-1-1a",
-          "status": "complete"
-        },
-        {
           "id": "4-4-1",
           "title": "Доля молодежи/взрослых, обладающей/ обладающихнавыками в области информационно-коммуникационныхтехнологий, в разбивке по видамнавыков",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-4-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "4-4-1-1a",
@@ -643,7 +627,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/4-4-1-1a",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "4-5-1",
@@ -763,7 +747,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-3-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "5-3-2",
@@ -779,7 +763,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-4-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "5-5-1",
@@ -787,7 +771,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-5-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "5-5-2",
@@ -795,7 +779,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-5-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "5-6-1",
@@ -843,7 +827,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/5-b-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "5-c-1",
@@ -867,7 +851,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "6-1-1-2b",
@@ -883,7 +867,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "6-3-1",
@@ -891,7 +875,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-3-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "6-3-2",
@@ -915,7 +899,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-4-1-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "6-4-2",
@@ -931,7 +915,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/6-4-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "6-5-1",
@@ -987,7 +971,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "7-1-2",
@@ -995,7 +979,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-1-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "7-2-1",
@@ -1027,7 +1011,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-3-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "7-3-1-2",
@@ -1035,7 +1019,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-3-1-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "7-a-1",
@@ -1075,7 +1059,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-2-1",
@@ -1083,7 +1067,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-3-1",
@@ -1095,11 +1079,11 @@
         },
         {
           "id": "8-3-1-1",
-          "title": "Занятость в неформальном секторе, включая сельское хозяйство",
+          "title": "Занятость в неформальном секторе  в разбивке по полу, возрасту, город-село и отраслям экономики",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-3-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-3-1-2",
@@ -1147,7 +1131,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-5-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-5-2-1",
@@ -1163,7 +1147,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-6-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-7-1",
@@ -1171,7 +1155,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-7-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-8-1",
@@ -1179,7 +1163,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-8-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-8-2",
@@ -1235,7 +1219,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-10-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-10-2",
@@ -1243,7 +1227,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-10-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "8-10-2-2",
@@ -1251,7 +1235,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/8-10-2-2",
-          "status": "complete"
+          "status": "notstarted"
         }]
     }
   },
@@ -1275,7 +1259,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-1-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-2-1",
@@ -1283,7 +1267,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-2-2",
@@ -1291,7 +1275,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-2-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-3-1",
@@ -1299,7 +1283,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-3-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-3-2",
@@ -1323,7 +1307,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-4-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-5-1",
@@ -1331,7 +1315,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-5-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-5-2",
@@ -1339,7 +1323,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-5-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-a-1",
@@ -1363,7 +1347,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/9-c-1",
-          "status": "complete"
+          "status": "notstarted"
         }]
     }
   },
@@ -1379,7 +1363,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "10-2-1",
@@ -1387,7 +1371,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "10-3-1",
@@ -1403,7 +1387,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/10-4-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "10-5-1",
@@ -1483,7 +1467,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "11-3-1",
@@ -1635,7 +1619,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/12-4-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "12-5-1",
@@ -1875,7 +1859,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-1-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "15-2-1",
@@ -1883,7 +1867,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "15-3-1",
@@ -1899,7 +1883,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-4-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "15-4-2",
@@ -1955,7 +1939,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/15-a-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "15-b-1",
@@ -1995,7 +1979,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "16-1-2",
@@ -2019,7 +2003,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-4",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "16-2-1",
@@ -2027,7 +2011,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-2-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "16-2-2",
@@ -2051,7 +2035,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-3-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "16-3-2",
@@ -2086,14 +2070,6 @@
           "status": "notstarted"
         },
         {
-          "id": "16-5-1-1b",
-          "title": ". Number of convictions for malfeasance, including corruption and bribery",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/16-5-1-1b",
-          "status": "complete"
-        },
-        {
           "id": "16-5-2",
           "title": "Доля коммерческих компаний, которые впредыдущие 12 месяцев хотя бы один раз имели контактс государственным должностным лицом и которыезаплатили взятку государственному должностномулицу или от которых это государственное должностноелицо требовало взятку",
           "description": "",
@@ -2123,7 +2099,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-6-2-1a",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "16-7-1",
@@ -2155,7 +2131,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-9-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "16-a-1",
@@ -2171,7 +2147,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-b-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "16-10-1",
@@ -2211,7 +2187,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-1-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "17-2-1",
@@ -2235,7 +2211,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-3-1-1a",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "17-3-1-1b",
@@ -2259,7 +2235,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-4-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "17-5-1",
@@ -2283,7 +2259,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-6-2",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "17-7-1",
@@ -2411,6 +2387,14 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/17-19-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-20-20",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/17-20-20",
           "status": "notstarted"
         }]
     }
