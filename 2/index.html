@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -13,12 +13,10 @@ var opensdg = {
   // A base URL for asynchronous calls to SDG data.
   remoteDataBaseUrl: 'https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/ru',
 
-  // A hook which can be replaced to modify the configuration for Chart.js.
-  // To see where this is used, see indicatorView.js createPlot() and updatePlot().
-  // To see an example of replacing it, see binary.html.
-  chartConfigAlter: function(config) {
-    // Alterations go here.
-    return config;
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
   },
 
   // A hook which can be replaced to alter whether/how the values that are
@@ -124,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200331001711">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200331104559">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,7 +130,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200331001711"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200331104559"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-ru layout-goal-by-target">
@@ -291,37 +289,7 @@ var translations = {
               Опубликован
             </span>
           </span>
-          Распространенность недоедания
-          
-        </a>
-      </div>
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12 indicator-национальный">
-        <a href="/open-sdg-site-starter/2-1-1-1e">
-          <span>
-            2.1.1.1e
-            <span class="status complete">
-              Опубликован
-            </span>
-          </span>
-          Среднедушевое потребление основных продуктов питания по отношению к среднефизиологическим нормам
-          
-            <ul class="tags">
-            
-              
-              <li class="tag-национальный warning">национальный</li>
-            
-            </ul>
+          Prevalence of undernourishment
           
         </a>
       </div>
@@ -337,17 +305,14 @@ var translations = {
       
 
       <div class="col-md-12 ">
-        <a href="/open-sdg-site-starter/2-1-2">
+        <a href="/open-sdg-site-starter/2-1-1-1e">
           <span>
-            2.1.2
-            <span class="status notstarted">
-              В процессе разработки
+            2.1.1.1e
+            <span class="status complete">
+              Опубликован
             </span>
           </span>
-          Уровень умеренного или острого отсутствия
-продовольственной безопасности населения (по
-«Шкале восприятия отсутствия продовольственной
-безопасности»)
+          . Average per capita consumption of basic food products in relation to the average physiological norms of consumption, in%
           
         </a>
       </div>
@@ -389,12 +354,7 @@ var translations = {
               Опубликован
             </span>
           </span>
-          Распространенность задержки роста среди
-детей в возрасте до пяти лет (среднеквадратичное отклонение
-от медианного показателя роста к возрасту
-ребенка в соответствии с нормами роста детей, установленными
-Всемирной организацией здравоохранения
-(ВОЗ), <-2) 
+          Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age
           
         </a>
       </div>
@@ -417,209 +377,7 @@ var translations = {
               Опубликован
             </span>
           </span>
-          Распространенность неполноценного питания
-среди детей в возрасте до пяти лет в разбивке по
-виду (истощение или ожирение) (среднеквадратичное
-отклонение от медианного показателя веса к возрасту
-в соответствии с нормами роста детей, установленными
-ВОЗ, >+2 или <-2)
-
-          
-        </a>
-      </div>
-    
-    </div>
-  
-    
-    <div class="indicator-cards target col-md-6">
-      <span>
-        <label class="hidden-md hidden-lg">Задача</label>
-        2.3
-      </span>
-      К 2030 году удвоить продуктивность сельского
-хозяйства и доходы мелких производителей продовольствия,
-в частности женщин, представителей коренных
-народов, фермерских семейных хозяйств,
-скотоводов и рыбаков, в том числе посредством
-обеспечения гарантированного и равного доступа к
-земле, другим производственным ресурсам и факторам
-сельскохозяйственного производства, знаниям,
-финансовым услугам, рынкам и возможностям для
-увеличения добавленной стоимости и занятости в
-несельскохозяйственных секторах 
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12 ">
-        <a href="/open-sdg-site-starter/2-3-1">
-          <span>
-            2.3.1
-            <span class="status notstarted">
-              В процессе разработки
-            </span>
-          </span>
-          Объем производства на производственную
-единицу в разбивке по классам размера предприятий фермерского хозяйства/скотоводства/лесного хозяйства
-
-          
-        </a>
-      </div>
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12 ">
-        <a href="/open-sdg-site-starter/2-3-2">
-          <span>
-            2.3.2
-            <span class="status notstarted">
-              В процессе разработки
-            </span>
-          </span>
-          Средний доход мелких производителей продовольственной
-продукции в разбивке по полу и статусу
-принадлежности к коренным народам
-          
-        </a>
-      </div>
-    
-    </div>
-  
-    
-    <div class="indicator-cards target col-md-6">
-      <span>
-        <label class="hidden-md hidden-lg">Задача</label>
-        2.4
-      </span>
-      К 2030 году обеспечить создание устойчивых
-систем производства продуктов питания и внедрить
-методы ведения сельского хозяйства, которые позволяют
-повысить жизнестойкость и продуктивность и
-увеличить объемы производства, способствуют сохранению
-экосистем, укрепляют способность адаптироваться
-к изменению климата, экстремальным
-погодным явлениям, засухам, наводнениям и другим
-бедствиям и постепенно улучшают качество земель
-и почв
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12 ">
-        <a href="/open-sdg-site-starter/2-4-1">
-          <span>
-            2.4.1
-            <span class="status notstarted">
-              В процессе разработки
-            </span>
-          </span>
-          Доля площади сельскохозяйственных угодий,
-на которых применяются продуктивные и неистощительные
-методы ведения сельского хозяйства
-          
-        </a>
-      </div>
-    
-    </div>
-  
-    
-    <div class="indicator-cards target col-md-6">
-      <span>
-        <label class="hidden-md hidden-lg">Задача</label>
-        2.5
-      </span>
-      К 2020 году обеспечить сохранение генетического
-разнообразия семян и культивируемых растений,
-а также сельскохозяйственных и домашних животных
-и их соответствующих диких видов, в том
-числе посредством надлежащего содержания разнообразных
-банков семян и растений на национальном,
-региональном и международном уровнях, и содействовать
-расширению доступа к генетическим
-ресурсам и связанным с ними традиционным знаниям
-и совместному использованию на справедливой
-и равной основе выгод от их применения на согласованных
-на международном уровне условиях
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12 ">
-        <a href="/open-sdg-site-starter/2-5-1">
-          <span>
-            2.5.1
-            <span class="status notstarted">
-              В процессе разработки
-            </span>
-          </span>
-          Количество генетических ресурсов растительного
-и зоологического происхождения, предназначенных
-для производства продовольствия и сельского
-хозяйства, которые хранятся на специальных
-объектах либо среднесрочного, либо долгосрочного
-хранения
-          
-        </a>
-      </div>
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12 ">
-        <a href="/open-sdg-site-starter/2-5-2">
-          <span>
-            2.5.2
-            <span class="status notstarted">
-              В процессе разработки
-            </span>
-          </span>
-          Доля местных пород, относимых к следующим
-категориям: находящиеся под угрозой исчезновения;
-не находящиеся под угрозой исчезновения;
-уровень угрозы исчезновения не известен
-
+          Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)
           
         </a>
       </div>
@@ -661,9 +419,7 @@ var translations = {
               Опубликован
             </span>
           </span>
-          Индекс ориентированности на сельское хозяйство,
-определяемый по структуре государственных
-расходов 
+          The agriculture orientation index for government expenditures
           
         </a>
       </div>
@@ -686,52 +442,7 @@ var translations = {
               Опубликован
             </span>
           </span>
-          Совокупный приток официальных средств
-(официальная помощь в целях развития плюс прочие
-потоки официальных средств) в сельское хозяйство
-
-          
-        </a>
-      </div>
-    
-    </div>
-  
-    
-    <div class="indicator-cards target col-md-6">
-      <span>
-        <label class="hidden-md hidden-lg">Задача</label>
-        2.b
-      </span>
-      Устранять и пресекать введение торговых
-ограничений и возникновение искажений на мировых
-рынках сельскохозяйственной продукции, в том
-числе посредством параллельной ликвидации всех
-форм субсидирования экспорта сельскохозяйственной
-продукции и всех экспортных мер, имеющих аналогичные последствия, в соответствии с мандатом
-Дохинского раунда переговоров по вопросам
-развития
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12 ">
-        <a href="/open-sdg-site-starter/2-b-1">
-          <span>
-            2.b.1
-            <span class="status notstarted">
-              В процессе разработки
-            </span>
-          </span>
-          
+          Total official flows (official development assistance plus other official flows) to the agriculture sector
           
         </a>
       </div>
@@ -765,29 +476,6 @@ var translations = {
       
 
       <div class="col-md-12 ">
-        <a href="/open-sdg-site-starter/2-c-1">
-          <span>
-            2.c.1
-            <span class="status notstarted">
-              В процессе разработки
-            </span>
-          </span>
-          Показатель ценовых аномалий на рынке продовольствия
-          
-        </a>
-      </div>
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12 indicator-национальный">
         <a href="/open-sdg-site-starter/2-c-1-1b">
           <span>
             2.c.1.1b
@@ -795,14 +483,7 @@ var translations = {
               Опубликован
             </span>
           </span>
-          Индекс потребительских цен на продовольственные товары
-          
-            <ul class="tags">
-            
-              
-              <li class="tag-национальный warning">национальный</li>
-            
-            </ul>
+          . Consumer price index for food products in the Kyrgyz Republic and regions
           
         </a>
       </div>
@@ -844,27 +525,20 @@ var translations = {
 <!-- Google Analytics -->
 
 <!-- /.container </div> -->
-<script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
-<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
-<script src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
-<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-<script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200331001711'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200331001711"></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200331104559'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200331104559"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -873,8 +547,13 @@ $(function() {
           $(obj).append($('<img />').attr('src', $(obj).data('img')));
       });
 
+      var remoteUrl = '/comb/' + domData.id + '.json';
+      if (opensdg.remoteDataBaseUrl !== '/') {
+        remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
+      }
+
       $.ajax({
-        url: opensdg.remoteDataBaseUrl + '/comb/' + domData.id + '.json',
+        url: remoteUrl,
         success: function(res) {
 
           $('.async-loading').remove();
@@ -883,12 +562,12 @@ $(function() {
           var model = new indicatorModel({
             data: res.data,
             edgesData: res.edges,
-            geoCodeRegEx: domData.geocoderegex,
             showMap: domData.showmap,
             country: domData.country,
             indicatorId: domData.indicatorid,
             shortIndicatorId: domData.id,
             chartTitle: domData.charttitle,
+            chartTitles: domData.charttitles,
             measurementUnit: domData.measurementunit,
             copyright: domData.copyright,
             dataSource: domData.datasource,
@@ -896,7 +575,9 @@ $(function() {
             showData: domData.showdata,
             footnote: domData.footnote,
             graphType: domData.graphtype,
-            startValues: domData.startvalues
+            startValues: domData.startvalues,
+            graphLimits: domData.graphlimits,
+            stackedDisaggregation: domData.stackeddisaggregation,
           }),
           view  = new indicatorView(model, {
             rootElement: '#indicatorData',

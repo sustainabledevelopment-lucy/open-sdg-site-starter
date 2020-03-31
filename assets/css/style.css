@@ -242,6 +242,12 @@ h5 + .btn-download {
   .image-download-in-progress #selectionChartFooter p {
     margin-bottom: 10px; }
 
+.zip-download-container {
+  margin-top: 20px; }
+  .zip-download-container #zip-download-info {
+    margin-top: 5px;
+    margin-left: 10px; }
+
 body.contrast-high .btn {
   background: white !important;
   color: black !important; }
@@ -249,6 +255,8 @@ body.contrast-high .btn {
     background: yellow !important; }
   body.contrast-high .btn:focus {
     background: yellow !important; }
+body.contrast-high #zip-download-info {
+  color: white; }
 
 .goal-1 {
   padding-top: 30px;
@@ -571,6 +579,13 @@ body.contrast-high .btn {
   #main-content #map .leaflet-control .download-geojson-button {
     display: block;
     cursor: pointer; }
+  #main-content #map .disaggregation-select-container {
+    background: white;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px; }
+    #main-content #map .disaggregation-select-container label {
+      margin-right: 4px; }
   #main-content #map .selection-legend {
     background-color: rgba(150, 150, 150, 0.6);
     padding: 0;
@@ -800,6 +815,9 @@ body.long #accessibility-nav li.contrast {
     text-decoration: none;
     padding: 1px; }
 
+body.contrast-high .site-intro .description {
+  color: white; }
+
 #skiplink {
   position: absolute;
   top: 0;
@@ -838,7 +856,8 @@ header {
     .navbar ul.navbar-nav li a {
       padding: 2px;
       margin: 2px 15px;
-      color: #595959; }
+      color: #595959;
+      font-size: 16px; }
     .navbar ul.navbar-nav li.active a {
       border-bottom: 2px solid #333;
       background: transparent;
@@ -1335,6 +1354,8 @@ footer {
     top: -1px;
     right: 0;
     display: inline; }
+    #main-content.goal-indicators .indicator-cards span.status.complete {
+      color: white; }
 #main-content.goal-indicators .indicator-cards .tags {
   padding: 0;
   margin: 6px 10px 0 0;
@@ -1457,6 +1478,12 @@ body.contrast-high caption {
   color: white; }
 body.contrast-high div#units {
   color: white; }
+body.contrast-high #legend li {
+  color: white !important;
+  border: 1px solid transparent; }
+  body.contrast-high #legend li:hover {
+    background: transparent !important;
+    border: 1px solid white; }
 
 body.contrast-high .goal-indicators div span {
   border-color: white !important;
@@ -1465,6 +1492,9 @@ body.contrast-high .goal-indicators .indicator-cards a, body.contrast-high .goal
   color: white !important; }
 body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-high .goal-indicators .indicator-cards .tags li {
   color: black !important; }
+body.contrast-high .goal-indicators .indicator-cards span.status.notstarted {
+  color: white !important;
+  border: 1px solid white !important; }
 
 .post-categories {
   padding: 0;
@@ -1494,16 +1524,14 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
     margin: 0; }
 
 .notapplicable {
-  background-color: #B7B7B7; }
-
-.notstarted {
-  background-color: #E27874; }
+  background-color: #ccc;
+  background: repeating-linear-gradient(135deg, #ccc, white 10px, #ccc 10px, white 20px); }
 
 .inprogress {
-  background-color: #f0ad4e; }
+  background-color: #757575; }
 
 .complete {
-  background-color: #5cb85c; }
+  background-color: #2B2B2B; }
 
 #main-content .statuses strong {
   font-weight: normal; }
@@ -1515,16 +1543,21 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
     margin-right: 3px;
     padding: 2px 5px;
     border-radius: 4px;
-    color: black;
     width: 40px;
-    text-align: center; }
+    text-align: center;
+    font-size: 16px; }
+    #main-content .statuses > div .status.notstarted {
+      border: 1px solid #000000;
+      color: black; }
+    #main-content .statuses > div .status.complete, #main-content .statuses > div .status.inprogress {
+      color: white; }
 #main-content .value {
   color: #333;
   font-weight: bold;
   margin-left: 3px; }
 #main-content .goal-stats {
+  border: 1px solid #000000;
   font-size: 0;
-  height: 10px;
   margin-top: 10px; }
   #main-content .goal-stats span {
     display: inline-block;
@@ -1542,7 +1575,7 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
   #main-content .goal .total {
     line-height: 24px;
     vertical-align: middle;
-    font-size: 0.65em;
+    font-size: 16px;
     width: auto;
     padding-left: 4px;
     padding-right: 4px;
@@ -1573,29 +1606,49 @@ body.contrast-high .goal-indicators .indicator-cards span.status, body.contrast-
   #main-content .goal-overall .details {
     width: 100%; }
 
+body.contrast-high .goal-stats {
+  border: 1px solid white !important; }
 body.contrast-high .statuses strong {
   color: white; }
 body.contrast-high .statuses .value {
   color: white !important; }
+body.contrast-high .summary .statuses .notstarted {
+  border: 1px solid white !important; }
+body.contrast-high .complete {
+  background-color: white;
+  color: black !important; }
+body.contrast-high .inprogress {
+  background-color: #767676; }
+body.contrast-high .notstarted {
+  color: white !important; }
+body.contrast-high .notapplicable {
+  color: black !important; }
 
 #jump-to-search a {
   cursor: pointer; }
+
+.layout-search h1 {
+  font-size: 24px; }
 
 #search-results {
   margin-top: 20px; }
   #search-results span.match {
     background-color: yellow; }
-  #search-results .search-result a {
-    text-decoration: none;
-    margin-bottom: 5px;
-    margin-top: 10px; }
-    #search-results .search-result a .title {
-      margin-bottom: 5px; }
-    #search-results .search-result a .url {
-      color: green;
-      font-size: 16px; }
-    #search-results .search-result a:hover .title {
-      text-decoration: underline; }
+  #search-results .search-result {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    #search-results .search-result a {
+      text-decoration: none;
+      margin-bottom: 5px;
+      margin-top: 10px; }
+      #search-results .search-result a .title {
+        margin-bottom: 5px;
+        font-size: 18px; }
+      #search-results .search-result a .url {
+        color: green;
+        font-size: 16px; }
+      #search-results .search-result a:hover .title {
+        text-decoration: underline; }
 
 body.contrast-high #search-results span.match {
   color: black !important; }

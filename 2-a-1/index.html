@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -13,12 +13,10 @@ var opensdg = {
   // A base URL for asynchronous calls to SDG data.
   remoteDataBaseUrl: 'https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/ru',
 
-  // A hook which can be replaced to modify the configuration for Chart.js.
-  // To see where this is used, see indicatorView.js createPlot() and updatePlot().
-  // To see an example of replacing it, see binary.html.
-  chartConfigAlter: function(config) {
-    // Alterations go here.
-    return config;
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
   },
 
   // A hook which can be replaced to alter whether/how the values that are
@@ -124,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200331001711">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200331104559">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,7 +130,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200331001711"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200331104559"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-ru layout-indicator">
@@ -276,9 +274,7 @@ var translations = {
         </a>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
-        <h1>показатель 2.a.1: Индекс ориентированности на сельское хозяйство,
-определяемый по структуре государственных
-расходов </h1>
+        <h1>показатель 2.a.1: The agriculture orientation index for government expenditures</h1>
       </div>
     </div>
   </div>
@@ -312,12 +308,26 @@ var translations = {
   
 
   
-  <div class="row" id="indicatorData" data-indicatorid='indicator_2-a-1' data-id="2-a-1" data-country="Кыргызская Республика"
-  data-charttitle="Индекс ориентированности на сельское хозяйство,
-определяемый по структуре государственных
-расходов " data-measurementunit="" data-datasource="" data-copyright=""
-  data-geographicalarea="Кыргызская Республика" data-footnote="" data-showdata="true" data-graphtype="line"
-  data-geocoderegex="" data-showmap="" data-startvalues="">
+  <div class="row"
+    id="indicatorData"
+    data-indicatorid='indicator_2-a-1'
+    data-id="2-a-1"
+    data-country=""
+    data-charttitle="The agriculture orientation index for government expenditures"
+    data-charttitles="null"
+    data-measurementunit=""
+    data-datasource=""
+    data-copyright=""
+    data-geographicalarea=""
+    data-footnote=""
+    data-showdata="true"
+    data-graphtype="line"
+    data-geocoderegex=""
+    data-showmap=""
+    data-startvalues="null"
+    data-graphlimits="null"
+    data-stackeddisaggregation=""
+  >
 
     
     <div id="indicator-sidebar" class="col-md-3">
@@ -350,9 +360,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Индекс ориентированности на сельское хозяйство,
-определяемый по структуре государственных
-расходов </caption>
+      <caption>The agriculture orientation index for government expenditures</caption>
       <thead>
         
         
@@ -517,8 +525,6 @@ var translations = {
   <div id="datatableFooter">
     
     
-    <p>Географический район: Кыргызская Республика</p>
-    
     
     
   </div>
@@ -531,7 +537,7 @@ var translations = {
 
         
         <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
-        
+
         <div class="async-loaded spacer medium" style="display:none;">
           <ul class="nav nav-tabs data-view" role="tablist">
             <li role="presentation" class="nav-item active">
@@ -568,12 +574,36 @@ data-event-label="Change to Map tab"
     
     <div id="selectionsChart">
       <div id="chart-canvas">
-        <h3 class="chart-title">Индекс ориентированности на сельское хозяйство,
-определяемый по структуре государственных
-расходов </h3>
+        <h3 class="chart-title">
+          
+            The agriculture orientation index for government expenditures
+          
+        </h3>
         <div id="chart" class="plot-container">
           
 <canvas></canvas>
+<script>
+// Add a chart alteration to support the chart_graph_limits metadata field.
+opensdg.chartConfigAlter(function(config, info) {
+  if (info.graphLimits) {
+    var limit = _.findWhere(info.graphLimits, { unit: info.selectedUnit }) || info.graphLimits[0];
+    var overrides = {
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              min: limit.minimum,
+              max: limit.maximum,
+            }
+          }]
+        }
+      }
+    }
+    // Add these overrides onto the normal config.
+    $.extend(true, config, overrides);
+  }
+});
+</script>
 
 
         </div>
@@ -660,7 +690,7 @@ data-event-label="Change to custom.data_reporter tab"
             <div role="tabpanel" class="tab-pane active" id="indicator_information">
               <article>
                 <p>Данная таблица предоставляет информацию об индикаторе</p>
-                <table class="table table-hover">
+                <table class="table">
   
   
   
@@ -672,7 +702,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Название показателя </th>
         <td>
           
-            <p>2.a.1 Индекс ориентированности на сельское хозяйство, определяемый по структуре государственных расходов</p>
+            
 
           
         </td>
@@ -686,7 +716,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Название задачи </th>
         <td>
           
-            <p>2.a Увеличить инвестирование, в том числе посредством активизации международного сотрудничества, в сельскую инфраструктуру, сельскохозяйственные исследования и агропропаганду, развитие технологий и создание генетических банков растений и животных в целях укрепления потенциала развивающихся стран, особенно наименее развитых стран, в области сельскохозяйственного производства</p>
+            
 
           
         </td>
@@ -700,7 +730,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Цель </th>
         <td>
           
-            <p>Цель 2. Ликвидация голода, обеспечение продовольственной безопасности и улучшение питания и содействие устойчивому развитию сельского хозяйства</p>
+            
 
           
         </td>
@@ -749,7 +779,7 @@ data-event-label="Change to custom.data_reporter tab"
             <div role="tabpanel" class="tab-pane " id="national">
               <article>
                 <p>В этой таблице представлены метаданные для фактического показателя, доступного из статистики ближайшей к соответствующему глобальному индикатору ЦУР. Обратите внимание, что даже если глобальный индикатор ЦУР полностью доступен из статистики, по этой таблице следует проконсультироваться для получения информации о национальной методологии и других специфичных метаданных.</p>
-                <table class="table table-hover">
+                <table class="table">
   
   
   
@@ -764,7 +794,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Географический охват </th>
         <td>
           
-            <p>Кыргызская Республика</p>
+            
 
           
         </td>
@@ -792,7 +822,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Определения </th>
         <td>
           
-            <p>Индекс ориентации государственных расходов на сельское хозяйство (AOI) определяется как соотношение доли государственных расходов на сельское хозяйство к доле сельского хозяйства в ВВП, где сельское хозяйство включает в себя земледелие, лесного хозяйство, рыболовство и охоту.</p>
+            
 
           
         </td>
@@ -806,9 +836,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Основные понятия </th>
         <td>
           
-            <p>Расходы государственного бюджета включают все невозвратные платежи, независимо от того, являются ли они возмездными (т.е. заплаченными в обмен на что-то) или безвозмездными и для каких целей осуществляются - для проведения операционной деятельности или для приобретения нефинансовых активов.
-Государственные расходы в области сельского хозяйства включают: расходы на секторальную политику и программы, расходы по улучшению качества почв и контроль деградации почв, орошение и водоснабжение для сельскохозяйственных нужд, наблюдение за здоровьем животных, исследования в животноводстве и обучение животноводству, морские или пресноводные биологические исследования, мероприятия в области облесения и других лесохозяйственных проектов и т.п.
-Доля сельского хозяйства в ВВП измеряется соотношением добавленной стоимости сельского хозяйства к ВВП.</p>
+            
 
           
         </td>
@@ -822,7 +850,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Обоснование и толкование </th>
         <td>
           
-            <p>Если значение индекса ориентации на сельское хозяйство (AOI) превышает 1, то это говорит о высокой ориентации на сельскохозяйственный сектор, затраты на который превышают его вклад в экономическую добавленную стоимость. Значение AOI меньше 1 отражает более низкую ориентацию на сельское хозяйство, тогда как AOI, равный 1, показывает нейтралитет в ориентации правительства на сельскохозяйственный сектор.</p>
+            
 
           
         </td>
@@ -836,10 +864,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Метод расчета </th>
         <td>
           
-            <p>Метод расчета:
-AOI = (доля государственных расходов правительства) / (доля сельского хозяйства в ВВП), где
-1) Доля сельского хозяйства в расходах правительства = (Расходы центрального правительства на сельское хозяйство) /(Общие расходы центрального правительства); 
-2) Доля сельского хозяйства в ВВП = (валовая добавленная стоимость сельского хозяйства) / ВВП</p>
+            
 
           
         </td>
@@ -853,7 +878,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Комментарий и ограничения </th>
         <td>
           
-            <p>Поскольку числитель этих данных основан на административных источниках, нет доверительного интервала или стандартной ошибки, связанной с данными государственных расходов. Для знаменателя данные национальных счетов обычно не предоставляют никакой информации о стандартных ошибках или доверительных интервалах.</p>
+            
 
           
         </td>
@@ -881,7 +906,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Доступность данных и пробелы </th>
         <td>
           
-            <p>Данные по индикатору имеются в годовой динамике с 2007 года. Данные доступны на сайте НСК в разделе “Открытые данные” (Open Data) и разделе “Статистика” / “Цели устойчивого развития”.</p>
+            
 
           
         </td>
@@ -895,7 +920,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Разбивка </th>
         <td>
           
-            <p>Данные по индикатору представлены по Кыргызской Республике в целом.</p>
+            
 
           
         </td>
@@ -909,7 +934,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Сопоставимость с международными данными/стандартами </th>
         <td>
           
-            <p>Показатель 2.a.1 находится под координацией ФАО ООН.</p>
+            
 
           
         </td>
@@ -923,8 +948,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Ссылки и документация </th>
         <td>
           
-            <p>Метаданные на сайте ООН: https://unstats.un.org/sdgs/metadata/
-Методология показателей доступна на сайте НСК КР: www.stat.kg</p>
+            
 
           
         </td>
@@ -938,8 +962,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Источники данных </th>
         <td>
           
-            <p>Данные о государственных расходах - административные данные Центрального казначейства Министерства финансов КР из отчетов по исполнению государственного, республиканского и местных бюджетов.
-Данные о валовой добавленной стоимости сельского хозяйства и ВВП (или доле сельского хозяйства в ВВП) - Управление экономической статистики и национальных счетов НСК КР.</p>
+            
 
           
         </td>
@@ -953,8 +976,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Методы сбора данных </th>
         <td>
           
-            <p>ЦК МФ КР предоставляет отчеты об исполнении государственного, республиканского и местных бюджетов в НСК КР на ежемесячной и годовой основе. 
-Данные по ВВП формируются Управлением экономической статистики и национальных счетов НСК КР, в соответствии с Программой статистических работ.</p>
+            
 
           
         </td>
@@ -973,10 +995,6 @@ AOI = (доля государственных расходов правител
             
             
 
-            
-              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-02-0A-01.pdf " target="_blank">
-                Метаданные Целей устойчивого развития Организации Объединённых Наций <span class="visuallyhidden">открывается в новой вкладке</span>
-              </a>
             
 
           
@@ -1014,7 +1032,7 @@ AOI = (доля государственных расходов правител
             <div role="tabpanel" class="tab-pane " id="data_reporter">
               <article>
                 <p>Данная таблица предоставляет информацию о поставщиках данных</p>
-                <table class="table table-hover">
+                <table class="table">
   
   
   
@@ -1045,7 +1063,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Организация </th>
         <td>
           
-            <p>Нацстатком КР</p>
+            
 
           
         </td>
@@ -1059,7 +1077,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Контактное лицо (лица)/Координатор </th>
         <td>
           
-            <p>Национальный координатор - Жукова Е.Н., ведущий специалист отдела статистики финансов НСК КР</p>
+            
 
           
         </td>
@@ -1073,7 +1091,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Электронная почта контактного лица </th>
         <td>
           
-            <p>Жукова Е.Н.: e.jukova@stat.kg</p>
+            
 
           
         </td>
@@ -1087,7 +1105,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Телефон контактного лица </th>
         <td>
           
-            <p>НСК КР: +996-0312-66-42-09</p>
+            
 
           
         </td>
@@ -1101,7 +1119,7 @@ AOI = (доля государственных расходов правител
         <th scope="row">Сайт организации </th>
         <td>
           
-            <p>НСК КР: www.stat.kg</p>
+            
 
           
         </td>
@@ -1176,27 +1194,20 @@ AOI = (доля государственных расходов правител
 <!-- Google Analytics -->
 
 <!-- /.container </div> -->
-<script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
-<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
-<script src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
-<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-<script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200331001711'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200331001711"></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200331104559'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200331104559"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -1205,8 +1216,13 @@ $(function() {
           $(obj).append($('<img />').attr('src', $(obj).data('img')));
       });
 
+      var remoteUrl = '/comb/' + domData.id + '.json';
+      if (opensdg.remoteDataBaseUrl !== '/') {
+        remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
+      }
+
       $.ajax({
-        url: opensdg.remoteDataBaseUrl + '/comb/' + domData.id + '.json',
+        url: remoteUrl,
         success: function(res) {
 
           $('.async-loading').remove();
@@ -1215,12 +1231,12 @@ $(function() {
           var model = new indicatorModel({
             data: res.data,
             edgesData: res.edges,
-            geoCodeRegEx: domData.geocoderegex,
             showMap: domData.showmap,
             country: domData.country,
             indicatorId: domData.indicatorid,
             shortIndicatorId: domData.id,
             chartTitle: domData.charttitle,
+            chartTitles: domData.charttitles,
             measurementUnit: domData.measurementunit,
             copyright: domData.copyright,
             dataSource: domData.datasource,
@@ -1228,7 +1244,9 @@ $(function() {
             showData: domData.showdata,
             footnote: domData.footnote,
             graphType: domData.graphtype,
-            startValues: domData.startvalues
+            startValues: domData.startvalues,
+            graphLimits: domData.graphlimits,
+            stackedDisaggregation: domData.stackeddisaggregation,
           }),
           view  = new indicatorView(model, {
             rootElement: '#indicatorData',

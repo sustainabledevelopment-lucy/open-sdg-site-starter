@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -13,12 +13,10 @@ var opensdg = {
   // A base URL for asynchronous calls to SDG data.
   remoteDataBaseUrl: 'https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/en',
 
-  // A hook which can be replaced to modify the configuration for Chart.js.
-  // To see where this is used, see indicatorView.js createPlot() and updatePlot().
-  // To see an example of replacing it, see binary.html.
-  chartConfigAlter: function(config) {
-    // Alterations go here.
-    return config;
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
   },
 
   // A hook which can be replaced to alter whether/how the values that are
@@ -124,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200331001711">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200331104559">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,7 +130,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200331001711"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200331104559"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-en layout-indicator">
@@ -309,10 +307,26 @@ var translations = {
   
 
   
-  <div class="row" id="indicatorData" data-indicatorid='indicator_6-1-1' data-id="6-1-1" data-country="Кыргызская Республика"
-  data-charttitle="Proportion of population using safely managed drinking water services" data-measurementunit="" data-datasource="" data-copyright=""
-  data-geographicalarea="Кыргызская Республика" data-footnote="" data-showdata="true" data-graphtype="line"
-  data-geocoderegex="" data-showmap="" data-startvalues="">
+  <div class="row"
+    id="indicatorData"
+    data-indicatorid='indicator_6-1-1'
+    data-id="6-1-1"
+    data-country=""
+    data-charttitle="Proportion of population using safely managed drinking water services"
+    data-charttitles="null"
+    data-measurementunit=""
+    data-datasource=""
+    data-copyright=""
+    data-geographicalarea=""
+    data-footnote=""
+    data-showdata="true"
+    data-graphtype="line"
+    data-geocoderegex=""
+    data-showmap=""
+    data-startvalues="null"
+    data-graphlimits="null"
+    data-stackeddisaggregation=""
+  >
 
     
     <div id="indicator-sidebar" class="col-md-3">
@@ -462,8 +476,6 @@ var translations = {
   <div id="datatableFooter">
     
     
-    <p>Geographical Area: Кыргызская Республика</p>
-    
     
     
   </div>
@@ -476,7 +488,7 @@ var translations = {
 
         
         <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
-        
+
         <div class="async-loaded spacer medium" style="display:none;">
           <ul class="nav nav-tabs data-view" role="tablist">
             <li role="presentation" class="nav-item active">
@@ -513,10 +525,36 @@ data-event-label="Change to Map tab"
     
     <div id="selectionsChart">
       <div id="chart-canvas">
-        <h3 class="chart-title">Proportion of population using safely managed drinking water services</h3>
+        <h3 class="chart-title">
+          
+            Proportion of population using safely managed drinking water services
+          
+        </h3>
         <div id="chart" class="plot-container">
           
 <canvas></canvas>
+<script>
+// Add a chart alteration to support the chart_graph_limits metadata field.
+opensdg.chartConfigAlter(function(config, info) {
+  if (info.graphLimits) {
+    var limit = _.findWhere(info.graphLimits, { unit: info.selectedUnit }) || info.graphLimits[0];
+    var overrides = {
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              min: limit.minimum,
+              max: limit.maximum,
+            }
+          }]
+        }
+      }
+    }
+    // Add these overrides onto the normal config.
+    $.extend(true, config, overrides);
+  }
+});
+</script>
 
 
         </div>
@@ -603,7 +641,7 @@ data-event-label="Change to custom.data_reporter tab"
             <div role="tabpanel" class="tab-pane active" id="indicator_information">
               <article>
                 <p>This table provides information about the indicator</p>
-                <table class="table table-hover">
+                <table class="table">
   
   
   
@@ -615,7 +653,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Indicator name </th>
         <td>
           
-            <p>Показатель 6.1.1: Доля населения, пользующегося услугами водоснабжения, организованного с соблюдением требований безопасности</p>
+            
 
           
         </td>
@@ -629,7 +667,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Target name </th>
         <td>
           
-            <p>Задача 6.1: К 2030 году обеспечить всеобщий и равноправный доступ к безопасной и недорогой питьевой воде для всех</p>
+            
 
           
         </td>
@@ -643,7 +681,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Goal </th>
         <td>
           
-            <p>Цель 6: Обеспечение наличия и рационального использования водных ресурсов и санитарии для всех</p>
+            
 
           
         </td>
@@ -692,7 +730,7 @@ data-event-label="Change to custom.data_reporter tab"
             <div role="tabpanel" class="tab-pane " id="national">
               <article>
                 <p>This table provides metadata for the actual indicator available from %country_name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country_adjective statistics, this table should be consulted for information on national methodology and other %country_adjective-specific metadata information.</p>
-                <table class="table table-hover">
+                <table class="table">
   
   
   
@@ -707,7 +745,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>Кыргызская Республика</p>
+            
 
           
         </td>
@@ -735,7 +773,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Definitions </th>
         <td>
           
-            <p>Доля населения, пользующегося безопасной инфраструктурой снабжения питьевой водой, измеряется как часть населения, которая использует улучшенные основные источники питьевой воды, не содержащей фекальных (в особенности химических) загрязнений, находящиеся в помещениях и в свободном доступе. “Улучшенные” источники определяются так же, как и для Целей тысячелетия, а именно: наличие водопровода до дома или участка; наличие общественных отводов или водосточных труб; наличие скважин или трубчатых колодцев; защищенные колодцы; защищенные источники и дождевая вода.</p>
+            
 
           
         </td>
@@ -749,9 +787,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Concepts </th>
         <td>
           
-            <p>“Улучшенные” водные источники включают: наличие водопровода до дома или участка; общественные отводы или водосточные трубы; скважины или трубчатые колодцы; защищенные колодцы; защищенные источники талой и дождевой воды. Пакетированная вода считается улучшенным источником в случае, если домохозяйства используют улучшенный источник воды для других домашних нужд. Источник воды считается “расположенным в помещении”, если место сбора воды расположено в помещении, во дворе или участке.
-Термин “В свободном доступе” означает: домохозяйства располагают достаточным количеством воды в случае необходимости.
-«Без фекального и  химического загрязнения»: вода соответствует соответствующим национальным или местным стандартам. В отсутствие таких стандартов делается ссылка на Руководство ВОЗ по качеству питьевой воды (http://www.who.int/water_sanitation_health/dwq/guidelines/en/).</p>
+            
 
           
         </td>
@@ -765,8 +801,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Rationale and interpretation </th>
         <td>
           
-            <p>Цель тысячелетия 7С ориентирована на “стабильный доступ” к “чистой питьевой воде”. На начальном этапе постановки целей тысячелетия имела место  нехватка данных о чистоте питьевой воде в развивающихся странах, эти данные не собирались с помощью обследований домашних хозяйств или переписей. Совместная программа мониторинга(JMP) ввела понятие “улучшенных” источников водных ресурсов, которое использовалось в качестве прокси для  понятия “безопасной воды”, поскольку улучшенные источники, как правило, защищены от фекальных загрязнений. Данная методика использовалась с 2000 года для отслеживания выполнения целей тысячелетия. В результате международных совещаний с 2011 было решено устранять упущения данного индикатора; в частности, обратиться к нормативным критериям прав человека на воду включая доступность и качество воды.
-В результате упомянутых выше совещаний было решено, что Совместная программа мониторинга (JMP) должна рассматривать не только базовый уровень доступности воды, но и то, каким образом осуществляется контроль над водной инфраструктурой, включая измерение доступности, наличия и качества воды. Предложенный индикатор “ Доля населения, пользующегося услугами водоснабжения, организованного с соблюдением требований безопасности “ призван соответствовать этому требованию.</p>
+            
 
           
         </td>
@@ -780,7 +815,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            <p>Показатель рассчитывается путем деления общего количества лиц, проживающих в домашних хозяйствах, использующих улучшенные основные источники питьевой воды, к общей численности населения. Все расчеты осуществляются с примененим коэффициентов взвешивания.</p>
+            
 
           
         </td>
@@ -794,9 +829,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Comments and limitations </th>
         <td>
           
-            <p>Данные о доступности и безопасности питьевой воды становятся все более доступными благодаря сочетанию данных из обследований домашних хозяйств и административных источников, включая регулирующие органы, однако определения еще не стандартизированы. Данные о фекальных и химических загрязнениях, взятые из обследований домашних хозяйств и информационно-нормативных баз данных, не охватят все страны сразу. Однако данных вполне достаточно для составления глобальных и региональных оценок услуг водоснабжения, организованных с соблюдением требований безопасности.
-Оценки JMP основаны на национальных источниках данных, утвержденных в качестве официальной статистики. Различия между глобальными и национальными цифрами возникают из-за различий в определениях показателей и методах, используемых при расчете оценок национального охвата.
-В некоторых случаях национальные оценки основаны на самой последней точке данных, а не на регрессии по всем точкам данных, как это делает JMP.</p>
+            
 
           
         </td>
@@ -824,7 +857,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Data availability and gaps </th>
         <td>
           
-            <p>Данные о наличии и качестве водоснабжения в настоящее время доступны из обследований домашних хозяйств или административных источников, включая регулирующие органы, для более чем 70 стран с высоким уровнем доходов и, по меньшей мере, для 30-40 стран с низким и средним уровнем дохода. Таким образом, данные в настоящее время доступны более чем для 100 стран, охватывающих большинство населения мира. Число имеющих данные  стран будет расти, поскольку регулирование данной области становится более распространенным в странах с низким и средним уровнем дохода.</p>
+            
 
           
         </td>
@@ -838,7 +871,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Disaggregation </th>
         <td>
           
-            <p>Индикатор дезагрегирован по регионам (географическим и городским / сельским).</p>
+            
 
           
         </td>
@@ -852,8 +885,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Comparability with international data/standards </th>
         <td>
           
-            <p>Национальные обследования домашних хозяйств оценивают показатель прямым методом, что отличается от международной методологии. Совместная программа мониторинга ВОЗ / ЮНИСЕФ по водоснабжению и санитарии (JMP) оценивает доступ к базовым услугам для каждой страны отдельно в городских и сельских районах путем подгонки линии регрессии к ряду точек данных из обследований домашних хозяйств и переписей. Этот подход использовался для построения отчета об использовании источников «улучшенной воды» для мониторинга ЦУР. По мере поступления большего количества данных JMP оценивает использование альтернативных методов статистической оценки. В сопроводительной Методической записке более подробно описывается, как данные о доступности и качестве из разных источников могут быть объединены с данными об использовании различных типов трубопроводов, которые учтены в текущей базе данных JMP для расчета предлагаемого индикатора.http://www.wssinfo.org/fileadmin/user_upload/resources/Methodological-note-on-monitoring-SDG-targets-for-WASH-and-wastewater_WHO-UNICEF_8October2015_Final.pdf. 
-ВОЗ, согласно резолюции Всемирной ассамблеи здравоохранения, консультируется со странами по всем статистическим данным  ВОЗ и запрашивает отзывы от стран по данным и территориям. Перед публикацией все оценки JMP проходят строгие страновые консультации при содействии национальных отделений ВОЗ и ЮНИСЕФ. Часто эти консультации приводят к непосредственному посещению страны и совещаниям по сверке данных. За последние 10 лет JMP взаимодействовал с более чем пятьюдесятью странами, объясняя оценки JMP и причины расхождений, если таковые имеются. JMP также разработал онлайн-инструмент для облегчения будущей проверки данных и расширения своих онлайн-возможностей. Данный инструмент позволит согласовывать данные в более интерактивном режиме и в режиме реального времени, что должно привести к сокращению расходов на миссии по согласованию данных.</p>
+            
 
           
         </td>
@@ -881,7 +913,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Data sources </th>
         <td>
           
-            <p>Исследования домашних хозяйств, включая глобальные исследования, такин как MICS и DHS, поддерживаемые в странах с низким и средним уровнем дохода международными организациями. В некоторых странах такие данные также собираются посредством национальных переписей или других обследований домашних хозяйств. Национальные статистические службы, министерства водного хозяйства, санитарии, здравоохранения, окружающей среды. Регулирующие органы водоснабжения и санитарных условий.</p>
+            
 
           
         </td>
@@ -895,7 +927,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Data collection methods </th>
         <td>
           
-            <p>Данные по этому показателю собираются с помощью национальных выборочных обследований домашних хозяйств.</p>
+            
 
           
         </td>
@@ -914,10 +946,6 @@ data-event-label="Change to custom.data_reporter tab"
             
             
 
-            
-              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-06-01-01.pdf" target="_blank">
-                United Nations Sustainable Development Goals Metadata <span class="visuallyhidden">opens in a new window</span>
-              </a>
             
 
           
@@ -955,7 +983,7 @@ data-event-label="Change to custom.data_reporter tab"
             <div role="tabpanel" class="tab-pane " id="data_reporter">
               <article>
                 <p>This table provides information about the supplier of the data</p>
-                <table class="table table-hover">
+                <table class="table">
   
   
   
@@ -986,7 +1014,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Organization </th>
         <td>
           
-            <p>НСК КР</p>
+            
 
           
         </td>
@@ -1000,7 +1028,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Contact person(s)/focal point </th>
         <td>
           
-            <p>Керималиева Н.К</p>
+            
 
           
         </td>
@@ -1014,7 +1042,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Contact person's email </th>
         <td>
           
-            <p>nazira.kerimaliena@gmail.com</p>
+            
 
           
         </td>
@@ -1028,7 +1056,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Contact person's phone </th>
         <td>
           
-            <p>(0312) 32 46 91</p>
+            
 
           
         </td>
@@ -1042,7 +1070,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Organization website </th>
         <td>
           
-            <p>www.stat.kg</p>
+            
 
           
         </td>
@@ -1117,27 +1145,20 @@ data-event-label="Change to custom.data_reporter tab"
 <!-- Google Analytics -->
 
 <!-- /.container </div> -->
-<script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
-<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
-<script src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
-<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-<script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200331001711'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200331001711"></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200331104559'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200331104559"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -1146,8 +1167,13 @@ $(function() {
           $(obj).append($('<img />').attr('src', $(obj).data('img')));
       });
 
+      var remoteUrl = '/comb/' + domData.id + '.json';
+      if (opensdg.remoteDataBaseUrl !== '/') {
+        remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
+      }
+
       $.ajax({
-        url: opensdg.remoteDataBaseUrl + '/comb/' + domData.id + '.json',
+        url: remoteUrl,
         success: function(res) {
 
           $('.async-loading').remove();
@@ -1156,12 +1182,12 @@ $(function() {
           var model = new indicatorModel({
             data: res.data,
             edgesData: res.edges,
-            geoCodeRegEx: domData.geocoderegex,
             showMap: domData.showmap,
             country: domData.country,
             indicatorId: domData.indicatorid,
             shortIndicatorId: domData.id,
             chartTitle: domData.charttitle,
+            chartTitles: domData.charttitles,
             measurementUnit: domData.measurementunit,
             copyright: domData.copyright,
             dataSource: domData.datasource,
@@ -1169,7 +1195,9 @@ $(function() {
             showData: domData.showdata,
             footnote: domData.footnote,
             graphType: domData.graphtype,
-            startValues: domData.startvalues
+            startValues: domData.startvalues,
+            graphLimits: domData.graphlimits,
+            stackedDisaggregation: domData.stackeddisaggregation,
           }),
           view  = new indicatorView(model, {
             rootElement: '#indicatorData',

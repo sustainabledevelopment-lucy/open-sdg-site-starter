@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -13,12 +13,10 @@ var opensdg = {
   // A base URL for asynchronous calls to SDG data.
   remoteDataBaseUrl: 'https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/ru',
 
-  // A hook which can be replaced to modify the configuration for Chart.js.
-  // To see where this is used, see indicatorView.js createPlot() and updatePlot().
-  // To see an example of replacing it, see binary.html.
-  chartConfigAlter: function(config) {
-    // Alterations go here.
-    return config;
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
   },
 
   // A hook which can be replaced to alter whether/how the values that are
@@ -124,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200331001711">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200331104559">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,7 +130,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200331001711"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200331104559"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-ru layout-reportingstatus">
@@ -225,33 +223,33 @@ var translations = {
 <div id="main-content" class="container reportingstatus"><h1>Статус отчётности</h1><div class="goal goal-overall">
       <div class="details">
         <h2 class="status-goal">
-            Общее состояние отчётности <span class="total"><span>292</span> показатели</span>
+            Общее состояние отчётности <span class="total"><span>122</span> показатели</span>
         </h2>
         <div class="summary">
           <div class="statuses"><div>
-              <span class="status complete">136</span><strong>Опубликован</strong><span class="value">47%</span>
+              <span class="status complete">122</span><strong>Опубликован</strong><span class="value">100%</span>
             </div><div>
               <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
             </div><div>
-              <span class="status notstarted">127</span><strong>В настоящее время не разработан</strong><span class="value">43%</span>
+              <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
             </div><div>
-              <span class="status notapplicable">29</span><strong>Неприменимые</strong><span class="value">10%</span>
+              <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
             </div><br style="clear:both;">
           </div>
         </div>
         <div class="goal-stats">
             
             
-            <span class="complete" style="width:46.57534246575342%" title="Опубликован: 47%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
             
             
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
             
             
-            <span class="notstarted" style="width:43.49315068493151%" title="В настоящее время не разработан: 43%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
             
             
-            <span class="notapplicable" style="width:9.931506849315069%" title="Неприменимые: 10%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
 
       </div>
     <br style="clear:both;">
@@ -270,15 +268,15 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/1">Ликвидация нищеты</a>
-            <span class="total">21 показатели</span>
+            <span class="total">13 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">14</span><strong>Опубликован</strong><span class="value">67%</span>
+                <span class="status complete">13</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">7</span><strong>В настоящее время не разработан</strong><span class="value">33%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
@@ -287,13 +285,13 @@ var translations = {
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:66.66666666666666%" title="Опубликован: 67%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:33.33333333333333%" title="В настоящее время не разработан: 33%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
             <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
@@ -310,15 +308,15 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/2">Ликвидация голода</a>
-            <span class="total">15 показатели</span>
+            <span class="total">7 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">7</span><strong>Опубликован</strong><span class="value">47%</span>
+                <span class="status complete">7</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">8</span><strong>В настоящее время не разработан</strong><span class="value">53%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
@@ -327,13 +325,13 @@ var translations = {
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:46.66666666666667%" title="Опубликован: 47%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:53.33333333333333%" title="В настоящее время не разработан: 53%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
             <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
@@ -350,15 +348,15 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/3">Хорошее здоровье и благополучие</a>
-            <span class="total">30 показатели</span>
+            <span class="total">21 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">21</span><strong>Опубликован</strong><span class="value">70%</span>
+                <span class="status complete">21</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">9</span><strong>В настоящее время не разработан</strong><span class="value">30%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
@@ -367,13 +365,13 @@ var translations = {
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:70.0%" title="Опубликован: 70%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:30.0%" title="В настоящее время не разработан: 30%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
             <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
@@ -390,15 +388,15 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/4">Качественное образование</a>
-            <span class="total">18 показатели</span>
+            <span class="total">9 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">10</span><strong>Опубликован</strong><span class="value">56%</span>
+                <span class="status complete">9</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">8</span><strong>В настоящее время не разработан</strong><span class="value">44%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
@@ -407,13 +405,13 @@ var translations = {
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:55.55555555555556%" title="Опубликован: 56%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:44.44444444444444%" title="В настоящее время не разработан: 44%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
             <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
@@ -430,33 +428,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/5">Гендерное равенство</a>
-            <span class="total">17 показатели</span>
+            <span class="total">7 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">9</span><strong>Опубликован</strong><span class="value">53%</span>
+                <span class="status complete">7</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">7</span><strong>В настоящее время не разработан</strong><span class="value">41%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">1</span><strong>Неприменимые</strong><span class="value">6%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:52.94117647058824%" title="Опубликован: 53%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:41.17647058823529%" title="В настоящее время не разработан: 41%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:5.88235294117647%" title="Неприменимые: 6%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -470,33 +468,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/6">Чистая вода и санитария</a>
-            <span class="total">14 показатели</span>
+            <span class="total">6 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">6</span><strong>Опубликован</strong><span class="value">43%</span>
+                <span class="status complete">6</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">7</span><strong>В настоящее время не разработан</strong><span class="value">50%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">1</span><strong>Неприменимые</strong><span class="value">7%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:42.857142857142854%" title="Опубликован: 43%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:50.0%" title="В настоящее время не разработан: 50%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:7.142857142857142%" title="Неприменимые: 7%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -510,33 +508,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/7">Недорогостоящая и чистая энергия</a>
-            <span class="total">11 показатели</span>
+            <span class="total">6 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">6</span><strong>Опубликован</strong><span class="value">55%</span>
+                <span class="status complete">6</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">4</span><strong>В настоящее время не разработан</strong><span class="value">36%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">1</span><strong>Неприменимые</strong><span class="value">9%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:54.54545454545454%" title="Опубликован: 55%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:36.36363636363637%" title="В настоящее время не разработан: 36%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:9.090909090909092%" title="Неприменимые: 9%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -550,33 +548,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/8">Достойна работа и экономический рост</a>
-            <span class="total">22 показатели</span>
+            <span class="total">13 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">13</span><strong>Опубликован</strong><span class="value">59%</span>
+                <span class="status complete">13</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">7</span><strong>В настоящее время не разработан</strong><span class="value">32%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">2</span><strong>Неприменимые</strong><span class="value">9%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:59.09090909090909%" title="Опубликован: 59%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:31.81818181818182%" title="В настоящее время не разработан: 32%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:9.090909090909092%" title="Неприменимые: 9%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -590,33 +588,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/9">Индустриализация, инновации и инфраструктура</a>
-            <span class="total">13 показатели</span>
+            <span class="total">8 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">8</span><strong>Опубликован</strong><span class="value">62%</span>
+                <span class="status complete">8</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">4</span><strong>В настоящее время не разработан</strong><span class="value">31%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">1</span><strong>Неприменимые</strong><span class="value">8%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:61.53846153846154%" title="Опубликован: 62%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:30.76923076923077%" title="В настоящее время не разработан: 31%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:7.692307692307693%" title="Неприменимые: 8%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -630,33 +628,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/10">Уменьшение неравенства</a>
-            <span class="total">14 показатели</span>
+            <span class="total">6 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">6</span><strong>Опубликован</strong><span class="value">43%</span>
+                <span class="status complete">6</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">7</span><strong>В настоящее время не разработан</strong><span class="value">50%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">1</span><strong>Неприменимые</strong><span class="value">7%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:42.857142857142854%" title="Опубликован: 43%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:50.0%" title="В настоящее время не разработан: 50%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:7.142857142857142%" title="Неприменимые: 7%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -670,33 +668,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/11">Устойчивые города и населенные пункты</a>
-            <span class="total">17 показатели</span>
+            <span class="total">4 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">4</span><strong>Опубликован</strong><span class="value">24%</span>
+                <span class="status complete">4</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">12</span><strong>В настоящее время не разработан</strong><span class="value">71%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">1</span><strong>Неприменимые</strong><span class="value">6%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:23.52941176470588%" title="Опубликован: 24%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:70.58823529411765%" title="В настоящее время не разработан: 71%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:5.88235294117647%" title="Неприменимые: 6%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -710,33 +708,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/12">Ответственное потребление и производство</a>
-            <span class="total">12 показатели</span>
+            <span class="total">1 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">4</span><strong>Опубликован</strong><span class="value">33%</span>
+                <span class="status complete">1</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">6</span><strong>В настоящее время не разработан</strong><span class="value">50%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">2</span><strong>Неприменимые</strong><span class="value">17%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:33.33333333333333%" title="Опубликован: 33%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:50.0%" title="В настоящее время не разработан: 50%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:16.666666666666664%" title="Неприменимые: 17%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -750,64 +748,24 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/13">Борьба с изменением климата</a>
-            <span class="total">8 показатели</span>
+            <span class="total">1 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">4</span><strong>Опубликован</strong><span class="value">50%</span>
-              </div><div>
-                <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
-              </div><div>
-                <span class="status notstarted">2</span><strong>В настоящее время не разработан</strong><span class="value">25%</span>
-              </div><div>
-                <span class="status notapplicable">2</span><strong>Неприменимые</strong><span class="value">25%</span>
-              </div><br style="clear:both;">
-            </div>
-          </div>
-          <div class="goal-stats">
-          
-          
-            <span class="complete" style="width:50.0%" title="Опубликован: 50%"></span>
-          
-          
-            <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
-          
-          
-            <span class="notstarted" style="width:25.0%" title="В настоящее время не разработан: 25%"></span>
-          
-          
-            <span class="notapplicable" style="width:25.0%" title="Неприменимые: 25%"></span></div>
-          <div class="divider">
-          </div>
-        </div>
-      <br style="clear:both;">
-    </div><div class="goal">
-        <div class="frame">
-          <a href="/open-sdg-site-starter/14">
-            <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/ru/14.png" alt="Сохранение морских экосистем - Цель 14" width="100" height="100" />
-          </a>
-        </div>
-        <div class="details">
-          <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/14">Сохранение морских экосистем</a>
-            <span class="total">10 показатели</span>
-          </h3>
-          <div class="summary">
-            <div class="statuses"><div>
-                <span class="status complete">0</span><strong>Опубликован</strong><span class="value">0%</span>
+                <span class="status complete">1</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
                 <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">10</span><strong>Неприменимые</strong><span class="value">100%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:0.0%" title="Опубликован: 0%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
@@ -816,7 +774,7 @@ var translations = {
             <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:100.0%" title="Неприменимые: 100%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -830,33 +788,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/15">Сохранение экосистем суши</a>
-            <span class="total">16 показатели</span>
+            <span class="total">6 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">7</span><strong>Опубликован</strong><span class="value">44%</span>
+                <span class="status complete">6</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">8</span><strong>В настоящее время не разработан</strong><span class="value">50%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">1</span><strong>Неприменимые</strong><span class="value">6%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:43.75%" title="Опубликован: 44%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:50.0%" title="В настоящее время не разработан: 50%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:6.25%" title="Неприменимые: 6%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -870,33 +828,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/16">Мир, правосудие и эффективные институты</a>
-            <span class="total">27 показатели</span>
+            <span class="total">10 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">11</span><strong>Опубликован</strong><span class="value">41%</span>
+                <span class="status complete">10</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">15</span><strong>В настоящее время не разработан</strong><span class="value">56%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">1</span><strong>Неприменимые</strong><span class="value">4%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:40.74074074074074%" title="Опубликован: 41%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:55.55555555555556%" title="В настоящее время не разработан: 56%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:3.7037037037037037%" title="Неприменимые: 4%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -910,33 +868,33 @@ var translations = {
         <div class="details">
           <h3 class="status-goal">
             <a href="/open-sdg-site-starter/17">Партнерство в интересах устойчивого развития</a>
-            <span class="total">27 показатели</span>
+            <span class="total">4 показатели</span>
           </h3>
           <div class="summary">
             <div class="statuses"><div>
-                <span class="status complete">6</span><strong>Опубликован</strong><span class="value">22%</span>
+                <span class="status complete">4</span><strong>Опубликован</strong><span class="value">100%</span>
               </div><div>
                 <span class="status inprogress">0</span><strong>Статистика в процессе выполнения</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notstarted">16</span><strong>В настоящее время не разработан</strong><span class="value">59%</span>
+                <span class="status notstarted">0</span><strong>В настоящее время не разработан</strong><span class="value">0%</span>
               </div><div>
-                <span class="status notapplicable">5</span><strong>Неприменимые</strong><span class="value">19%</span>
+                <span class="status notapplicable">0</span><strong>Неприменимые</strong><span class="value">0%</span>
               </div><br style="clear:both;">
             </div>
           </div>
           <div class="goal-stats">
           
           
-            <span class="complete" style="width:22.22222222222222%" title="Опубликован: 22%"></span>
+            <span class="complete" style="width:100.0%" title="Опубликован: 100%"></span>
           
           
             <span class="inprogress" style="width:0.0%" title="Статистика в процессе выполнения: 0%"></span>
           
           
-            <span class="notstarted" style="width:59.25925925925926%" title="В настоящее время не разработан: 59%"></span>
+            <span class="notstarted" style="width:0.0%" title="В настоящее время не разработан: 0%"></span>
           
           
-            <span class="notapplicable" style="width:18.518518518518515%" title="Неприменимые: 19%"></span></div>
+            <span class="notapplicable" style="width:0.0%" title="Неприменимые: 0%"></span></div>
           <div class="divider">
           </div>
         </div>
@@ -979,27 +937,20 @@ var translations = {
 <!-- Google Analytics -->
 
 <!-- /.container </div> -->
-<script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
-<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
-<script src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
-<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-<script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200331001711'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200331001711"></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200331104559'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200331104559"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -1008,8 +959,13 @@ $(function() {
           $(obj).append($('<img />').attr('src', $(obj).data('img')));
       });
 
+      var remoteUrl = '/comb/' + domData.id + '.json';
+      if (opensdg.remoteDataBaseUrl !== '/') {
+        remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
+      }
+
       $.ajax({
-        url: opensdg.remoteDataBaseUrl + '/comb/' + domData.id + '.json',
+        url: remoteUrl,
         success: function(res) {
 
           $('.async-loading').remove();
@@ -1018,12 +974,12 @@ $(function() {
           var model = new indicatorModel({
             data: res.data,
             edgesData: res.edges,
-            geoCodeRegEx: domData.geocoderegex,
             showMap: domData.showmap,
             country: domData.country,
             indicatorId: domData.indicatorid,
             shortIndicatorId: domData.id,
             chartTitle: domData.charttitle,
+            chartTitles: domData.charttitles,
             measurementUnit: domData.measurementunit,
             copyright: domData.copyright,
             dataSource: domData.datasource,
@@ -1031,7 +987,9 @@ $(function() {
             showData: domData.showdata,
             footnote: domData.footnote,
             graphType: domData.graphtype,
-            startValues: domData.startvalues
+            startValues: domData.startvalues,
+            graphLimits: domData.graphlimits,
+            stackedDisaggregation: domData.stackeddisaggregation,
           }),
           view  = new indicatorView(model, {
             rootElement: '#indicatorData',

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -13,12 +13,10 @@ var opensdg = {
   // A base URL for asynchronous calls to SDG data.
   remoteDataBaseUrl: 'https://SDG-kyrgyzstan.github.io/open-sdg-data-starter/ru',
 
-  // A hook which can be replaced to modify the configuration for Chart.js.
-  // To see where this is used, see indicatorView.js createPlot() and updatePlot().
-  // To see an example of replacing it, see binary.html.
-  chartConfigAlter: function(config) {
-    // Alterations go here.
-    return config;
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
   },
 
   // A hook which can be replaced to alter whether/how the values that are
@@ -124,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200331001711">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200331104559">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,7 +130,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200331001711"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200331104559"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-ru layout-indicator">
@@ -276,9 +274,7 @@ var translations = {
         </a>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
-        <h1>показатель 5.5.1: Доля мест, занимаемых женщинами в
-a) национальных парламентах и b) местных органах
-власти</h1>
+        <h1>показатель 5.5.1: Proportion of seats held by women in (a) national parliaments and (b) local governments</h1>
       </div>
     </div>
   </div>
@@ -312,12 +308,26 @@ a) национальных парламентах и b) местных орга
   
 
   
-  <div class="row" id="indicatorData" data-indicatorid='indicator_5-5-1' data-id="5-5-1" data-country="Кыргызская Республика"
-  data-charttitle="Доля мест, занимаемых женщинами в
-a) национальных парламентах и b) местных органах
-власти" data-measurementunit="" data-datasource="" data-copyright=""
-  data-geographicalarea="Кыргызская Республика" data-footnote="" data-showdata="true" data-graphtype="line"
-  data-geocoderegex="" data-showmap="" data-startvalues="">
+  <div class="row"
+    id="indicatorData"
+    data-indicatorid='indicator_5-5-1'
+    data-id="5-5-1"
+    data-country=""
+    data-charttitle="Proportion of seats held by women in (a) national parliaments and (b) local governments"
+    data-charttitles="null"
+    data-measurementunit=""
+    data-datasource=""
+    data-copyright=""
+    data-geographicalarea=""
+    data-footnote=""
+    data-showdata="true"
+    data-graphtype="line"
+    data-geocoderegex=""
+    data-showmap=""
+    data-startvalues="null"
+    data-graphlimits="null"
+    data-stackeddisaggregation=""
+  >
 
     
     <div id="indicator-sidebar" class="col-md-3">
@@ -350,9 +360,7 @@ a) национальных парламентах и b) местных орга
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Доля мест, занимаемых женщинами в
-a) национальных парламентах и b) местных органах
-власти</caption>
+      <caption>Proportion of seats held by women in (a) national parliaments and (b) local governments</caption>
       <thead>
         
         
@@ -517,8 +525,6 @@ a) национальных парламентах и b) местных орга
   <div id="datatableFooter">
     
     
-    <p>Географический район: Кыргызская Республика</p>
-    
     
     
   </div>
@@ -531,7 +537,7 @@ a) национальных парламентах и b) местных орга
 
         
         <p class="async-loading" data-img="/open-sdg-site-starter/assets/img/loading-small.gif"></p>
-        
+
         <div class="async-loaded spacer medium" style="display:none;">
           <ul class="nav nav-tabs data-view" role="tablist">
             <li role="presentation" class="nav-item active">
@@ -568,12 +574,36 @@ data-event-label="Change to Map tab"
     
     <div id="selectionsChart">
       <div id="chart-canvas">
-        <h3 class="chart-title">Доля мест, занимаемых женщинами в
-a) национальных парламентах и b) местных органах
-власти</h3>
+        <h3 class="chart-title">
+          
+            Proportion of seats held by women in (a) national parliaments and (b) local governments
+          
+        </h3>
         <div id="chart" class="plot-container">
           
 <canvas></canvas>
+<script>
+// Add a chart alteration to support the chart_graph_limits metadata field.
+opensdg.chartConfigAlter(function(config, info) {
+  if (info.graphLimits) {
+    var limit = _.findWhere(info.graphLimits, { unit: info.selectedUnit }) || info.graphLimits[0];
+    var overrides = {
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              min: limit.minimum,
+              max: limit.maximum,
+            }
+          }]
+        }
+      }
+    }
+    // Add these overrides onto the normal config.
+    $.extend(true, config, overrides);
+  }
+});
+</script>
 
 
         </div>
@@ -660,7 +690,7 @@ data-event-label="Change to custom.data_reporter tab"
             <div role="tabpanel" class="tab-pane active" id="indicator_information">
               <article>
                 <p>Данная таблица предоставляет информацию об индикаторе</p>
-                <table class="table table-hover">
+                <table class="table">
   
   
   
@@ -672,7 +702,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Название показателя </th>
         <td>
           
-            <p>5.5.1 Доля мест, занимаемых женщинами в  а) национальных парламентах</p>
+            
 
           
         </td>
@@ -686,7 +716,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Название задачи </th>
         <td>
           
-            <p>Обеспечить всестороннее и реальное участие женщин и равные для них возможности для лидерства на всех уровнях принятия решений в политической, экономической и общественной жизни</p>
+            
 
           
         </td>
@@ -700,7 +730,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Цель </th>
         <td>
           
-            <p>5.Обеспечение гендерного равенства и расширение прав и возможностей всех женщин и девочек</p>
+            
 
           
         </td>
@@ -749,7 +779,7 @@ data-event-label="Change to custom.data_reporter tab"
             <div role="tabpanel" class="tab-pane " id="national">
               <article>
                 <p>В этой таблице представлены метаданные для фактического показателя, доступного из статистики ближайшей к соответствующему глобальному индикатору ЦУР. Обратите внимание, что даже если глобальный индикатор ЦУР полностью доступен из статистики, по этой таблице следует проконсультироваться для получения информации о национальной методологии и других специфичных метаданных.</p>
-                <table class="table table-hover">
+                <table class="table">
   
   
   
@@ -764,7 +794,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Географический охват </th>
         <td>
           
-            <p>Кыргызская Республика</p>
+            
 
           
         </td>
@@ -792,7 +822,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Определения </th>
         <td>
           
-            <p>Доля мест, занимаемых женщинами в Жогорку Кенеше КР, определяется отношением численности женщин депутатов к общей численности депутатов Жогорку Кенеша КР, в процентах</p>
+            
 
           
         </td>
@@ -806,9 +836,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Основные понятия </th>
         <td>
           
-            <p>Жогорку Кене́ш Кыргы́зской Респу́блики  — состоящий из 120 депутатов однопалатный парламент Кыргызской Республики, законодательный орган государства. Доля мест, занимаемых женщинами в (а) национальных парламентах, по состоянию на 1 января отчетного года, в настоящее время измеряется как количество мест, занимаемых женщинами членами парламента в однопалатном парламенте, выраженное в процентах от всех занятых мест.
-Национальные парламенты могут быть двухпалатными или однопалатными. В данном случае показатель охватывает одну палату в однопалатном парламенте и нижнюю палату в двухпалатных парламентах. При этом показатель не охватывает верхнюю палату двухпалатных парламентов. Места обычно выигрываются членами на всеобщих парламентских выборах. Также места могут распределяться путем назначения, косвенных выборов, ротации членов или через дополнительные выборы.
-Места относятся к числу парламентских мандатов или количеству членов парламента.</p>
+            
 
           
         </td>
@@ -822,8 +850,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Обоснование и толкование </th>
         <td>
           
-            <p>При определении списка кандидатов политическая партия обязана учесть представительство:- не более 70 процентов кандидатов одного пола, при этом разница очередности в списках кандидатов женщин и мужчин, выдвинутых от политических партий, не должна превышать трех позиций Показатель измеряет степень равноправия доступа женщин к парламентским решениям. Участие женщин в парламентах является ключевым аспектом возможности участия женщин в политической и общественной жизни и поэтому связано с расширением их прав и возможностей. Показатель, равный 50%, отразит ситуацию, когда число женщин и мужчин в нижних палатах будет одинаковым.
-Значительная доля женщин в парламенте позволяет выявить новые проблемы в политических повестках дня, реализовать новые приоритетные направления на практике путем принятия решений и внедрения новых законов и практик. Включение перспективных направлений и интересов женщин является необходимым условием демократии и гендерного равенства и способствует качественному управлению.</p>
+            
 
           
         </td>
@@ -837,7 +864,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Метод расчета </th>
         <td>
           
-            <p>Из данных Жогорку Кенеша на основе ф. №1-ГОС краткая берется данные по численности женщин депутаты делится на численность всех депутатов ЖК и умножается на 100</p>
+            
 
           
         </td>
@@ -879,7 +906,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Доступность данных и пробелы </th>
         <td>
           
-            <p>Данные публикуются с статистическом сборнике “Кыргызстан в цифрах”, “Женщины и мужчины Кыргызской Республики”</p>
+            
 
           
         </td>
@@ -893,7 +920,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Разбивка </th>
         <td>
           
-            <p>Республика</p>
+            
 
           
         </td>
@@ -935,7 +962,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Источники данных </th>
         <td>
           
-            <p>Жогорку Кенеш КР  представляет в НСК статотчетность ф.1-Гос краткая</p>
+            
 
           
         </td>
@@ -949,7 +976,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Методы сбора данных </th>
         <td>
           
-            <p>Органы государственного управления и власти представляют статистическую отчетность ежегодно по состоянию на 1 января по ф. №1-ГОС-краткая”Отчет о численности работников органов государственного управления”</p>
+            
 
           
         </td>
@@ -968,10 +995,6 @@ data-event-label="Change to custom.data_reporter tab"
             
             
 
-            
-              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-05-05-01.pdf" target="_blank">
-                Метаданные Целей устойчивого развития Организации Объединённых Наций <span class="visuallyhidden">открывается в новой вкладке</span>
-              </a>
             
 
           
@@ -1009,7 +1032,7 @@ data-event-label="Change to custom.data_reporter tab"
             <div role="tabpanel" class="tab-pane " id="data_reporter">
               <article>
                 <p>Данная таблица предоставляет информацию о поставщиках данных</p>
-                <table class="table table-hover">
+                <table class="table">
   
   
   
@@ -1040,7 +1063,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Организация </th>
         <td>
           
-            <p>НСК КР</p>
+            
 
           
         </td>
@@ -1054,7 +1077,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Контактное лицо (лица)/Координатор </th>
         <td>
           
-            <p>Джайлобаева Г.Ж.</p>
+            
 
           
         </td>
@@ -1068,7 +1091,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Электронная почта контактного лица </th>
         <td>
           
-            <p>jailobaeva@stat.kg</p>
+            
 
           
         </td>
@@ -1082,7 +1105,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Телефон контактного лица </th>
         <td>
           
-            <p>(0312) 626076</p>
+            
 
           
         </td>
@@ -1096,7 +1119,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Сайт организации </th>
         <td>
           
-            <p>www.stat.kg</p>
+            
 
           
         </td>
@@ -1171,27 +1194,20 @@ data-event-label="Change to custom.data_reporter tab"
 <!-- Google Analytics -->
 
 <!-- /.container </div> -->
-<script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
-<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
-<script src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
-<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-<script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200331001711'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200331001711"></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200331104559'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200331104559"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -1200,8 +1216,13 @@ $(function() {
           $(obj).append($('<img />').attr('src', $(obj).data('img')));
       });
 
+      var remoteUrl = '/comb/' + domData.id + '.json';
+      if (opensdg.remoteDataBaseUrl !== '/') {
+        remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
+      }
+
       $.ajax({
-        url: opensdg.remoteDataBaseUrl + '/comb/' + domData.id + '.json',
+        url: remoteUrl,
         success: function(res) {
 
           $('.async-loading').remove();
@@ -1210,12 +1231,12 @@ $(function() {
           var model = new indicatorModel({
             data: res.data,
             edgesData: res.edges,
-            geoCodeRegEx: domData.geocoderegex,
             showMap: domData.showmap,
             country: domData.country,
             indicatorId: domData.indicatorid,
             shortIndicatorId: domData.id,
             chartTitle: domData.charttitle,
+            chartTitles: domData.charttitles,
             measurementUnit: domData.measurementunit,
             copyright: domData.copyright,
             dataSource: domData.datasource,
@@ -1223,7 +1244,9 @@ $(function() {
             showData: domData.showdata,
             footnote: domData.footnote,
             graphType: domData.graphtype,
-            startValues: domData.startvalues
+            startValues: domData.startvalues,
+            graphLimits: domData.graphlimits,
+            stackedDisaggregation: domData.stackeddisaggregation,
           }),
           view  = new indicatorView(model, {
             rootElement: '#indicatorData',
