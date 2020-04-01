@@ -1622,6 +1622,14 @@
       "indicators": [
         
         {
+          "id": "12-1-1",
+          "title": "Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/en/12-1-1",
+          "status": "notapplicable"
+        },
+        {
           "id": "12-2-1",
           "title": "Material footprint, material footprint per capita, and material footprint per GDP",
           "description": "",
