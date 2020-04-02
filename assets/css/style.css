@@ -1087,7 +1087,7 @@ footer {
       footer #footerLinks ul li:first-child {
         margin-left: 0px; }
 
-#main-content #indicatorData.no-series #series-help {
+#main-content #indicatorData.no-series #series-help, #main-content #indicatorData.no-series #fields {
   display: none; }
 #main-content #indicatorData.no-series.no-units > .col-md-3 {
   display: none; }
