@@ -1682,7 +1682,6 @@ var indicatorView = function (model, options) {
       $(this._rootElement).removeClass('no-series');
 
     } else {
-      $('#fields').html('');
       $(this._rootElement).addClass('no-series');
     }
   };
