@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200422001622">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200423001626">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -130,7 +130,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200422001622"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200423001626"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-en layout-indicator">
@@ -222,6 +222,7 @@ var translations = {
 
 </header>
 
+
 <script type="text/template" id="item_template">
   <% _.each(series, function(seriesItem) { %>
     <div class="variable-selector<% if(allowedFields.indexOf(seriesItem.field) == -1) { %> disallowed child<% }%>" data-field="<%=seriesItem.field%>">
@@ -283,122 +284,81 @@ var translations = {
 
 <div id="main-content" class="container goal-2">
   <ol class="breadcrumb">
-    <li><a href="/open-sdg-site-starter/en/">Home</a></li>
-    <li><a href="/open-sdg-site-starter/en/2" title="End hunger, achieve food security and improved nutrition and promote sustainable agriculture">Goal 2</a></li>
-    <li class="active">Indicator 2.5.2</li>
-  </ol>
-
-  <div class="row" id="page-content-row">
-    <div class="col-xs-12">
-      
-
-      <div id="page-content">
-  
-
-</div>
-
-    </div>
-  </div>
+  <li><a href="/open-sdg-site-starter/en/">Home</a></li>
+  <li><a href="/open-sdg-site-starter/en/2" title="End hunger, achieve food security and improved nutrition and promote sustainable agriculture">Goal 2</a></li>
+  <li class="active">Indicator 2.5.2</li>
+</ol>
 
   
 
   
-  
+
 
   
 
   
-  <div class="row"
-    id="indicatorData"
-    data-indicatorid='indicator_2-5-2'
-    data-id="2-5-2"
-    data-country="Кыргызская Республика"
-    data-charttitle="Proportion of local breeds classified as being at risk, not at risk or at unknown level of risk of extinction"
-    data-charttitles="null"
-    data-measurementunit=""
-    data-datasource=""
-    data-copyright=""
-    data-geographicalarea="Кыргызская Республика"
-    data-footnote=""
-    data-showdata="false"
-    data-graphtype="line"
-    data-geocoderegex=""
-    data-showmap=""
-    data-startvalues="null"
-    data-graphlimits="null"
-    data-stackeddisaggregation=""
-  >
 
-    
-    <div id="indicator-main" class="col-md-12">
-    
+  <div class="row">
+  <div id="metadata-sidebar" class="indicator-sidebar col-md-3"></div>
+  <div id="metadata-main" class="indicator-main col-md-9">
+    <ul class="nav nav-tabs spacer medium" role="tablist">
 
-      
 
-      <section>
-
-        
-
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs spacer medium" role="tablist">
-        
-          
-          
-          
-          
-          
-          <li role="presentation" class="nav-item active">
-            <a class="nav-link" data-toggle="tab" href="#indicator_information" aria-controls="indicator_information" role="tab" data-on="click"
+  
+  
+  
+  
+  <li role="presentation" class="nav-item active">
+    <a class="nav-link" data-toggle="tab" href="#indicator_information" aria-controls="indicator_information" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to custom.indicator_information tab"
 >Indicator information</a>
-          </li>
-          
-          
-          
-          
-          
-          <li role="presentation" class="nav-item ">
-            <a class="nav-link" data-toggle="tab" href="#national" aria-controls="national" role="tab" data-on="click"
+  </li>
+
+  
+  
+  
+  
+  <li role="presentation" class="nav-item ">
+    <a class="nav-link" data-toggle="tab" href="#national" aria-controls="national" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to indicator.national_metadata tab"
 >National Metadata</a>
-          </li>
-          
-          
-          
-          
-          
-          <li role="presentation" class="nav-item ">
-            <a class="nav-link" data-toggle="tab" href="#data_reporter" aria-controls="data_reporter" role="tab" data-on="click"
+  </li>
+
+  
+  
+  
+  
+  <li role="presentation" class="nav-item ">
+    <a class="nav-link" data-toggle="tab" href="#data_reporter" aria-controls="data_reporter" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to custom.data_reporter tab"
 >Data supplier</a>
-          </li>
-          
-        
-          
-          <li role="presentation" class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Edit</a>
-          </li>
-          
-        </ul>
+  </li>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-          
-            
-            
-            
-            
-            
-            <div role="tabpanel" class="tab-pane active" id="indicator_information">
-              <article>
-                <p>This table provides information about the indicator</p>
-                <table class="table">
+
+  
+  <li role="presentation" class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Edit</a>
+  </li>
+  
+</ul>
+
+    <div class="tab-content">
+  
+    
+    
+    
+    
+    
+    <div role="tabpanel" class="tab-pane active" id="indicator_information">
+      <article>
+        <p>This table provides information about the indicator</p>
+        <table class="table">
   
   
   
@@ -477,17 +437,17 @@ data-event-label="Change to custom.data_reporter tab"
   
 </table>
 
-              </article>
-            </div>
-            
-            
-            
-            
-            
-            <div role="tabpanel" class="tab-pane " id="national">
-              <article>
-                <p>This table provides metadata for the actual indicator available from %country_name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country_adjective statistics, this table should be consulted for information on national methodology and other %country_adjective-specific metadata information.</p>
-                <table class="table">
+      </article>
+    </div>
+    
+    
+    
+    
+    
+    <div role="tabpanel" class="tab-pane " id="national">
+      <article>
+        <p>This table provides metadata for the actual indicator available from %country_name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country_adjective statistics, this table should be consulted for information on national methodology and other %country_adjective-specific metadata information.</p>
+        <table class="table">
   
   
   
@@ -734,17 +694,17 @@ data-event-label="Change to custom.data_reporter tab"
   
 </table>
 
-              </article>
-            </div>
-            
-            
-            
-            
-            
-            <div role="tabpanel" class="tab-pane " id="data_reporter">
-              <article>
-                <p>This table provides information about the supplier of the data</p>
-                <table class="table">
+      </article>
+    </div>
+    
+    
+    
+    
+    
+    <div role="tabpanel" class="tab-pane " id="data_reporter">
+      <article>
+        <p>This table provides information about the supplier of the data</p>
+        <table class="table">
   
   
   
@@ -849,28 +809,29 @@ data-event-label="Change to custom.data_reporter tab"
   
 </table>
 
-              </article>
-            </div>
-            
-          
-          
-          <div role="tabpanel" class="tab-pane" id="edit">
-            <div class="edit-container">
-              
-<a class="btn btn-primary" href="http://prose.io/#sustainabledevelopment-kyrgyzstan/open-sdg-data-starter/edit/develop/data/indicator_2-5-2.csv">Edit Data</a>
-
-
-
-<a class="btn btn-primary" href="http://prose.io/#sustainabledevelopment-kyrgyzstan/open-sdg-data-starter/edit/develop/meta/2-5-2.md">Edit Metadata</a>
-
-
-            </div>
-          </div>
-          
-        </div>
-      </section>
+      </article>
     </div>
+    
+  
+  
+  <div role="tabpanel" class="tab-pane" id="edit">
+    <div class="edit-container">
+  
+  <a class="btn btn-primary" href="http://prose.io/#sustainabledevelopment-kyrgyzstan/open-sdg-data-starter/edit/develop/data/indicator_2-5-2.csv">Edit Data</a>
+  
+
+  
+  <a class="btn btn-primary" href="http://prose.io/#sustainabledevelopment-kyrgyzstan/open-sdg-data-starter/edit/develop/meta/2-5-2.md">Edit Metadata</a>
+  
+</div>
+
   </div>
+  
+</div>
+
+  </div>
+</div>
+
 </div>
 
 <footer role="contentinfo">
@@ -919,7 +880,7 @@ data-event-label="Change to custom.data_reporter tab"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200422001622'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200422001622"></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200423001626'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200423001626"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
