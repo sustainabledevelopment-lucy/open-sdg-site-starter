@@ -831,6 +831,7 @@ body {
   display: block; }
 
 header .container {
+  padding-top: 20px;
   min-height: 113px; }
   header .container .navbar-default {
     border: none; }
@@ -842,7 +843,7 @@ header .container {
   padding: 15px; }
   @media screen and (min-width: 769px) {
     .navbar-brand {
-      padding: 15px 15px 15px 0; } }
+      padding: 5px 15px 15px 0; } }
   .navbar-brand img {
     width: 100%; }
 
@@ -903,7 +904,8 @@ header .container {
   .navbar #search {
     position: relative;
     clear: both;
-    float: right; }
+    float: right;
+    margin-bottom: 20px; }
     .navbar #search label {
       position: absolute;
       top: 5px;
@@ -1084,9 +1086,9 @@ footer {
 
 #main-content #indicatorData.no-fields #series-help, #main-content #indicatorData.no-fields #fields, #main-content #indicatorData.no-fields #legend-help, #main-content #indicatorData.no-fields #clear {
   display: none; }
-#main-content #indicatorData.no-fields.no-units > .col-md-3 {
+#main-content #indicatorData.no-fields.no-units.no-serieses > .col-md-3 {
   display: none; }
-#main-content #indicatorData.no-fields.no-units > .col-md-9 {
+#main-content #indicatorData.no-fields.no-units.no-serieses > .col-md-9 {
   width: 100%; }
 #main-content .indicator-sidebar-hidden {
   padding: 0;
@@ -1261,10 +1263,10 @@ footer {
       display: block; }
     #main-content #fields .variable-selector.disallowed .variable-hint {
       display: block; }
-#main-content #units {
+#main-content #units, #main-content #serieses {
   clear: left;
   margin-bottom: 20px; }
-  #main-content #units label {
+  #main-content #units label, #main-content #serieses label {
     font-weight: normal;
     border: 1px solid #ccc;
     padding: 10px;
@@ -1491,7 +1493,7 @@ body.contrast-high #main-content #fields .variable-selector .variable-hint {
   color: white; }
 body.contrast-high caption {
   color: white; }
-body.contrast-high div#units {
+body.contrast-high div#units, body.contrast-high div#serieses {
   color: white; }
 body.contrast-high #legend li {
   color: white !important;
