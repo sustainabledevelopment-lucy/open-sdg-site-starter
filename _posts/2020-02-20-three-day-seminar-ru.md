@@ -9,7 +9,8 @@ categories:
   - custom.international
 ---
 
-## В Бишкеке проходит семинар «Показатели ЦУР под координацией ФАО ООН»
+**В Бишкеке проходит семинар «Показатели ЦУР под координацией ФАО ООН»**
+
 ***
 
 <img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/dscn1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
