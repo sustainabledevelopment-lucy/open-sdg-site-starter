@@ -830,6 +830,14 @@
           "status": "complete"
         },
         {
+          "id": "5-b-1-1",
+          "title": "Число мобильных телефонов на 100 домохозяйств",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/en/5-b-1-1",
+          "status": "notstarted"
+        },
+        {
           "id": "5-c-1",
           "title": "Proportion of countries with systems to track and make public allocations for gender equality and women’s empowerment",
           "description": "",
