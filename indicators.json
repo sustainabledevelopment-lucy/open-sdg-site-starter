@@ -1966,6 +1966,14 @@
           "status": "notstarted"
         },
         {
+          "id": "15-3-1-1",
+          "title": "Площадь пашни по причинам неиспользования",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/15-3-1-1",
+          "status": "complete"
+        },
+        {
           "id": "15-4-1",
           "title": "Доля охраняемых районов среди важных длягорного биоразнообразия участков",
           "description": "",
