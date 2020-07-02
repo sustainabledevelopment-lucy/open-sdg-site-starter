@@ -29,6 +29,7 @@ create_pages: true
 analytics:
   ga_prod: ''
   
+series_toggle: true
  
 # Social media accounts.
 #twitter: 'MyTwitterAccount'
