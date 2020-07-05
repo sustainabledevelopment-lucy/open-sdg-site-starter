@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200705065746">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200705071159">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -130,7 +130,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200705065746"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200705071159"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-ru layout-indicator">
@@ -800,7 +800,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Название показателя </th>
         <td>
           
-            
+            <p>2.1.1: Распространенность недоедания</p>
 
           
         </td>
@@ -814,7 +814,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Название задачи </th>
         <td>
           
-            
+            <p>2.1: К 2030 году покончить с голодом и обеспечить доступ для всех людей, особенно бедных и уязвимых групп населения, включая детей, к безопасному, богатому питательными веществами и достаточному питанию в течение всего года</p>
 
           
         </td>
@@ -828,7 +828,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Цель </th>
         <td>
           
-            
+            <p>2: Ликвидация голода, обеспечение продовольственной безопасности, улучшение питания и содействие устойчивому развитию сельского хозяйства</p>
 
           
         </td>
@@ -920,7 +920,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Определения </th>
         <td>
           
-            
+            <p>Распространенность недоедания (PoU) – это оценка доли населения, обычное потребление пищи которого недостаточно для удовлетворения потребности в поступающей с пищей энергии, необходимой для поддержания нормальной, активной и здоровой жизни. Данная оценка выражается в процентах.</p>
 
           
         </td>
@@ -934,7 +934,9 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Основные понятия </th>
         <td>
           
-            
+            <p>Недоедание определяется как состояние, при котором человек имеет регулярный доступ к количеству еды, которое недостаточно, чтобы обеспечить его энергией, необходимой для ведения нормальной, здоровой и активной жизни, учитывая его или ее собственные потребности в поступающей с пищей энергии. 
+Хотя, строго говоря, понятие “недоедание”, как определено здесь, отличается от физического состояния “неправильного питания” и “недостаточного питания”, так как это относится к состоянию, вызванному недостаточным потреблением пищи, а не к результату с точки зрения питания.
+Таким образом, распространенность недоедания оценивает процент лиц в группе, которые находятся в данном состоянии, но она не позволяет идентифицировать тех индивидов в группе, которые, по сути, страдают от недоедания.</p>
 
           
         </td>
@@ -948,7 +950,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Обоснование и толкование </th>
         <td>
           
-            
+            <p>Данный показатель позволяет отслеживать тенденции степени недостаточной калорийности рациона питания населения с течением времени, образовавшаяся в результате сочетания изменений в общей доступности продовольствия, в возможности получить к нему доступ в домашних хозяйствах в любой момент времени, а также различий между регионами.</p>
 
           
         </td>
@@ -962,7 +964,13 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Метод расчета </th>
         <td>
           
-            
+            <p>Показатель вычисляется на уровне населения.
+Существует два распространенных метода расчета показателя.</p>
+<ol>
+  <li>Население представлено “среднестатистическим” индивидом, для которого распределение вероятностей привычного ежедневного уровня потребления калорий моделируется путем параметрической функции плотности вероятностей. Пользовательская функция (R) доступна для расчета оценки распространенности недоедания, с учетом четырех параметров оценки уровня потребления калорий (DEC), коэффициента вариации (CV), асимметрии (Skew) и минимальной калорийности пищевого рациона (MDER);</li>
+  <li>В качестве минимальной калорийности пищевого рациона применяется среднее значение по миру (2100Ккал.). Среднедушевая калорийность питания в домохозяйстве рассчитывается с учетом поло-возрастного состава домашнего хозяйства.
+В Кыргызстане показатель рассчитывается по второму методу и характеризует долю населения, потребляющего менее 2100 Ккал.</li>
+</ol>
 
           
         </td>
@@ -976,7 +984,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Комментарий и ограничения </th>
         <td>
           
-            
+            <p>На протяжении многих лет, параметрический подход, использующийся при расчете оценки распространенности недоедания, был подвергнут критике, исходя из предположения, что недоедание следует оценивать, основываясь на индивидуальном уровне, путем сравнения индивидуальных потребностей в энергии с индивидуальным потреблением энергии, поступающей с пищей. Согласно такому мнению, распространенность недоедания может быть просто вычислена путем подсчета количества лиц в репрезентативной выборке населения, которое классифицируется как недоедающие, на основе сопоставления привычного потребления пищи и потребностей на индивидуальном уровне. К сожалению, такой подход не представляется возможным по двум причинам: во-первых, из-за стоимости обследований индивидуального пищевого рациона, индивидуальное потребление продуктов питания измеряется лишь в нескольких странах каждые несколько лет на относительно небольших выборках; кроме того, индивидуальные энергетические потребности практически невозможно наблюдать с помощью стандартных методов сбора данных.</p>
 
           
         </td>
@@ -990,7 +998,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Гарантия качества </th>
         <td>
           
-            
+            <p>Исходные данные проверяются на качество, прежде чем они будут использованы для дальнейшего анализа.</p>
 
           
         </td>
@@ -1004,7 +1012,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Доступность данных и пробелы </th>
         <td>
           
-            
+            <p>Сопоставимый динамический ряд, рассчитанный по единой методологии доступен с 2000 года.</p>
 
           
         </td>
@@ -1018,7 +1026,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Разбивка </th>
         <td>
           
-            
+            <p>Национальный и субнациональный уровень, по типу местности.</p>
 
           
         </td>
@@ -1032,7 +1040,9 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Сопоставимость с международными данными/стандартами </th>
         <td>
           
-            
+            <p>Оценка среднего уровня потребления калорий (DEC) может быть оценена либо на основе данных опроса, либо на основе продовольственных балансов. Оба источника не лишены недостатков. При сравнении оценок национального уровня потребления калорий (DEC) на основе продовольственных балансов (FBS) и опросов часто отмечаются различия.<br />
+Чтобы ограничить влияние таких ошибок, ФАО традиционно представляла оценки распространенности недоедания на уровне страны как средние показатели за трехлетний период, исходя из предположения, что ошибки, вызванные неточной записью индексов изменения в каждый отдельный год, могут быть уменьшены при рассмотрении среднего показателя за три года подряд. 
+Национальная методология расчета показателя существенно отличается от методологии ФАО. Наиболее распространенный подход - расчет доли населения домохозяйств, для которых средний уровень ежедневного потребления калорий в расчете на душу населения окажется ниже пороговых значений на основе ежедневного рекомендуемого пищевого рациона, как правило, установленного на уровень 2100 ккал, основываясь на данных обследования домашних хозяйств.</p>
 
           
         </td>
@@ -1046,7 +1056,13 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Ссылки и документация </th>
         <td>
           
-            
+            <p>http://www.fao.org/economic/ess/ess-fs/en/ 
+http://www.fao.org/docrep/012/w0931e/w0931e16.pdf 
+http://www.fao.org/docrep/005/Y4249E/y4249e06.htm#bm06
+http://www.fao.org/3/a-i4060e.pdf 
+http://www.fao.org/3/a-i4046e.pdf</p>
+
+<p>Национальная платформа отчётности ЦУР КР: https://sustainabledevelopment-kyrgyzstan.github.io</p>
 
           
         </td>
@@ -1060,7 +1076,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Источники данных </th>
         <td>
           
-            
+            <p>Интегрированное выборочное обследование бюджетов домашних хозяйств и рабочей силы (далее ИОДХ), содержащий модуль о потреблении продуктов питания в домашнем хозяйстве и расходах на питание вне дома, а также половозрастной состав членов домашнего хозяйства.</p>
 
           
         </td>
@@ -1074,7 +1090,8 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Методы сбора данных </th>
         <td>
           
-            
+            <p>Сбор данных осуществляется посредством вопросников ИОДХ с применением кластерной выборки, построенной на последней доступной Переписи населения и актуализированных списках жилых помещений. В опросах ИОДХ используется персональное интервью с использованием планшетных компьютеров (ComputerAssisted Personal Interview, CAPI).
+Сбор данных осуществляется на ежеквартальной основе, разработка индикатора производится по итогам года.</p>
 
           
         </td>
@@ -1165,7 +1182,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Организация </th>
         <td>
           
-            
+            <p>Национальный статистический комитет (Отдел статистики домашних хозяйств)</p>
 
           
         </td>
@@ -1179,7 +1196,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Контактное лицо (лица)/Координатор </th>
         <td>
           
-            
+            <p>Керималиева Н.К</p>
 
           
         </td>
@@ -1193,7 +1210,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Электронная почта контактного лица </th>
         <td>
           
-            
+            <p>Sdg_nsc@stat.kg</p>
 
           
         </td>
@@ -1207,7 +1224,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Телефон контактного лица </th>
         <td>
           
-            
+            <p>(0312) 32 46 91</p>
 
           
         </td>
@@ -1221,7 +1238,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Сайт организации </th>
         <td>
           
-            
+            <p>www.stat.kg</p>
 
           
         </td>
@@ -1311,7 +1328,7 @@ data-event-label="Change to custom.data_reporter tab"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200705065746'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200705065746"></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200705071159'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200705071159"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
