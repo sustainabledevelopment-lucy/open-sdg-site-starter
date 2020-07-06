@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200706093638">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200706094017">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -130,7 +130,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200706093638"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200706094017"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-en layout-indicator">
@@ -679,7 +679,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Indicator name </th>
         <td>
           
-            
+            <p>8.1.1. Ежегодные темпы роста реального ВВП на душу населения</p>
 
           
         </td>
@@ -693,7 +693,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Target name </th>
         <td>
           
-            
+            <p>8.1. Поддерживать экономический рост на душу населения в соответствии с национальными условиями и, в частности, рост валового внутреннего продукта на уровне не менее 7 процентов в год.</p>
 
           
         </td>
@@ -707,7 +707,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Goal </th>
         <td>
           
-            
+            <p>Цель 8: Содействие поступательному, всеохватному и устойчивому экономическому росту, полной и производительной занятости и достойной работе для всех</p>
 
           
         </td>
@@ -799,7 +799,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Definitions </th>
         <td>
           
-            
+            <p>ВВП на душу населения – это номинальный объем, произведенного за определенный промежуток времени валового внутреннего продукта, приходящийся на одного человека.</p>
 
           
         </td>
@@ -813,7 +813,8 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Concepts </th>
         <td>
           
-            
+            <p>Валовой внутренний продукт (ВВП) - важнейший показатель национальных счетов, характеризующий состояние и развитие экономики и тенденций экономического роста Кыргызской Республики за определенный период. Он отражает стоимость товаров и услуг, произведенных в стране и предназначенных для конечного потребления, накопления и экспорта. 
+Численность наличного населения – это численность населения, фактически находившееся в стране на момент учета, независимо от места постоянного проживания.</p>
 
           
         </td>
@@ -827,7 +828,8 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Rationale and interpretation </th>
         <td>
           
-            
+            <p>ВВП на душу населения позволяет определить уровень жизни населения и на его основе определяется размер взносов в международные организации.
+Расчет производства ВВП на душу наличного населения осуществляется в сомах и долларах США (по официальному курсу НБ КР).</p>
 
           
         </td>
@@ -841,7 +843,21 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            
+            <p>ВВП на душу населения представляет собой отношения всего объема, произведенного валового внутреннего продукта за определенный промежуток времени к численности наличного населения. 
+GDPPC=GDP/P 
+где, 
+GDPPC – ВВП на душу населения;
+GDP – номинальный объем ВВП; 
+P – численность наличного населения.
+Годовые темпы роста реального валового внутреннего продукта на душу населения рассчитываются следующим образом:
+1)	Преобразование годового реального ВВП в национальной валюте по ценам 2010 года для страны в долларах США по ценам 2010 года с использованием обменных курсов 2010 года;
+2)	Деление результата на население страны для получения годового реального ВВП на душу населения в постоянных долларах США по ценам 2010 года;
+3)	Расчет годового темпа роста реального ВВП на душу населения в год производится по формуле:
+   G(t+1) – G(t)
+——————–*100
+          G(t),
+где G(t+1) - реальный ВВП на душу населения в 2010 году в долларах США в год t+1,
+G(t) - реальный ВВП на душу населения в 2010 году в долларах США в год t.</p>
 
           
         </td>
@@ -855,7 +871,9 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Comments and limitations </th>
         <td>
           
-            
+            <p>ВВП в расчёте на душу населения является одной из важнейших характеристик, определяющих уровень экономического развития государства, так как позволяет оценить экономическое развитие стран с учетом численности населения. 
+Увеличение этого показателя может свидетельствовать о росте уровня жизни населения, и поэтому является социально значимым показателем.<br />
+Рост производства добавленной стоимости является базовым фактором, определяющим состояние функционирования экономики. Путем распределения общего объема производства на каждую единицу населения можно измерить степень воздействия на развитие темпов роста объема производства с учетом отдельного индивида. Показатель, по сути, может рассматриваться как суммарный индикатор социально-экономического развития.</p>
 
           
         </td>
@@ -869,7 +887,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Quality assurance </th>
         <td>
           
-            
+            <p>Проводится логический и арифметический контроль отчетных данных.</p>
 
           
         </td>
@@ -883,7 +901,8 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Data availability and gaps </th>
         <td>
           
-            
+            <p>Имеются динамические ряды с 1993 года. 
+Данные публикуются в различных публикациях Нацстаткома, размещаются на сайте НСК.</p>
 
           
         </td>
@@ -897,7 +916,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Disaggregation </th>
         <td>
           
-            
+            <p>По группам основных видов экономической деятельности и областям Кыргызской Республики</p>
 
           
         </td>
@@ -911,7 +930,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Comparability with international data/standards </th>
         <td>
           
-            
+            <p>В настоящее время рассчитывается по методологии СНС 1993 года. Поэтому показатель не полностью сопоставим с данными стран, которые используют СНС 2008 года.</p>
 
           
         </td>
@@ -925,7 +944,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">References and documentation </th>
         <td>
           
-            
+            <p>Национальная платформа отчётности ЦУР: https://sustainabledevelopment-kyrgyzstan.github.io</p>
 
           
         </td>
@@ -939,7 +958,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Data sources </th>
         <td>
           
-            
+            <p>Сбор данных, обработка и расчет осуществляется Национальным статистическим комитетом с использованием форм статистической отчетности и выборочных обследований</p>
 
           
         </td>
@@ -953,7 +972,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Data collection methods </th>
         <td>
           
-            
+            <p>Показатель расчетный, при котором используются данные отраслевой статистики. Периодичность: квартальная, годовая.</p>
 
           
         </td>
@@ -1044,7 +1063,8 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Organization </th>
         <td>
           
-            
+            <p>Национальный статистический комитет Кыргызской Республики
+(Управление экономической статистики и национальных счетов)</p>
 
           
         </td>
@@ -1058,7 +1078,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Contact person(s)/focal point </th>
         <td>
           
-            
+            <p>Исенкулова Э. К.</p>
 
           
         </td>
@@ -1072,7 +1092,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Contact person's email </th>
         <td>
           
-            
+            <p>eisenkulova@stat.kg</p>
 
           
         </td>
@@ -1086,7 +1106,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Contact person's phone </th>
         <td>
           
-            
+            <p>(0312) 32 46 95</p>
 
           
         </td>
@@ -1100,7 +1120,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Organization website </th>
         <td>
           
-            
+            <p>www.stat.kg</p>
 
           
         </td>
@@ -1190,7 +1210,7 @@ data-event-label="Change to custom.data_reporter tab"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200706093638'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200706093638"></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200706094017'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200706094017"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
