@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200708055047">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20200708055532">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -130,7 +130,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200708055047"><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><link rel="stylesheet" href="/open-sdg-site-starter/assets/css/custom.css?v=20200708055532"><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
 <body class="language-en layout-indicator">
@@ -679,7 +679,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Indicator name </th>
         <td>
           
-            
+            <p>10.4.1.Доля доходов в ВВП, включая заработную плату и выплаты по линии социальной защиты</p>
 
           
         </td>
@@ -693,7 +693,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Target name </th>
         <td>
           
-            
+            <p>10.4 Принять соответствующую политику, особенно бюджетно-налоговую политику и политику в вопросах заработной платы и социальной защиты, и постепенно добиваться обеспечения большего равенства</p>
 
           
         </td>
@@ -707,7 +707,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Goal </th>
         <td>
           
-            
+            <p>Цель 10. Сокращение неравенства внутри стран и между ними</p>
 
           
         </td>
@@ -799,7 +799,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Definitions </th>
         <td>
           
-            
+            <p>Доля рабочей силы в валовом внутреннем продукте (ВВП) - это совокупная заработная плата работников, выраженная в процентах от ВВП, которая является мерой общего объема производства. Он содержит информацию об относительной доле продукции, выплачиваемой в качестве компенсации работникам, по сравнению с долей, выплачиваемой капиталу в производственном процессе за данный отчетный период.</p>
 
           
         </td>
@@ -813,7 +813,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Concepts </th>
         <td>
           
-            
+            <p>Оплата труда отражается по методу начислений, то есть она измеряется как сумма вознаграждения в денежной или натуральной форме, которую работник имеет право получить от работодателя за работу, выполненную за соответствующий период, независимо от того, выплачивается ли она авансом, одновременно или после выполнения работы. Оплата труда работников учитывается на основе начисленных сумм и включает в себя суммы отчислений на социальное страхование, налогов на доходы и другие выплаты, которые подлежат уплате работниками и выплачиваются непосредственно органам социального страхования и налоговым службам.</p>
 
           
         </td>
@@ -827,7 +827,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Rationale and interpretation </th>
         <td>
           
-            
+            <p>Метод формирования ВВП по источникам дохода является одним из трех методов исчисления ВВП, применяемых Нацстаткомом Кыргызской Республики в рамках расчетов по СНС-1993 и 2008. Однако он не является основным, поскольку в соответствии с принятой методологией не все показатели доходов получаются путем прямого счета, часть из них исчисляется балансовым методом.</p>
 
           
         </td>
@@ -841,7 +841,12 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            
+            <p>Расчет показателя «Доля доходов в ВВП, включая заработную плату и выплаты по линии социальной защиты» производится следующим образом: 
+LF share = Salary / GDP * 100,
+где
+LF share – доля рабочей силы,
+Salary – оплата труда,
+GDP – валовой внутренний продукт (ВВП).</p>
 
           
         </td>
@@ -855,7 +860,9 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Comments and limitations </th>
         <td>
           
-            
+            <p>В целом доля рабочей силы в ВВП будет занижать долю начисленного ВВП в общей занятости, поскольку она охватывает только оплату труда работников и не включает в себя трудовой доход самозанятых.
+Таким образом, показатель может быть менее релевантным в странах, где большая доля занятости занимается самозанятостью. Однако скорректированная доля рабочей силы может быть оценена с учетом трудовых доходов самозанятых работников.
+ВВП может исключать или недооценивать виды деятельности, которые трудно измерить, такие как операции в неформальном секторе или на нелегальных рынках, и т. д. тем самым занижая ВВП. Более того, ВВП не учитывает социальные и экологические издержки производства, и поэтому не является хорошим показателем уровня общего благополучия.</p>
 
           
         </td>
@@ -869,7 +876,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Quality assurance </th>
         <td>
           
-            
+            <p> Проводится логический и арифметический контроль отчетных данных.</p>
 
           
         </td>
@@ -883,7 +890,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Data availability and gaps </th>
         <td>
           
-            
+            <p>Имеются динамические данные, которые рассчитаны с 1993 года и размещены на сайте Нацстаткома.www.stat.kg</p>
 
           
         </td>
@@ -897,7 +904,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Disaggregation </th>
         <td>
           
-            
+            <p>Данные рассчитываются только на республиканском уровне.</p>
 
           
         </td>
@@ -911,7 +918,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Comparability with international data/standards </th>
         <td>
           
-            
+            <p>Для сопоставления с другими странами данные по оплате труда Кыргызской Республики по запросу Международных организаций (заполняются их вопросники).</p>
 
           
         </td>
@@ -925,7 +932,9 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">References and documentation </th>
         <td>
           
-            
+            <p>Национальная платформа отчетности ЦУР КР: https://sustainabledevelopment-kyrgyzstan.github.io/16-7-1/ 
+Система национальных счетов-СНС ООН -1993 и СНС 2008:
+Рекомендации Статкомитета СНГ по составлению счет образования доходов. Москва, 1995г: Европейская система интегрированных экономических счетов 1995г.</p>
 
           
         </td>
@@ -939,7 +948,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Data sources </th>
         <td>
           
-            
+            <p>Сбор данных, обработка и расчет осуществляется Национальным статистическим комитетом.</p>
 
           
         </td>
@@ -953,7 +962,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Data collection methods </th>
         <td>
           
-            
+            <p>Показатель расчетный, при котором используются данные отраслевой статистики, Министерства финансов, Социального фонда и Национального банка Кыргызской Республики Периодичность: годовая.</p>
 
           
         </td>
@@ -1044,7 +1053,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Organization </th>
         <td>
           
-            
+            <p>Национальный статистический комитет КР (Управление экономической статистики и национальных счетов)</p>
 
           
         </td>
@@ -1058,7 +1067,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Contact person(s)/focal point </th>
         <td>
           
-            
+            <p>Исенкулова Э. К.</p>
 
           
         </td>
@@ -1072,7 +1081,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Contact person's email </th>
         <td>
           
-            
+            <p>eisenkulova@stat.kg</p>
 
           
         </td>
@@ -1086,7 +1095,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Contact person's phone </th>
         <td>
           
-            
+            <p>(0312) 32 46 95</p>
 
           
         </td>
@@ -1100,7 +1109,7 @@ data-event-label="Change to custom.data_reporter tab"
         <th scope="row">Organization website </th>
         <td>
           
-            
+            <p>www.stat.kg</p>
 
           
         </td>
@@ -1196,7 +1205,7 @@ data-event-label="Change to custom.data_reporter tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200708055047'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200708055047"></script><script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20200708055532'></script><script src="/open-sdg-site-starter/assets/js/custom.js?v=20200708055532"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
