@@ -2134,6 +2134,22 @@
           "status": "complete"
         },
         {
+          "id": "16-1-1-1a",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/16-1-1-1a",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-1-1-4a",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/16-1-1-4a",
+          "status": "notstarted"
+        },
+        {
           "id": "16-1-2",
           "title": "Число связанных с конфликтами смертей на100 000 человек (в разбивке по возрастной группе,полу и причине)",
           "description": "",
@@ -2147,6 +2163,14 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/16-1-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-1-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/16-1-3-1",
           "status": "notstarted"
         },
         {
@@ -2180,6 +2204,14 @@
           "keywords": "",
           "href": "/open-sdg-site-starter/16-2-2",
           "status": "complete"
+        },
+        {
+          "id": "16-2-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/16-2-2-1",
+          "status": "notstarted"
         },
         {
           "id": "16-2-3",
