@@ -1926,6 +1926,14 @@
       "indicators": [
         
         {
+          "id": "15-1-1",
+          "title": "Forest area as a proportion of total land area",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/en/15-1-1",
+          "status": "notstarted"
+        },
+        {
           "id": "15-1-1-1",
           "title": "Forest area as a proportion of the total area of the country",
           "description": "",
