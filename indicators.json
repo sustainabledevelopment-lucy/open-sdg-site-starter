@@ -1067,14 +1067,6 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/7-b-1-1a",
-          "status": "notstarted"
-        },
-        {
-          "id": "7-b-1-1а",
-          "title": "Flow of foreign direct investment for the expansion of energy infrastructure and modernization of technologies",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/7-b-1-1а",
           "status": "complete"
         }]
     }
@@ -1406,14 +1398,6 @@
           "status": "complete"
         },
         {
-          "id": "10-3-1-1-a",
-          "title": ". Number of appeals to the Ombudsman",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/10-3-1-1-a",
-          "status": "complete"
-        },
-        {
           "id": "10-3-1-1a",
           "title": ". Number of appeals to the Ombudsman",
           "description": "",
@@ -1599,7 +1583,7 @@
         },
         {
           "id": "11-7-1-1a",
-          "title": "11.1.1.1a. Green spaces in localities, hectares per 1000 people",
+          "title": ". Green spaces in localities, hectares per 1000 people",
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/11-7-1-1a",
