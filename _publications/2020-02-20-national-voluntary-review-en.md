@@ -1,24 +1,27 @@
 ---
 layout: post
-title: The National Statistical Committee held a meeting of the working group on the preparation of the National Voluntary Review on progress towards the SDGs
+title: >-
+  Статистический сборник «Мониторинг показателей Целей устойчивого развития в
+  Кыргызской Республике»
 author: National Statistical Committee of the Kyrgyz Republic
-excerpt:
-language: en
-permalink: /en/national-voluntary-review/
+excerpt: null
+language: ru
+permalink: /ru/sbornik/
 categories:
   - custom.national
+published: true
 ---
 
-**The National Statistical Committee held a meeting of the Monitoring and Assessment working group on the preparation of the National Voluntary Review on progress towards the SDGs**
+**Статистический сборник «Мониторинг показателей Целей устойчивого развития в Кыргызской Республике»**
 
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-1.jpg" alt="Lorem Ipsum" height="300px" align="center">
+![обложка.jpg]({{site.baseurl}}/_publications/обложка.jpg)
 
 ***
 
-Today, June 21, 2019, the National Statistical Committee of the Kyrgyz Republic held a meeting of the Monitoring and Assessment working group on the preparation of voluntary reviews on development achievements of the Kyrgyz Republic.
+Целью настоящего издания является информирование общественности о текущем состоянии и прогрессе устойчивого развития в нашей стране, а также содействие в определении дальнейших приоритетных шагов для достижения успеха в реализации ЦУР.
 
-Taking into account the results of ongoing activities to build a monitoring and reporting system for indicators of the Development Goal, as well as determining steps to prepare for the use of the Voluntary Survey of the Kyrgyz Republic.
+В данном сборнике представлены данные о прогрессе достижения Целей устойчивого развития (ЦУР) по всем доступным показателям, включая временные ряды для более 100 глобальных и национальных показателей, что позволит проводить углубленный анализ социально-экономических и экологических тенденций, происходящих в республике и ее регионах.
 
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-2.jpg" height="200px" alt="Lorem Ipsum" align="left">
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-3.jpg" height="200px" alt="Lorem Ipsum" align="center">
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-4.jpg" height="200px" alt="Lorem Ipsum" align="right">
+Предлагаемая Вашему вниманию публикация содержит полную информацию о мониторинге ЦУР, характеристику отдельных показателей и краткий обзор прогресса с соответствующими метаданными и дезагрегированными данными. Она будет весьма полезна работникам государственного управления для принятия обоснованных политических и управленческих решений, выявления основных направлений, на которых необходимо сосредоточить внимание для последующих действий.
+
+Данные в сборнике приведены за последние пять лет, а для анализа тенденций представлены также данные за 2010 год.
