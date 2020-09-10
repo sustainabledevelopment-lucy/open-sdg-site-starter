@@ -7,13 +7,22 @@ layout: default
       {{content}}
       {% assign posts = site.publications | where: 'language', page.language %}
       {% for post in posts %}
-      <article>
-        <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
-        <p><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | t_date: 'standard' }}</time></p>
-        <div class="post-excerpt">
-          {{ post.excerpt | markdownify }}
+      <div class="row">
+        <div class="col-md-2">
+          <img style="width: 100%" src="{{ site.baseurl }}{{ post.img }}"/>
         </div>
-      </article>
+        <div class="col-md-9">
+          <article>
+            <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+            <p>
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | t_date: 'standard' }}</time>
+            </p>
+            <div class="post-excerpt">
+              {{ post.excerpt | markdownify }}
+            </div>
+          </article>
+        </div>
+      </div>
       {% endfor %}
     </div>
   </div>
