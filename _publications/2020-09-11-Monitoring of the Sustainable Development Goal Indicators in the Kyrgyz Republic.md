@@ -1,6 +1,7 @@
 ---
 published: true
 layout: publication
+title: The Statistical Compendium “Monitoring of the Sustainable Development Goal Indicators in the Kyrgyz Republic”
 author: National Statistical Committee of the Kyrgyz Republic
 language: en
 permalink: /en/sbornik/
