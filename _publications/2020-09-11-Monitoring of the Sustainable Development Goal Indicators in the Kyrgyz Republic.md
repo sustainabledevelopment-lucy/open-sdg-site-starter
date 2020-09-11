@@ -5,7 +5,7 @@ title: The Statistical Compendium “Monitoring of the Sustainable Development G
 author: National Statistical Committee of the Kyrgyz Republic
 language: en
 permalink: /en/sbornik/
-img: /upload/обложка.jpg
+img: /upload/sdg-report-en.jpg
 file: /upload/SDG_report_ENG_3.pdf
 ---
 The purpose of this publication is to inform the public about the current state and progress of sustainable development in our country, as well as to assist in identifying further priority steps to achieve success in the implementation of the SDGs.
