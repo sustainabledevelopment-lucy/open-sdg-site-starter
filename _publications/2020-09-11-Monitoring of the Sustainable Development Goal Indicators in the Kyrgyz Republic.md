@@ -5,7 +5,7 @@ author: National Statistical Committee of the Kyrgyz Republic
 language: en
 permalink: /en/sbornik/
 img: /upload/обложка.jpg
-file: /upload/SDG_Ru_040820_printing.pdf
+file: /upload/SDG_report_ENG_3.pdf
 ---
 The purpose of this publication is to inform the public about the current state and progress of sustainable development in our country, as well as to assist in identifying further priority steps to achieve success in the implementation of the SDGs.
 
