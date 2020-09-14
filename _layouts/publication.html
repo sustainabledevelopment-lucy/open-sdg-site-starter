@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div id="main-content" class="container">
+  <div class="row">
+    <div class="col-md-12 push-md-6">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
+        <div class="post-content" itemprop="articleBody">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="thumbnail">
+                <img src="{{ site.baseurl }}{{ page.img }}"/>
+              </div>
+            </div>
+            <div class="col-md-10">
+              {{ content }}
+              <a class="btn btn-success" href="{{site.baseurl}}{{page.file}}">
+                <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                Скачать публикацию
+              </a>
+            </div>
+          </div>
+      </article>
+    </div>
+  </div>
+</div>

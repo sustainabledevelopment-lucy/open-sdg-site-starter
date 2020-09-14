@@ -596,3 +596,24 @@ prose:
             element: textarea
             label: "Other information"
             scope: source_6
+    _publication:
+      - name: "title"
+        field:
+          element: text
+          label: "Page Title"
+          scope: page
+      - name: "img"
+        field:
+          element: hidden
+          label: "Publication image"
+          scope: page
+      - name: "file"
+          field:
+            element: hidden
+            label: "Publication file"
+            scope: page
+      - name: "layout"
+          field:
+            element: hidden
+            label: "Layout"
+            scope: page
