@@ -17,7 +17,7 @@ layout: default
               {{ content }}
               <a class="btn btn-success" href="{{site.baseurl}}{{page.file}}">
                 <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-                Скачать публикацию
+                {{ site.download_publication | t }}
               </a>
             </div>
           </div>

@@ -1,8 +1,8 @@
 ---
 layout: publications
 title: Publications
-language: en
 permalink: /en/publications/
+language: en
 ---
 
-## Publications
+## Публикации
