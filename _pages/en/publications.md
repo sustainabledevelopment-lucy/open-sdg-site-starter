@@ -5,4 +5,4 @@ permalink: /en/publications/
 language: en
 ---
 
-## Публикации
+## Publications
