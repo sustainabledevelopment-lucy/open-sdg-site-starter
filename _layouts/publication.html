@@ -9,7 +9,7 @@ layout: default
         <div class="post-content" itemprop="articleBody">
           <div class="row">
             <div class="col-md-2">
-              <div class="thumbnail">
+              <div class="thumbnail" data-toggle="modal" data-target=".publication-modal-lg">
                 <img src="{{ site.baseurl }}{{ page.img }}"/>
               </div>
             </div>
@@ -22,6 +22,13 @@ layout: default
             </div>
           </div>
       </article>
+    </div>
+  </div>
+  <div class="modal fade publication-modal-lg" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <img style="width: 100%" src="{{ site.baseurl }}{{ page.img }}"/>
+      </div>
     </div>
   </div>
 </div>
