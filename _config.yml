@@ -90,8 +90,6 @@ menu:
     translation_key: menu.publications
   - path: /about
     translation_key: menu.about
-  - path: /guidance
-    translation_key: menu.guidance
   - path: /faq
     translation_key: menu.faq
     
@@ -133,7 +131,7 @@ defaults:
 
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
-goal_image_base: https://open-sdg.github.io/sdg-translations/assets/img/goals
+goal_image_base: https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/assets/img/goals
 
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
