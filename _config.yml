@@ -90,8 +90,6 @@ menu:
     translation_key: menu.publications
   - path: /about
     translation_key: menu.about
-  - path: /guidance
-    translation_key: menu.guidance
   - path: /faq
     translation_key: menu.faq
     
