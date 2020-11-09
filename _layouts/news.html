@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div id="main-content" class="container newslist">
+  <div class="row">
+    <div class="col-md-9 push-md-3">
+      {{content}}
+      {% assign posts = site.posts | where: 'language', page.language %}
+      {% for post in posts %}
+      <article>
+        <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+        <p><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | t_date: 'standard' }}</time></p>
+        <div class="post-excerpt">
+          {{ post.excerpt | markdownify }}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</div>
