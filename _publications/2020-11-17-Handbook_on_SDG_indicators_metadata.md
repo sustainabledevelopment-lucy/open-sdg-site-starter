@@ -8,7 +8,7 @@ permalink: /en/sbornik/
 img: /upload/Handbook_on_SDG_indicators_metadata 1_1.jpg
 file: /upload/Handbook_on_SDG_indicators_metadata.pdf
 ---
-This Handbook provides metadata of the Sustainable Development Goals (SDGs) indicators of the Kyrgyz Republic disseminated through the National Reporting Platform (hereinafter NRP).
+This Handbook provides metadata of the Sustainable Development Goals (SDGs) indicators of the Kyrgyz Republic disseminated through the National Reporting Platform.
 
 The Handbook provides metadata on both global and national indicators developed by the National Statistical Committee of the Kyrgyz Republic (hereinafter NSC) and other producers of official statistics.
 
