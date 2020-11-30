@@ -9,7 +9,7 @@ categories:
   - custom.international
 ---
 
-## Bishkek hosts a workshop on " SDG Indicators coordinated by the UN FAO»
+Bishkek hosts a workshop on " SDG Indicators coordinated by the UN FAO»
 
 ***
 
