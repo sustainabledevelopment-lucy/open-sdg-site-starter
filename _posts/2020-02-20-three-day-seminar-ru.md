@@ -4,7 +4,7 @@ title: В Бишкеке проходит семинар «Показатели 
 author: National Statistical Committee of the Kyrgyz Republic
 excerpt:
 language: ru
-permalink: /international-conference/
+permalink: /fao-seminar/
 categories:
   - custom.international
 ---
