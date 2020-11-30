@@ -13,7 +13,7 @@ categories:
 
 ***
 
-<img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/internation-con-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
+<img src="{{ site.baseurl }}/news-images/internation-con-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
 
 ***
 
@@ -21,6 +21,6 @@ On November 6, 2019, the National Statistical Committee of the Kyrgyz Republic h
 During the event, information was provided on the current activities of the National Statistics Committee on compiling global and national SDG indicators, international recommendations on compiling and disseminating metadata on SDG indicators. In addition, workshop participants discussed the draft SDG Monitoring Roadmap in the Kyrgyz Republic.
 
 
-<img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/internation-con-2.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
+<img src="{{ site.baseurl }}/news-images/internation-con-2.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
 
-<img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/internation-con-3.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
+<img src="{{ site.baseurl }}/news-images/internation-con-3.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
