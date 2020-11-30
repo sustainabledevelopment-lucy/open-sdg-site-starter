@@ -13,7 +13,7 @@ Bishkek hosts a workshop on " SDG Indicators coordinated by the UN FAO»
 
 ***
 
-<img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/dscn1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
+<img src="{{ site.baseurl }}/news-images/dscn1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
 
 ***
 
