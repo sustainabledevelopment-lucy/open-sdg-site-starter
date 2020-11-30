@@ -13,7 +13,7 @@ Bishkek hosts a workshop on " SDG Indicators coordinated by the UN FAO»
 
 ***
 
-<img src="{{ site.baseurl }}/news-images/dscn1.jpg" alt="Photo of all participants at international conference" height="300px" width="400px" align="center">
+<img src="{{ site.baseurl }}/news-images/dscn1.jpg" alt="Photo of all participants at international conference" align="center">
 
 ***
 
@@ -29,6 +29,6 @@ At the end of the workshop, the target audience should have a clear understandin
 - The necessary data for compiling indicators and the steps that need to be taken in order for the country to meet these data needs;
 - Procedures for compiling these indicators and working with the UN FAO.
 
-<img src="{{ site.baseurl }}/news-images/dscn2.jpg" alt="Photo of three participants at international conference" height="200px" width="350px" align="left">
+<img src="{{ site.baseurl }}/news-images/dscn2.jpg" alt="Photo of three participants at international conference" align="left">
 
-<img src="{{ site.baseurl }}/news-images/dscn3.jpg" alt="Photo of three participants at international conference" height="200px" width="350px" align="left">
+<img src="{{ site.baseurl }}/news-images/dscn3.jpg" alt="Photo of three participants at international conference" align="left">
