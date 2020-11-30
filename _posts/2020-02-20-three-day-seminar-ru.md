@@ -29,6 +29,6 @@ categories:
 - Необходимых данных для составления индикаторов и шагов, которые необходимо предпринять для того, чтобы страна могла удовлетворить эти потребности в данных;
 - Процедурах составления этих индикаторов и взаимодействии с ФАО ООН.
 
-<img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/dscn2.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
+<img src="{{ site.baseurl }}/news-images/dscn2.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
 
-<img src="https://github.com/sdg-kyrgyzstan/open-sdg-site-starter/blob/develop/news-images/dscn3.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
+<img src="{{ site.baseurl }}/news-images/dscn3.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
