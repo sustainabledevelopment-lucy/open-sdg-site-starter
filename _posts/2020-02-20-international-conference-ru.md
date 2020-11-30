@@ -11,7 +11,7 @@ categories:
 
 **Представители национальных статистических служб стран СНГ, Жогорку Кенеша, Аппарата Президента КР, Аппарата Правительства КР и международных организаций принимают участие в Международной конференции по внедрению национальной системы мониторинга Целей устойчивого развития (ЦУР), которая проходит в Бишкеке 19-20 сентября 2016 г.**
 
-<center><img src="{{ site.baseurl }}/news-images/group-photo-international-conference-1.jpg" alt="Photo of all participants at international conference" height="300px" align="middle"></center>
+<center><img src="{{ site.baseurl }}/news-images/group-photo-international-conference-1.jpg" alt="Photo of all participants at international conference" align="middle"></center>
 
 ***
 
@@ -29,7 +29,7 @@ categories:
 
 В ходе конференции обсуждались также и практические вопросы, связанные с определением основных направлений и построением системы мониторинга ЦУР, правильным использованием источников данных и эффективной координацией деятельности агентств по международному развитию. В панельных дискуссиях принимали участие представители национальных статистических служб стран СНГ и ряд международных экспертов.
 
-<img src="{{ site.baseurl }}/news-images/group-photo-international-conference-2.jpg" alt="Photo of three participants at international conference" height="300px" align="right">
+<img src="{{ site.baseurl }}/news-images/group-photo-international-conference-2.jpg" alt="Photo of three participants at international conference" align="right">
 
 
 
