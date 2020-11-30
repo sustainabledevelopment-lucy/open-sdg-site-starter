@@ -13,7 +13,7 @@ categories:
 
 ***
 
-<img src="{{ site.baseurl }}/news-images/dscn1.jpg" alt="Photo of all participants at international conference" height="300px" width="400px" align="center">
+<img src="{{ site.baseurl }}/news-images/dscn1.jpg" alt="Photo of all participants at international conference" align="center">
 
 ***
 
@@ -29,6 +29,6 @@ categories:
 - Необходимых данных для составления индикаторов и шагов, которые необходимо предпринять для того, чтобы страна могла удовлетворить эти потребности в данных;
 - Процедурах составления этих индикаторов и взаимодействии с ФАО ООН.
 
-<img src="{{ site.baseurl }}/news-images/dscn2.jpg" alt="Photo of three participants at international conference" height="200px" width="350px" align="left">
+<img src="{{ site.baseurl }}/news-images/dscn2.jpg" alt="Photo of three participants at international conference" align="left">
 
-<img src="{{ site.baseurl }}/news-images/dscn3.jpg" alt="Photo of three participants at international conference" height="200px" width="350px" align="left">
+<img src="{{ site.baseurl }}/news-images/dscn3.jpg" alt="Photo of three participants at international conference" align="left">
