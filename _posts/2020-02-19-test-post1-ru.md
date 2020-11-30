@@ -14,7 +14,7 @@ categories:
 
 ***
 
-<img src="{{ site.baseurl }}/news-images/internation-con-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
+<img src="{{ site.baseurl }}/news-images/internation-con-1.jpg" alt="Photo of all participants at international conference" align="center">
 
 ***
 
@@ -22,6 +22,6 @@ categories:
 В ходе мероприятия представлена информация о текущей деятельности Нацстаткома по составлению глобальных и национальных показателей ЦУР, международных рекомендациях по составлению и распространению метаданных по показателям ЦУР. Кроме того, участники семинара обсудили проект Дорожной карты мониторинга ЦУР в Кыргызской Республике.
 
 
-<img src="{{ site.baseurl }}/news-images/internation-con-2.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
+<img src="{{ site.baseurl }}/news-images/internation-con-2.jpg" alt="Photo of three participants at international conference" align="left">
 
-<img src="{{ site.baseurl }}/news-images/internation-con-3.jpg" alt="Photo of three participants at international conference" height="200px" align="left">
+<img src="{{ site.baseurl }}/news-images/internation-con-3.jpg" alt="Photo of three participants at international conference" align="left">
