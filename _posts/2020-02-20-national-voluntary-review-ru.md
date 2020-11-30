@@ -11,7 +11,7 @@ categories:
 
 **Нацстатком провел совещание рабочей группы «Мониторинг и оценка» по подготовке Национального Добровольного обзора о ходе достижения ЦУР**
 
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-1.jpg" height="200px" alt="Lorem Ipsum" align="right">
+<img src="{{ site.baseurl }}/news-images/con-sdg-1.jpg" height="200px" alt="Lorem Ipsum" align="right">
 
 ***
 
@@ -19,6 +19,6 @@ categories:
 
 Целью совещания являлось обсуждение текущей деятельности по построению системы мониторинга и отчётности для показателей Целей устойчивого развития, а также определение последующих шагов для подготовки Национального Добровольного Обзора Кыргызской Республики.
 
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-2.jpg" height="200px" alt="Lorem Ipsum" align="left">
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-3.jpg" height="200px" alt="Lorem Ipsum" align="center">
-<img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/con-sdg-4.jpg" height="200px" alt="Lorem Ipsum" align="right">
+<img src="{{ site.baseurl }}/news-images/con-sdg-2.jpg" height="200px" alt="Lorem Ipsum" align="left">
+<img src="{{ site.baseurl }}/news-images/con-sdg-3.jpg" height="200px" alt="Lorem Ipsum" align="center">
+<img src="{{ site.baseurl }}/news-images/con-sdg-4.jpg" height="200px" alt="Lorem Ipsum" align="right">
