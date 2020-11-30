@@ -977,7 +977,6 @@ header .container {
     .navbar #search input {
       padding: 5px;
       padding-left: 5px;
-      padding-right: 45px;
       width: 240px;
       height: 34px;
       transition: width 0.4s;
@@ -985,7 +984,6 @@ header .container {
       font-size: 16px; }
 
 #search-btn {
-  line-height: 15px;
   height: 34px; }
 
 .table .table-value {
@@ -1147,9 +1145,9 @@ footer {
 
 #main-content #indicatorData.no-fields #series-help, #main-content #indicatorData.no-fields #fields, #main-content #indicatorData.no-fields #legend-help, #main-content #indicatorData.no-fields #clear {
   display: none; }
-#main-content #indicatorData.no-fields.no-units.no-serieses > .col-md-3 {
+#main-content #indicatorData.no-fields.no-units > .col-md-3 {
   display: none; }
-#main-content #indicatorData.no-fields.no-units.no-serieses > .col-md-9 {
+#main-content #indicatorData.no-fields.no-units > .col-md-9 {
   width: 100%; }
 #main-content .indicator-sidebar-hidden {
   padding: 0;
@@ -1324,10 +1322,10 @@ footer {
       display: block; }
     #main-content #fields .variable-selector.disallowed .variable-hint {
       display: block; }
-#main-content #units, #main-content #serieses {
+#main-content #units {
   clear: left;
   margin-bottom: 20px; }
-  #main-content #units label, #main-content #serieses label {
+  #main-content #units label {
     font-weight: normal;
     border: 1px solid #ccc;
     padding: 10px;
@@ -1490,8 +1488,6 @@ footer {
     margin-top: 2rem !important; }
 #main-content #selectionsTable {
   padding-bottom: 20px; }
-  #main-content #selectionsTable.table-has-no-data #selectionTableFooter {
-    display: none; }
   #main-content #selectionsTable div.dataTables_wrapper {
     overflow-x: auto; }
     #main-content #selectionsTable div.dataTables_wrapper .row {
@@ -1522,8 +1518,6 @@ footer {
       margin: 0 0 5px; }
 #main-content #selectionsChart {
   padding-bottom: 20px; }
-  #main-content #selectionsChart.chart-has-no-data #selectionChartFooter {
-    display: none; }
 #main-content #selectionChartFooter {
   font-size: 12px;
   line-height: 1.2;
@@ -1564,7 +1558,7 @@ body.contrast-high #main-content #fields .variable-selector .variable-hint {
   color: white; }
 body.contrast-high caption {
   color: white; }
-body.contrast-high div#units, body.contrast-high div#serieses {
+body.contrast-high div#units {
   color: white; }
 body.contrast-high #legend li {
   color: white !important;
@@ -1831,12 +1825,6 @@ body.contrast-high #search-results .search-result .content {
   margin-top: 40px; }
   .layout-frontpage-alt .frontpage-cards .row {
     margin-bottom: 20px; }
-
-.layout-goals .goals-page-description {
-  margin-bottom: 20px; }
-
-.layout-goals.contrast-high .goals-page-description {
-  color: white; }
 
 /**
  * custom.scss
