@@ -4,7 +4,7 @@ title: National Statistics Committee held a seminar “Data and metadata for ind
 author: National Statistical Committee of the Kyrgyz Republic
 excerpt:
 language: en
-permalink: /en/international-conference/
+permalink: /en/fao-seminar/
 categories:
   - custom.international
 ---
