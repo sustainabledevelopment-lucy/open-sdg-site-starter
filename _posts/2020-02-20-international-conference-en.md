@@ -3,7 +3,7 @@ layout: post
 title: Kyrgyzstan hosts an international conference on the implementation of a national monitoring system for the Sustainable Development Goals
 author: National Statistical Committee of the Kyrgyz Republic
 excerpt: Representatives of the national statistical services of the CIS countries, the Jogorku Kenesh, the Office of the President of the Kyrgyz Republic, the Office of the Government of the Kyrgyz Republic and international organizations participate in the International Conference on the implementation of the national monitoring system for the Sustainable Development Goals (SDGs), which is being held in Bishkek on September 19-20, 2016.
-  <img src="https://sdg-kyrgyzstan.github.io/open-sdg-site-starter/news-images/group-photo-international-conference-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
+  <img src="{{ site.baseurl }}/news-images/group-photo-international-conference-1.jpg" alt="Photo of all participants at international conference" height="300px" align="center">
 language: en
 permalink: /en/international-conference/
 categories:
@@ -13,7 +13,7 @@ categories:
 **
 Representatives of the national statistical services of the CIS countries, the Jogorku Kenesh, the Office of the President of the Kyrgyz Republic, the Office of the Government of the Kyrgyz Republic and international organizations participate in the International Conference on the implementation of the national monitoring system for the Sustainable Development Goals (SDGs), which is being held in Bishkek on September 19-20, 2016.**
 
-<img src="{{ site.baseurl }}/news-images/group-photo-international-conference-1.jpg" alt="Photo of all participants at international conference" height="300px" align="middle">
+<img src="{{ site.baseurl }}/news-images/group-photo-international-conference-1.jpg" alt="Photo of all participants at international conference" align="middle">
 
 ***
 
@@ -31,4 +31,4 @@ Alexander Avanesov, UN Resident Coordinator in Kyrgyzstan, emphasized that the S
 
 The conference also discussed practical issues related to determining the main directions and building the SDG monitoring system, the correct use of data sources and the effective coordination of the activities of international development agencies. Representatives of national statistical services of the CIS countries and a number of international experts took part in the panel discussions.
 
-<img src="{{ site.baseurl }}/news-images/group-photo-international-conference-2.jpg" alt="Photo of three participants at international conference" height="300px" align="right">
+<img src="{{ site.baseurl }}/news-images/group-photo-international-conference-2.jpg" alt="Photo of three participants at international conference" align="right">
