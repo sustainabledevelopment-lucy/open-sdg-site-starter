@@ -299,6 +299,14 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-c-1-1b",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-с-1-1b",
+          "title": "Consumer price index for food products",
+          "description": "",
+          "keywords": "",
+          "href": "/open-sdg-site-starter/en/2-с-1-1b",
           "status": "complete"
         }]
     }
@@ -611,14 +619,6 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/4-3-1-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "4-3-1-1a",
-          "title": ".  Proportion of young people, by sex, who are enrolled in the system of primary vocational education (including short-term courses), in the system of secondary vocational and higher education",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/en/4-3-1-1a",
           "status": "complete"
         },
         {
