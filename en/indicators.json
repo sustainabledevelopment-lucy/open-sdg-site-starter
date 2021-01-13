@@ -147,7 +147,7 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/1-a-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-a-3",
@@ -299,14 +299,6 @@
           "description": "",
           "keywords": "",
           "href": "/open-sdg-site-starter/en/2-c-1-1b",
-          "status": "notstarted"
-        },
-        {
-          "id": "2-с-1-1b",
-          "title": "Consumer price index for food products",
-          "description": "",
-          "keywords": "",
-          "href": "/open-sdg-site-starter/en/2-с-1-1b",
           "status": "complete"
         }]
     }
